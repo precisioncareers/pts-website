@@ -1,0 +1,81 @@
+<div class="col-1-middle mob-hide center">
+    <a href="/">
+        <img src="/images/logo.png">
+    </a>
+</div>
+
+<!-- <div class="col-12 mob-show center">
+    <a href="/">
+        <h2 class="logo">Ekonomie Jednoduše</h2>
+    </a>
+</div> -->
+
+<nav class="col-12-middle mob-hide web-nav center p-t-2 space-between-navlinks">
+    <!-- <a 
+        {% if page.url == "/" %}
+            class="clickedon"
+        {%endif%}
+    
+    href="/"> Home </a> -->
+    <span class="dropdown-nav space-between-navlinks">
+        <a  {% if page.url == "/blog-archive.html"%} class="clickedon" {%endif%} href="/blog-archive.html"> Services </a>
+        <div class="dropdown-content">
+            <a href="/bitcoin">C-Suite</a>
+            <a href="/ekonomie">Contained Search</a>
+            <a href="/lightning-network">Technical/Cleared</a>
+            <a href="/penize">Bid & Proposal</a>
+            <a href="/selhani-trhu">Diversity & Veteran</a>
+        </div>
+    </span>
+
+    <span class="dropdown-nav space-between-navlinks">
+        <a  {% if page.url == "/blog-archive.html"%} class="clickedon" {%endif%} href="/blog-archive.html"> Sectors </a>
+        <div class="dropdown-content">
+            <a href="/bitcoin">DoD</a>
+            <a href="/ekonomie">DoS</a>
+            <a href="/lightning-network">USAID</a>
+            <a href="/penize">Fed Tech</a>
+            <a href="/selhani-trhu">Domestic</a>
+            <a href="/penize">Intel</a>
+            <a href="/selhani-trhu">International</a>
+        </div>
+    </span>
+
+    <span class="dropdown-nav space-between-navlinks">
+        <a  {% if page.url == "/blog-archive.html"%} class="clickedon" {%endif%} href="/blog-archive.html"> Candidates </a>
+        <div class="dropdown-content">
+            <a href="/bitcoin">Careers</a>
+        </div>
+    </span>
+
+    <span class="space-between-navlinks">
+    <a {% if page.url == "/dalsi-tvorba.html" %}
+    class="clickedon"
+    {%endif%} href="/dalsi-tvorba.html"> Industry Network </a>
+    </span>
+
+    <span class="space-between-navlinks">
+    <a {% if page.url == "/kontakt.html" %}
+    class="clickedon"
+    {%endif%} href="/kontakt"> Team </a>
+    </span>
+
+    <span class="dropdown-nav space-between-navlinks">
+       <a  {% if page.url == "/blog-archive.html"%} class="clickedon" {%endif%} href="/blog-archive.html"> Blog </a>
+        <div class="dropdown-content">
+            <a href="/bitcoin">Category 1</a>
+            <a href="/ekonomie">Category 2</a>
+            <a href="/lightning-network">Category 3</a>
+            <a href="/penize">Category 4</a>
+            <a href="/selhani-trhu">Category 5</a>
+            <a href="/penize">Category 6</a>
+        </div>
+    </span>
+
+    <span class="space-between-navlinks">
+    <a {% if page.url == "/kontakt.html" %}
+    class="clickedon"
+    {%endif%} href="/kontakt"> Contact Us </a>
+    </span>
+</nav>
+

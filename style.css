@@ -4,6 +4,7 @@
     --whitewriting: white;
     --bg: white;
     --bg-faded: #eff1ee;
+    --write: black;
     --headlines: font-family: 'Roboto';
     /* 300, 400, 500 */
     --writing: font-family: 'Montserrat'; 
@@ -20,14 +21,19 @@
 [class*="grid-"], [class*="grid_"], [class~="grid"]{
     margin: 0;
 }
-  
+ 
+[class*="col-"], [class*="col_"], [class~="col"] {
+    padding: 0.3rem 0rem;
+}
+
 body {
-color: var(--writing-lm);
-font-family: 'Roboto';
-font-size: 1rem;
-background-color: var(--bg-lm);
-overflow-x: hidden;
-word-break: break-word;
+    padding: 2% 5%;
+    color: var(--write);
+    font-family: 'Roboto';
+    font-size: 1rem;
+    background-color: var(--bg);
+    overflow-x: hidden;
+    word-break: break-word;
 }
 
 
@@ -122,9 +128,10 @@ margin-bottom:0;
 }
 
 hr {
+    padding-left: 0;
+    padding-right: 0;
     border: none;
-    border-bottom: 2px solid var(--writing-lm); 
-    margin: 2.5rem 0;
+    border-bottom: 2px solid var(--neonblue); 
 }
 
 /* Unique typography styles */
@@ -146,22 +153,20 @@ a {
 }
 
 a:hover{
-    color:var(--purple);
+    color:var(--neonblue);
 }
 
 p a {
-    color: var(--writing-lm);
+    color: var(--writing);
     text-decoration: none;
-    border-bottom: 2px solid #4389A2;
+    border-bottom: 2px solid var(--blue);
     transition: all 0.2s;
 }
 
 p a:hover {
-    color: #4389A2;
+    color: var(--neonblue);
     border-bottom: 2px solid;
     border-image-slice: 1;
-    /* border-width: 3px; i don't know if i need this */
-    border-image-source: linear-gradient(to left, var(--purple), var(--blue));
 }
 
 .social-share{
@@ -178,6 +183,112 @@ p a:hover {
     padding-top: 0.7rem;
 }
 
+/* Nav styles */
+.web-nav{
+    font-family: var(--headlines);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.15rem;
+    letter-spacing: 0.08em;
+    display: inline-block;
+}
+
+.web-nav a{
+    padding: 0.4rem 0.6rem;
+    transition: 0.2s;
+}
+
+.web-nav a:hover{
+    color: var(--neonblue);
+}
+
+
+
+.hamburger-button {
+    cursor: pointer;
+    padding: 0 0.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 3.5rem;
+    line-height: 0.8;
+    margin-top: -0.7rem;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    z-index: 3;
+}
+
+.hamburger-button.active {
+    color: var(--blue);
+}
+
+.mobile-menu {
+    display: none; 
+    background-color: var(--bg); 
+    color: var(--white);
+    padding: 5%;
+    position: fixed; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.mobile-menu a {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 5vh 5%;
+    display: block;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.mobile-menu a:hover{
+    color: var(--neonblue);
+}
+
+.mob-show {
+    display: none; 
+}
+
+.clickedon{
+    color: var(--neonblue);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-faded);
+    left:10px;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+  display:block;
+  color: rgb(78, 73, 73);
+  padding:5px 15px;
+  text-align:left;
+  white-space:nowrap;
+}
+
+
+.dropdown-nav {
+  position:relative;
+  padding-bottom: 1rem;
+  z-index: 2;
+}
+.dropdown-nav:hover .dropdown-content {
+    display: block;
+}
+
+.space-between-navlinks{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
 /* Image styles */
 
 .bg-image{
@@ -190,3 +301,10 @@ p a:hover {
     max-width: 100%;
 }
 
+@media(max-width:48em) {
+    .mob-hide { display: none; }
+    .mob-show { display: block; }
+    .logo{
+        font-size: 5rem;
+    }
+}
