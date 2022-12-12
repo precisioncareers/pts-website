@@ -23,11 +23,11 @@
 }
  
 [class*="col-"], [class*="col_"], [class~="col"] {
-    padding: 0.3rem 0rem;
+    padding: 0.1rem 0rem;
 }
 
 body {
-    padding: 2% 5%;
+    padding-top: 1%;
     color: var(--write);
     font-family: 'Roboto';
     font-size: 1rem;
@@ -56,7 +56,10 @@ p{
     margin-bottom: 0.8rem;
 }
 
-
+h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
 
 .copyright{
     font-size: 0.8rem;
@@ -83,6 +86,7 @@ p{
 .m-b-1{margin-bottom: 1rem;}
 .m-b-0{margin-bottom: 0;}
 .m-t-2{margin-top: 2%;}
+.p-banner{padding-bottom: 50vh;}
 
 .capped-width { max-width: 1100px; margin: auto;}
 
@@ -134,6 +138,14 @@ hr {
     border-bottom: 2px solid var(--neonblue); 
 }
 
+#blueline{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 100vw;
+}
+
 /* Unique typography styles */
 
 .emphasis{
@@ -183,12 +195,17 @@ p a:hover {
     padding-top: 0.7rem;
 }
 
+
+/* Header and footer styles */
+
+
+
 /* Nav styles */
 .web-nav{
     font-family: var(--headlines);
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1.15rem;
+    font-size: 1rem;
     letter-spacing: 0.08em;
     display: inline-block;
 }
@@ -297,9 +314,70 @@ p a:hover {
     background-repeat: no-repeat;
 }
 
+.bg-structure{
+    background-image: url('/images/structure.svg');
+    min-height: 80vh;
+    width: auto;
+}
+
 .max-w{
     max-width: 100%;
 }
+
+.capped-img{
+    min-width: 100vw;
+    max-height: 80vh;
+}
+
+* {box-sizing:border-box}
+
+
+/* Banner homepage Styles */
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  min-width: 100vw;
+  position: relative;
+  margin: auto;
+}
+
+.banner-text {
+    color: #f2f2f2;
+    font-size: 2.5rem;
+    padding: 14.5% 12px;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+/* Hide the images by default */
+.mySlides {
+ display: none;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 
 @media(max-width:48em) {
     .mob-hide { display: none; }
