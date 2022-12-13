@@ -86,6 +86,7 @@ h3{
 .left     {  text-align: left;     }
 .right    {  text-align: right;    }
 .center {  text-align: center;   }
+.blocktext{text-align: justify;}
 
 
 .padded   {  padding: 5%;    }
@@ -101,7 +102,13 @@ h3{
 .m-b-1{margin-bottom: 1rem;}
 .m-b-0{margin-bottom: 0;}
 .m-t-2{margin-top: 2%;}
+.m-t-5{margin-top: 5%;}
+.m-t-11{margin-top: 11%;}
+.m-b-5{margin-bottom: 5%;}
+.m-l-5{margin-left: 5.5vw;}
+.m-l-7{margin-left: 7vw;}
 .p-banner{padding-bottom: 50vh;}
+.m-r-6{margin-right: 6%;}
 
 .capped-width { max-width: 1100px; margin: auto;}
 
@@ -216,7 +223,7 @@ p a:hover {
     border: 2px solid var(--button);
     background-color: var(--button);
     border-radius: 6rem;
-    padding: 1.2% 1.3%;
+    padding: 1.2rem 1.3rem;
     color: white;
     font-size: 1.2rem;
     font-weight: 300;
@@ -343,7 +350,6 @@ p a:hover {
 
 .bg-structure{
     background-image: url('/images/structure.svg');
-    min-height: 80vh;
     width: auto;
 }
 
@@ -426,6 +432,26 @@ p a:hover {
 #why-pts p{
     text-align: justify;
 }
+
+.img-stairs{
+    max-height: 80vh;
+    width: auto;
+    border-radius: 12%;
+}
+
+.main-banner-text{
+    color: var(--whitewriting);
+    font-size: 3.5rem;
+    font-weight: 400;
+    padding-top: 10%;
+    padding-bottom: 3%;
+}
+
+#banner div{
+    min-height: 50vh;
+    background-attachment: fixed;
+}
+
 
 @keyframes fade {
   from {opacity: .4}

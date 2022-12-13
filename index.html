@@ -10,7 +10,7 @@ layout: default
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
         <!-- <img class="capped-img" src="/images/logo.png" style="width:100%"> -->
-        <div class="bg-image bg-structure"></div>
+        <div class="bg-image bg-structure tall-80"></div>
         <div class="center grid-spaceAround">
             <h1 class="banner-text col-12">Talent Solutions <br> Defense and government contracting</h1>
             <p class="banner-paragraph col-12">A call to action to something.</p>
@@ -52,13 +52,35 @@ layout: default
 </section>
 
 
-<section id="video-teamphoto" class="grid-spaceBetween padded center">
+<section id="video-teamphoto" class="grid-spaceAround padded center">
     <div class="col-5">
-        <img src="/images/structure.svg">
+        <img class="img-stairs" src="/images/team-stairs.jpg">
     </div>
-    <div class="col-6">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam cumque et ullam reprehenderit doloribus, labore eligendi minima exercitationem nihil beatae. </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptatem, mollitia magni molestias culpa assumenda porro sapiente odio vitae sunt delectus provident eligendi veritatis libero?</p>
-        <a class="button" href="#">Top talent</a>
+    <div class="m-r-6 col-3 p-t-2">
+        <p class="p-b-5 blocktext m-t-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam cumque et ullam reprehenderit doloribus, labore eligendi minima exercitationem nihil beatae. </p>
+        <p class="p-b-5 blocktext m-t-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptatem, mollitia magni molestias culpa assumenda porro sapiente odio vitae sunt delectus provident eligendi veritatis libero?</p>
+        <a class="m-t-11 m-b-5 button center" href="#">Top talent</a>
     </div>
 </section>
+
+<section class="grid-spaceAround padded">
+    <div class="m-r-6 col-3-middle p-t-2 m-l-7">
+        <h3>Lorem ipsum id</h3>
+        <p class="p-b-5 blocktext m-t-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam cumque et ullam reprehenderit doloribus, labore eligendi minima exercitationem nihil beatae. </p>
+        <!-- <a class="m-b-5 button center m-l-5" href="#">Top talent</a> -->
+    </div>
+    <div class="col-5">
+        <video width="560" height="315" poster="/images/video-cover.jpeg" frameborder="0" allowfullscreen controls>
+            <source src="/images/pts-video.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+{%include banner.html%}
+
+<!-- <section id="banner">
+    <div class="bg-image bg-structure center">
+        <p class="main-banner-text">Secure Top Talent Today</p>
+        <a class="m-b-5 button center" href="#">Contact Us</a>
+    </div>
+</section> -->
