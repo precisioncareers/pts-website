@@ -166,6 +166,8 @@ hr {
     padding-right: 0;
     border: none;
     border-bottom: 2px solid var(--neonblue); 
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #blueline{
@@ -439,7 +441,7 @@ p a:hover {
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3.5s;
 }
 
 .fade:not(.show){
@@ -718,6 +720,14 @@ p a:hover {
     max-height: 80vh;
     width: auto;
     border-radius: 12%;
+}
+
+#stairs-container {
+    background-image: url('/images/team-stairs.jpg');
+    box-shadow: 50px 50px 50px 50px white inset, -25px -25px 50px 50px white inset; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main-banner-text{
