@@ -196,6 +196,7 @@ a {
 
 a:hover{
     color:var(--neonblue);
+    text-decoration: none;
 }
 
 p a {
@@ -413,6 +414,14 @@ p a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid var(--button);
+    background-color: var(--button);
+    border-radius: 6rem;
+    padding: 1.2rem 1.6rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-decoration: none;
 }
 
 /* Hide the images by default */
@@ -433,6 +442,9 @@ p a:hover {
   animation-duration: 1.5s;
 }
 
+.fade:not(.show){
+    opacity: 1;
+}
 /* Testimonial styles */
 
 .heading {
