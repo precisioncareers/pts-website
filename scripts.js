@@ -19,3 +19,6 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 } 
 
+AOS.init({
+  duration: 2500 // values from 0 to 3000, with step 50ms
+});

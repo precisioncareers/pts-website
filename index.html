@@ -8,6 +8,26 @@ images:
  - bg: julie-andy.jpg
  - bg: selfiejpeg.jpg
  - bg: stuttgart.jpg
+testimonials:
+ - headshot: ben-andy.jpg 
+   text: lorem ipsum sid dolores
+   title: Chief Growth Officer, Company
+   logo: isoa-dc.jpg
+ - headshot: ben-andy.jpg 
+   text: lorem ipsum sid dolores
+   title: Chief Growth Officer, Company
+   logo: isoa-dc.jpg
+logos:
+ - img: inc.png 
+ - img: ben-andy.jpg 
+ - img: isoa-img.jpeg
+ - img: inc.png 
+ - img: ben-andy.jpg 
+ - img: isoa-img.jpeg
+ - img: inc.png 
+ - img: ben-andy.jpg 
+ - img: isoa-img.jpeg
+ - img: isoa-img.jpeg
 ---
 
 
@@ -120,25 +140,39 @@ images:
 </section>
 
 
+<section class="grid-spaceBetween padded capped-width">
+    {%for logo in page.logos%}
+    <div data-aos="fade-up" class="col-2 logos">
+        <img src="/images/{{logo.img}}">
+    </div>
+    {%endfor%}
+    <!-- <div class="col-2">
+        <img src="/images/isoa-dc.jpg">
+    </div>
+    <div class="col-2">
+        <img src="/images/isoa-dc.jpg">
+    </div>
+    <div class="col-2">
+        <img src="/images/isoa-dc.jpg">
+    </div>
+    <div class="col-2">
+        <img src="/images/isoa-dc.jpg">
+    </div> -->
+</section>
+
+
+
 <section class="testimonial text-center">
     <div class="container">
 
         <div class="heading white-heading">
             Voice of our candidates
         </div>
+        
         <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-         
+            
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <div class="testimonial4_slide">
-                        <img src="https://source.unsplash.com/n4KewLKFOZw" class="img-circle img-responsive" />
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                        <h4 class="emphasized">- Chief Growth Officer, Valiant</h4>
-                     
-                      <img src="https://source.unsplash.com/CoNsEK5iHug" class="img-logo img-responsive"/>                      
-                    </div>
-                </div>
-                <div class="carousel-item">
                     <div class="testimonial4_slide">
                         <img src="https://source.unsplash.com/n4KewLKFOZw" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                         <h4 class="emphasized">- Client 2</h4>
@@ -146,16 +180,23 @@ images:
             
                     </div>
                 </div>
+                {%for testimonial in page.testimonials%}
                 <div class="carousel-item">
+                   
                     <div class="testimonial4_slide">
-                        <img src="https://source.unsplash.com/n4KewLKFOZw" class="img-circle img-responsive" />
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                        <h4 class="emphasized">- Client 3</h4>
-                       <img src="https://source.unsplash.com/CoNsEK5iHug" class="img-logo img-responsive"/>                      
-            
+                        
+                        <img src="/images/{{testimonial.headshot}}" class="img-circle img-responsive" />
+                        <p>{{testimonial.text}} </p>
+                        <h4 class="emphasized">- {{testimonial.title}}</h4>
+                     
+                      <img src="/images/{{testimonial.logo}}" class="img-logo img-responsive"/>        
+                                  
                     </div>
+                    
                 </div>
+                {%endfor%} 
             </div>
+            
             <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>
@@ -163,8 +204,12 @@ images:
                 <span class="carousel-control-next-icon"></span>
             </a>
         </div>
+         
     </div>
 </section>
+
+
+
 
 
 {%include banner.html%}

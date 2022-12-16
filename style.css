@@ -507,7 +507,7 @@ p a:hover {
 .testimonial {
     min-height: 100vh;
     position: relative;
-    background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
+    background: url('/images/ben-andy.jpg');
     padding-top: 50px;
     padding-bottom: 50px;
     background-position: center;
@@ -747,6 +747,11 @@ p a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logos{
+    max-height: 12vh;
+    margin: 1%;
 }
 
 
