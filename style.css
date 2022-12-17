@@ -752,6 +752,8 @@ p a:hover {
 .logos{
     max-height: 12vh;
     margin: 1%;
+    box-shadow: 5px -4px 10px rgba(34,177,224,0.3);
+    margin-top: 3rem;
 }
 
 
