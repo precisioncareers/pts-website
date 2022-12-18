@@ -265,6 +265,59 @@ p a:hover {
     font-weight: 300;
 }
 
+/* Form styles */
+
+            
+              
+input, textarea {
+    border-style: solid;
+    border-bottom: 2px solid rgb(200, 200, 205);
+    padding: 0.8em;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+}
+  
+input:focus,
+textarea:focus {
+outline: none;
+border-bottom: 2px solid #e67e22;
+/* featured color */
+}
+
+textarea {
+min-height: 7em;
+}
+
+input[type="submit"] {
+width: auto;
+display: block;
+}
+
+form [class*=col-] {
+padding: 5px;
+}
+
+.email-signup input {
+width: 30%;
+display: inline-block;
+max-width: 250px;
+margin-top:1rem;
+}
+
+.email-signup .button-solid {
+padding: 0.8em;
+border-radius: 0;
+font-size: 1rem;
+}
+
+form .button {
+width:100%;
+}
+    
+  
+              
+            
 /* Header and footer styles */
 
 footer{
@@ -876,5 +929,12 @@ footer li{
     .mob-show { display: block; }
     .logo{
         font-size: 5rem;
+    }
+}
+
+@media(max-width:768px) {
+    .email-signup input {
+      width: 100%;
+      max-width: 100%;
     }
 }
