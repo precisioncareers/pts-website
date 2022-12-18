@@ -1,0 +1,19 @@
+<section class="padded">
+	<div class="capped-width">
+	{% for person in page.placements %}
+
+	<div class="grid flex-flip-alternate">
+		<div class="col-5 padded-2">
+			<img src="/images/{{person.profile_image}}" class="profile-image">
+       	</div>
+       	<div class="col-7-middle padded-1">
+           	<!-- <h3>{{person.name}}</h3> -->
+           	<p class="blocktext">"{{person.quote}}"</p>
+           	<p class="emphasized">- {{person.title}}</p>
+            <img class="logo-placements" src="/images/{{person.logo}}">
+       	</div>
+   	</div>
+
+   	{% endfor %}
+ 	</div>
+</section>

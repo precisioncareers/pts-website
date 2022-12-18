@@ -1,0 +1,9 @@
+<section class="grid-spaceAround padded capped-width">
+    <h2 class="center p-b-5 col-12">Past Performance</h2>
+    {%for job in page.performances%}
+    <div class="col-3">
+        <h4>{{job.title}}</h4>
+        <p class="emphasized">{{job.company}}</p>
+    </div>
+    {%endfor%}
+</section>
