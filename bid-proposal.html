@@ -1,0 +1,59 @@
+---
+layout: default 
+main-texts: 
+ - heading: Bid & Proposal Support 
+   writing: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam cumque et ullam reprehenderit doloribus, labore eligendi minima exercitationem nihil beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptatem, mollitia magni molestias culpa assumenda porro sapiente odio vitae sunt delectus provident eligendi veritatis libero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam cumque et ullam reprehenderit doloribus, labore eligendi minima exercitationem nihil beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptatem, mollitia magni molestias culpa assumenda porro sapiente odio vitae sunt delectus provident eligendi veritatis libero?
+bids:
+ - profile_image: headshot.jpg 
+   quote: Ab, voluptatem, mollitia magni molestias culpa assumenda porro sapiente odio vitae sunt delectus provident eligendi veritatis libero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam cumque et ullam reprehenderit doloribus, labore eligendi minima exercitationem nihil beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   title: Project Manager, Company
+   logo: isoa-img.jpeg 
+ - profile_image: headshot.jpg 
+   quote: Ab, voluptatem, mollitia magni molestias culpa assumenda porro sapiente odio vitae sunt delectus provident eligendi veritatis libero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam cumque et ullam reprehenderit doloribus, labore eligendi minima exercitationem nihil beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   title: Project Manager, Company
+   logo: isoa-img.jpeg 
+--- 
+
+{%include main-text.html%}
+
+
+<section id="why-pts" class="padded grid-spaceAround center">
+    <h2 class="col-12 p-b-5 p-t-2">What we can help you with</h2>
+    <div class="col-3 why-pts">
+        <h3 class="p-b-2">Thing 1</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quidem, omnis eaque delectus quo cupiditate perferendis itaque rem, facere recusandae et ea eveniet unde iste, maiores rerum placeat eius. Atque.</p>
+    </div>
+    <div class="col-3 why-pts">
+        <h3 class="p-b-2">Thing 2</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quidem, omnis eaque delectus quo cupiditate perferendis itaque rem, facere recusandae et ea eveniet unde iste, maiores rerum placeat eius. Atque.</p>
+    </div>
+    <div class="col-3 why-pts">
+        <h3 class="p-b-2">Thing 3</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quidem, omnis eaque delectus quo cupiditate perferendis itaque rem, facere recusandae et ea eveniet unde iste, maiores rerum placeat eius. Atque.</p>
+    </div>
+
+</section>
+
+<section class="padded">
+	<div class="capped-width">
+		<h2 class="center p-b-5">Recent Bids</h2>
+	{% for bid in page.bids %}
+
+	<div class="grid flex-flip-alternate">
+		<div class="col-5 padded-2">
+			<img src="/images/{{bid.profile_image}}" class="profile-image">
+       	</div>
+       	<div class="col-7-middle padded-1">
+           	<!-- <h3>{{person.name}}</h3> -->
+           	<p class="blocktext">"{{bid.quote}}"</p>
+           	<p class="emphasized">- {{bid.title}}</p>
+            <img class="logo-placements" src="/images/{{bid.logo}}">
+       	</div>
+   	</div>
+
+   	{% endfor %}
+ 	</div>
+</section>
+
+
+{%include banner-2.html%}
