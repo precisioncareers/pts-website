@@ -9,25 +9,39 @@ images:
  - bg: selfiejpeg.jpg
  - bg: stuttgart.jpg
 testimonials:
- - headshot: ben-andy.jpg 
-   text: lorem ipsum sid dolores
+ - headshot: headshot.jpg 
+   text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
    title: Chief Growth Officer, Company
-   logo: isoa-dc.jpg
- - headshot: ben-andy.jpg 
-   text: lorem ipsum sid dolores
+   logo: isoa-img.jpeg
+ - headshot: headshot.jpg 
+   text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
    title: Chief Growth Officer, Company
-   logo: isoa-dc.jpg
+   logo: isoa-img.jpeg
+ - headshot: headshot.jpg 
+   text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+   title: Chief Growth Officer, Company
+   logo: isoa-img.jpeg
 logos:
  - img: inc.png 
- - img: ben-andy.jpg 
- - img: isoa-img.jpeg
  - img: inc.png 
- - img: ben-andy.jpg 
- - img: isoa-img.jpeg
+ - img: inc.png
  - img: inc.png 
- - img: ben-andy.jpg 
- - img: isoa-img.jpeg
- - img: isoa-img.jpeg
+ - img: inc.png
+ - img: inc.png
+ - img: inc.png 
+ - img: inc.png 
+ - img: inc.png
+ - img: inc.png
+ - img: inc.png 
+ - img: inc.png 
+ - img: inc.png
+ - img: inc.png 
+ - img: inc.png
+ - img: inc.png
+ - img: inc.png 
+ - img: inc.png 
+ - img: inc.png
+ - img: inc.png
 ---
 
 
@@ -39,7 +53,7 @@ logos:
         <div class="mySlides fade">
         <!-- <img class="capped-img" src="/images/logo.png" style="width:100%"> -->
         
-        <div class="bg-image tall-80" style="background-image: url('/images/{{image.bg}}')"></div>
+        <div class="bg-image bg-overlay-dark tall-80" style="background-image: url('/images/{{image.bg}}')"></div>
         
         <div class="center grid-spaceAround">
             <h1 class="banner-text col-12">Talent Solutions <br> Defense and government contracting</h1>
@@ -87,10 +101,10 @@ logos:
     <div class="col-5" id="stairs-container">
         <!-- <img class="img-stairs" src="/images/team-stairs.jpg"> -->
     </div>
-    <div class="m-r-6 col-3 p-t-2">
+    <div class="m-r-6 col-3-middle p-t-2">
         <p class="p-b-5 blocktext m-t-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam cumque et ullam reprehenderit doloribus, labore eligendi minima exercitationem nihil beatae. </p>
         <p class="p-b-5 blocktext m-t-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptatem, mollitia magni molestias culpa assumenda porro sapiente odio vitae sunt delectus provident eligendi veritatis libero?</p>
-        <a class="m-t-11 m-b-5 button center" href="#">Top talent</a>
+        <a class="m-t-6 m-b-5 button center" href="#">Top talent</a>
     </div>
 </section>
 
@@ -114,12 +128,12 @@ logos:
         <img class="rounded" src="/images/isoa-img.jpeg">
     </div>
    
-    <div class="col-5-middle justify centered-p m-b-11">
+    <div data-aos="fade-left" class="col-5-middle justify centered-p m-b-11">
         <p class="capped-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt inventore pariatur!</p>
     </div>
     
     <div class="col-5-middle justify centered-p">
-        <p class="capped-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt inventore pariatur!</p>
+        <p data-aos="fade-right" class="capped-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt inventore pariatur!</p>
     </div>
     <div class="col-5 center m-t-6 max-20">
         <img src="/images/vosb-img.png">
@@ -129,7 +143,7 @@ logos:
         <img class="rounded" src="/images/inc.png">
     </div>
     <div class="col-5-middle justify centered-p">
-        <p class="capped-text p-t-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt inventore pariatur! Lorem ipsum </p>
+        <p data-aos="fade-left" class="capped-text p-t-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt inventore pariatur! Lorem ipsum </p>
     </div>
 </section>
 
@@ -141,8 +155,9 @@ logos:
 
 
 <section class="grid-spaceBetween padded capped-width">
+    <h2 class="col-12 p-b-5 center p-t-2">Our Clients</h2>
     {%for logo in page.logos%}
-    <div data-aos="fade-up" class="col-2 logos">
+    <div data-aos="flip-left" class="col-2 logos">
         <img src="/images/{{logo.img}}">
     </div>
     {%endfor%}
@@ -169,17 +184,19 @@ logos:
             Voice of our candidates
         </div>
         
-        <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+        <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="3000" data-duration="1000">
             
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
                     <div class="testimonial4_slide">
-                        <img src="https://source.unsplash.com/n4KewLKFOZw" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        <img src="/images/headshot.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                         <h4 class="emphasized">- Client 2</h4>
-                       <img src="https://source.unsplash.com/CoNsEK5iHug" class="img-logo img-responsive"/>                      
+                       <img src="/images/isoa-img.jpeg" class="img-logo img-responsive"/>                      
             
                     </div>
                 </div>
+
+                <!-- I had to jekyllify this on the second one, because the first one has a special class called active that has to be only in the first one -->
                 {%for testimonial in page.testimonials%}
                 <div class="carousel-item">
                    

@@ -120,7 +120,10 @@ h3{
 .m-l-7{margin-left: 7vw;}
 .p-banner{padding-bottom: 50vh;}
 .m-r-6{margin-right: 6%;}
-.m-l-neg{margin-left: -2.5rem; }
+.m-r-4{margin-right: 4%;}
+.m-l-neg{margin-left: -5%; }
+.m-l--7{margin-left: -7%; }
+.m-l--2{margin-left: -2%; }
 
 .capped-width { max-width: 1100px; margin: auto;}
 .capped-section { max-width: 1200px; margin: auto;}
@@ -321,7 +324,7 @@ width:100%;
 /* Header and footer styles */
 
 footer{
-    padding: 5% 2%;
+    padding: 5% 3%;
 }
 
 .diamond-ul{
@@ -372,7 +375,7 @@ footer li{
 }
 
 .socials{
-    font-size: 1.8rem;
+    font-size: 3rem;
     padding: 0.5rem 0.8rem;
 }
 
@@ -531,6 +534,24 @@ footer li{
     position: relative;
 }
 
+.bg-overlay-dark {
+    position: relative;
+}
+  
+.bg-overlay-dark::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.35);
+}
+  
+.bg-overlay-dark > * {
+    position: relative;
+}
+
 /* Banner homepage Styles */
 
 
@@ -562,6 +583,7 @@ footer li{
     font-weight: 400;
     font-size: 1.7rem;
     padding: 10.5% 12px;
+    color: #f2f2f2;
 }
 
 .banner-button{
@@ -596,7 +618,7 @@ footer li{
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 3.5s;
+  animation-duration: 1.5s;
 }
 
 .fade:not(.show){
@@ -662,11 +684,11 @@ footer li{
 .testimonial {
     min-height: 100vh;
     position: relative;
-    background: url('/images/ben-andy.jpg');
+    background: url('/images/testimonial-kosovo.svg');
     padding-top: 50px;
     padding-bottom: 50px;
     background-position: center;
-        background-size: cover;
+    background-size: cover;
 }
 #testimonial4 .carousel-inner:hover{
   cursor: -moz-grab;
@@ -879,7 +901,7 @@ footer li{
 
 #stairs-container {
     background-image: url('/images/team-stairs.jpg');
-    box-shadow: 50px 50px 50px 50px white inset, -25px -25px 50px 50px white inset; 
+    box-shadow: 40px 40px 40px 40px white inset, -20px -20px 40px 40px white inset; 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
