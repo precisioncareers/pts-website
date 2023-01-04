@@ -344,6 +344,12 @@ footer{
     padding: 5% 3%;
 }
 
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 .diamond-ul{
     width: 20px;
     height: auto;
@@ -357,6 +363,41 @@ footer a{
 .footer-contact{
     font-size: 1.2rem;
 }
+
+
+
+  .side-nav {
+    /* width: 200px; */
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    background-color: #333333;
+    color: white;
+    box-sizing: border-box;
+  }
+  .side-nav a {
+    color: white;
+    padding-right: 5px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .side-nav a:first-child{
+    padding-top: 16px;
+  }
+
+  .side-nav a:last-child{
+    padding-bottom: 16px;
+  }
+  .side-nav a:hover {
+    background-color: white;
+    color: var(--neonblue);
+  }
 
 /* footer ul{
     list-style-image:url('/images/diamond.png');
@@ -582,7 +623,7 @@ footer li{
 
 .banner-text {
     color: #f2f2f2;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     padding: 14.5% 12px;
     position: absolute;
     bottom: 100px;
@@ -598,7 +639,7 @@ footer li{
     width: 100%;
     text-align: center;
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 1.95rem;
     padding: 10.5% 12px;
     color: #f2f2f2;
 }
@@ -916,13 +957,13 @@ footer li{
     border-radius: 12%;
 }
 
-#stairs-container {
+/* #stairs-container {
     background-image: url('/images/team-stairs.jpg');
     box-shadow: 40px 40px 40px 40px white inset, -20px -20px 40px 40px white inset; 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
 .main-banner-text{
     color: var(--whitewriting);
@@ -958,7 +999,7 @@ footer li{
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .9}
   to {opacity: 1}
 }
 
