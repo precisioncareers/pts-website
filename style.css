@@ -28,7 +28,6 @@
 }
 
 body {
-    padding-top: 1%;
     color: var(--write);
     font-family: 'Roboto';
     font-size: 1rem;
@@ -131,6 +130,7 @@ h3{
 .capped-sector{max-width: 200px;}
 .m-sector{margin: 1% 0.5%}
 
+.tall-17-max  {  max-height: 17vh;   }
 .tall-30  {  min-height: 30vh;   }
 .tall-35  {  min-height: 35vh;   }
 .tall-40  {  min-height: 40vh;   }
@@ -340,6 +340,12 @@ form .button:hover {
             
 /* Header and footer styles */
 
+.logo{
+   
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+}
+
 footer{
     padding: 5% 3%;
 }
@@ -442,14 +448,16 @@ footer li{
     font-family: var(--headlines);
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: 0.08em;
     display: inline-block;
-    padding: 0.6rem 0 0.7rem 0;
+    margin-right: 5rem;
+    padding-left: 0;
+    /* padding: 0.6rem 0 0.7rem 0; */
 }
 
 .web-nav a{
-    padding: 0.4rem 0.6rem;
+    /* padding: 0.4rem 0.6rem; */
     transition: 0.2s;
 }
 
@@ -513,22 +521,28 @@ footer li{
 }
 
 .dropdown-content {
+    border: 2px solid #333333;
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #333333;
+    color: white;
     left:10px;
-    padding:5px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-content a {
   display:block;
-  color: rgb(78, 73, 73);
+  /* color: rgb(78, 73, 73); */
   padding:5px 15px;
   text-align:left;
   white-space:nowrap;
+  font-size: 1rem;
 }
 
+.dropdown-content a:hover{
+    background-color: white;
+    color: var(--neonblue);
+}
 
 .dropdown-nav {
   position:relative;
@@ -540,9 +554,11 @@ footer li{
 }
 
 .space-between-navlinks{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+   padding: 0 1.05rem;
 }
+
+
+
 
 /* Image styles */
 
