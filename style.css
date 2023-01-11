@@ -986,6 +986,7 @@ footer li{
 
 #why-pts p{
     text-align: justify;
+    max-width: 1200px;
 }
 
 .img-stairs{

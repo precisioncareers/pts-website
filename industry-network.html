@@ -1,5 +1,31 @@
 --- 
 layout: default
+customers:
+ - headshot: headshot.jpg 
+   text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+   title: Chief Growth Officer, Company
+   logo: isoa-img.jpeg
+ - headshot: headshot.jpg 
+   text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+   title: Chief Growth Officer, Company
+   logo: isoa-img.jpeg
+ - headshot: headshot.jpg 
+   text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+   title: Chief Growth Officer, Company
+   logo: isoa-img.jpeg
+candidates:
+ - headshot: headshot.jpg 
+   text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+   title: Chief Growth Officer, Company
+   logo: isoa-img.jpeg
+ - headshot: headshot.jpg 
+   text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+   title: Chief Growth Officer, Company
+   logo: isoa-img.jpeg
+ - headshot: headshot.jpg 
+   text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+   title: Chief Growth Officer, Company
+   logo: isoa-img.jpeg
 --- 
 
 
@@ -8,13 +34,70 @@ layout: default
       <h1 class="center p-b-5">Industry network</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat molestiae dolore et facere accusamus ex, eos architecto, dolorum reprehenderit odit maxime rerum consectetur suscipit accusantium! Accusamus voluptatibus eum atque consequatur!</p>
     </div>
-    {%endfor%}
 </section>
 
 
 
 
 <!------------------- Voice of our customers ----------------------------------->
+
+<section class="testimonial text-center">
+    <div class="container">
+
+        <div class="heading white-heading">
+            Voice of our customers
+        </div>
+        
+        <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="3000" data-duration="1000">
+            
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="testimonial4_slide">
+                        <img src="/images/headshot.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        <h4 class="emphasized">- Client 2</h4>
+                       <img src="/images/isoa-img.jpeg" class="img-logo img-responsive"/>                      
+            
+                    </div>
+                </div>
+
+                <!-- I had to jekyllify this on the second one, because the first one has a special class called active that has to be only in the first one -->
+                {%for customers in page.customers%}
+                <div class="carousel-item">
+                   
+                    <div class="testimonial4_slide">
+                        
+                        <img src="/images/{{testimonial.headshot}}" class="img-circle img-responsive" />
+                        <p>{{customers.text}} </p>
+                        <h4 class="emphasized">- {{customers.title}}</h4>
+                     
+                      <img src="/images/{{testimonial.logo}}" class="img-logo img-responsive"/>        
+                                  
+                    </div>
+                    
+                </div>
+                {%endfor%} 
+            </div>
+            
+            <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+         
+    </div>
+</section>
+
+
+<section id="banner">
+    <div class="bg-image bg-structure center">
+        <p class="main-banner-text">We treat our candidates like customers</p>
+        <a class="m-b-5 button center" href="/contact-us.html">Contact Us</a>
+    </div>
+</section>
+
+<!---------------------------------------------- Voice of our Candidates -------------------------------------------------->
 
 <section class="testimonial text-center">
     <div class="container">
@@ -36,14 +119,14 @@ layout: default
                 </div>
 
                 <!-- I had to jekyllify this on the second one, because the first one has a special class called active that has to be only in the first one -->
-                {%for testimonial in page.testimonials%}
+                {%for candidate in page.candidates%}
                 <div class="carousel-item">
                    
                     <div class="testimonial4_slide">
                         
                         <img src="/images/{{testimonial.headshot}}" class="img-circle img-responsive" />
-                        <p>{{testimonial.text}} </p>
-                        <h4 class="emphasized">- {{testimonial.title}}</h4>
+                        <p>{{candidate.text}} </p>
+                        <h4 class="emphasized">- {{candidate.title}}</h4>
                      
                       <img src="/images/{{testimonial.logo}}" class="img-logo img-responsive"/>        
                                   
@@ -63,3 +146,5 @@ layout: default
          
     </div>
 </section>
+
+{%include banner.html%}
