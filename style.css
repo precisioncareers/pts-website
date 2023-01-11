@@ -217,6 +217,13 @@ ul, ol{
     list-style-position: inside;
 }
 
+li{
+    font-size: 1.2rem;
+}
+
+.display-block{
+    display: block;
+}
 
 /* Button and link styles */
 
@@ -230,6 +237,11 @@ a:hover{
     color:var(--neonblue);
     text-decoration: none;
 }
+
+.subtle-button {
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
 
 p a {
     color: var(--writing);
@@ -426,11 +438,11 @@ li::before {
     background-image: url('/images/diamond.png');
 } */
 
-ul {
+footer ul {
     list-style-image: url('/images/diamond.png');
 }
 
-ul::content{
+footer ul::content{
     vertical-align: middle;
 }
 

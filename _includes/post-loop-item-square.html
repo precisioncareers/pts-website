@@ -1,7 +1,7 @@
 <!-- Since the post loop item uses a column class, make sure the parent container has a grid -->
 
 <div class="col-4_xs-12 post-item padded-1">
-    <a href="{{ post.url }}" class="bg-image square" style="background-image:url( '{{ post.featured_image }}' );"></a>
+    <a href="{{ post.url }}" class="bg-image square display-block" style="background-image:url( '{{ post.featured_image }}' );"></a>
     <div class="padded-1">
 
         {% for item in post.categories %}
@@ -10,7 +10,8 @@
         
         <a href="{{ post.url }}">
             <h2 class="margin-t-1"> {{ post.title }} </h2>
-            <p> {{ post.description }} </p>
         </a>
+        <p> {{ post.description }} </p>
+        <a href="{{ post.url }}" class="subtle-button"> Read More </a>
     </div>
 </div>
