@@ -4,8 +4,8 @@
     <a href="{{ post.url }}" class="bg-image square display-block" style="background-image:url( '{{ post.featured_image }}' );"></a>
     <div class="padded-1">
 
-        {% for item in post.categories %}
-        <a href="/{{item}}"> <span class="tag"> {{item}} </span></a>
+        <a href="/{{post.category-link}}"> 
+            {% for item in post.categories %}<span class="tag"> {{item}} </span></a>
         {% endfor %}
         
         <a href="{{ post.url }}">
