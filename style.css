@@ -227,6 +227,10 @@ li{
 
 /* Button and link styles */
 
+.post-item {
+    text-decoration: none;
+  }
+
 a {
     text-decoration: none;
     color: inherit;
