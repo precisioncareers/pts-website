@@ -26,6 +26,16 @@ candidates:
    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
    title: Chief Growth Officer, Company
    logo: isoa-img.jpeg
+images:
+ - bg_image: /images/ben-andy.jpg
+ - bg_image: /images/ben-andy.jpg
+ - bg_image: /images/ben-andy.jpg
+ - bg_image: /images/ben-andy.jpg
+ - bg_image: /images/ben-andy.jpg
+ - bg_image: /images/ben-andy.jpg
+ - bg_image: /images/ben-andy.jpg
+ - bg_image: /images/ben-andy.jpg
+ - bg_image: /images/ben-andy.jpg
 --- 
 
 
@@ -41,7 +51,7 @@ candidates:
 
 <!------------------- Voice of our customers ----------------------------------->
 
-<section class="testimonial text-center">
+<section class="testimonial text-center" id="customer-testimonials">
     <div class="container">
 
         <div class="heading white-heading">
@@ -55,7 +65,7 @@ candidates:
                     <div class="testimonial4_slide">
                         <img src="/images/headshot.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                         <h4 class="emphasized">- Client 2</h4>
-                       <img src="/images/isoa-img.jpeg" class="img-logo img-responsive"/>                      
+                                           
             
                     </div>
                 </div>
@@ -70,7 +80,7 @@ candidates:
                         <p>{{customers.text}} </p>
                         <h4 class="emphasized">- {{customers.title}}</h4>
                      
-                      <img src="/images/{{testimonial.logo}}" class="img-logo img-responsive"/>        
+                 
                                   
                     </div>
                     
@@ -99,7 +109,7 @@ candidates:
 
 <!---------------------------------------------- Voice of our Candidates -------------------------------------------------->
 
-<section class="testimonial text-center">
+<section class="testimonial text-center" id="candidate-testimonials">
     <div class="container">
 
         <div class="heading white-heading">
@@ -113,7 +123,7 @@ candidates:
                     <div class="testimonial4_slide">
                         <img src="/images/headshot.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                         <h4 class="emphasized">- Client 2</h4>
-                       <img src="/images/isoa-img.jpeg" class="img-logo img-responsive"/>                      
+                                        
             
                     </div>
                 </div>
@@ -127,8 +137,7 @@ candidates:
                         <img src="/images/{{testimonial.headshot}}" class="img-circle img-responsive" />
                         <p>{{candidate.text}} </p>
                         <h4 class="emphasized">- {{candidate.title}}</h4>
-                     
-                      <img src="/images/{{testimonial.logo}}" class="img-logo img-responsive"/>        
+                       
                                   
                     </div>
                     
@@ -147,4 +156,16 @@ candidates:
     </div>
 </section>
 
+
+<div class="wrapper">
+    <h2 class="col-12 center p-b-1 m-t-5">Gallery</h2>
+    <input id="btnBox" type="checkbox">
+    <ul>
+        {%for image in page.images%}
+        <li style="background-image: url('{{image.bg_image}}')"></li>
+        {%endfor%}
+    </ul><label class="btn-area" for="btnBox"><span class="btn1">Load more</span> <span class="btn2">Load less</span></label>
+</div>
+
 {%include banner.html%}
+

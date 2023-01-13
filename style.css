@@ -291,6 +291,7 @@ p a:hover {
     color: white;
     font-size: 1.2rem;
     font-weight: 300;
+    transition: 0.3s;
 }
 
 .button:hover{
@@ -650,6 +651,80 @@ footer li{
 .bg-overlay-dark > * {
     position: relative;
 }
+
+/* industry network gallery */
+
+.wrapper {
+	width: 900px;
+	min-height: auto;
+	margin: 20px auto;
+}
+.wrapper ul {
+	list-style: none;
+	padding: 0;
+}
+.wrapper ul:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.wrapper ul li {
+	width: calc(30% - 5px);
+	margin: 30px 15px 0;
+	height: 150px;
+	background-size: cover;
+	background-position: center center;
+	float: left;
+	box-shadow: 0 15px 10px 1px rgba(0, 0, 0, 0.5);
+}
+.wrapper ul li:nth-child(1n + 4) {
+	max-height: 0;
+	opacity: 0;
+	transition: 0.2s ease-in;
+}
+.wrapper .btn-area {
+	display: block;
+	cursor: pointer;
+	text-align: center;
+	width: 150px;
+	line-height: 50px;
+	margin: 30px auto 0;
+    margin-bottom: 5rem;
+    padding: 0.7rem 1.2rem;
+    border: 2px solid var(--button);
+    background-color: var(--button);
+    border-radius: 6rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.wrapper .btn-area:hover{
+    color: var(--neonblue);
+    background: white;
+    border: 2px solid var(--neonblue);
+}
+
+.wrapper .btn-area .btn2 {
+	display: none;
+}
+.wrapper #btnBox {
+	display: none;
+}
+.wrapper #btnBox:checked~ul li:nth-child(1n + 4) {
+	max-height: 1000px;
+	opacity: 1;
+	transition: 0.2s ease-in;
+}
+.wrapper #btnBox:checked~.btn-area .btn2 {
+	display: block;
+}
+.wrapper #btnBox:checked~.btn-area .btn1 {
+	display: none;
+}
+
 
 /* Banner homepage Styles */
 
