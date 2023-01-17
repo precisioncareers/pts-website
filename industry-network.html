@@ -41,7 +41,7 @@ images:
 
 <section class="grid-centered padded blocktext bg-image bg-structure tall-80 bg-overlay">
     <div class="col-8_sm-12">
-      <h1 class="center p-b-5">Industry network</h1>
+      <h1 class="center p-b-5">Testimonials</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat molestiae dolore et facere accusamus ex, eos architecto, dolorum reprehenderit odit maxime rerum consectetur suscipit accusantium! Accusamus voluptatibus eum atque consequatur!</p>
     </div>
 </section>
@@ -51,7 +51,7 @@ images:
 
 <!------------------- Voice of our customers ----------------------------------->
 
-<section class="testimonial text-center" id="customer-testimonials">
+<section class="testimonial-clients text-center" id="customer-testimonials">
     <div class="container">
 
         <div class="heading white-heading">
@@ -157,15 +157,31 @@ images:
 </section>
 
 
-<div class="wrapper">
+<section class="padded capped-section">
+    <div class="gallery grid" id="lightgallery">
+        {% for item in page.images %}
+    
+        <a class="col-4 gallery-item" href="{{item.bg_image}}">
+            <div class="bg-image landscape" 
+                style="background-image: url('{{item.bg_image}}');">
+            </div>
+        </a> 
+    
+        {% endfor %}
+    </div>
+</section>
+
+<!-- <div class="wrapper"> 
     <h2 class="col-12 center p-b-1 m-t-5">Gallery</h2>
-    <input id="btnBox" type="checkbox">
+    <input id="btnBox" type="checkbox"> 
     <ul>
         {%for image in page.images%}
         <li style="background-image: url('{{image.bg_image}}')"></li>
         {%endfor%}
+
+       
     </ul><label class="btn-area" for="btnBox"><span class="btn1">Load more</span> <span class="btn2">Load less</span></label>
-</div>
+</div> -->
 
 {%include banner.html%}
 

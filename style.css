@@ -77,6 +77,10 @@ h3{
     margin-bottom: 1rem;
 }
 
+.relative{
+    position: relative;
+}
+
 .copyright{
     font-size: 0.8rem;
     margin-bottom: 0.4rem;
@@ -299,6 +303,16 @@ p a:hover {
     background: white;
     border: 2px solid var(--neonblue);
 }
+
+
+/* Blog styles */
+
+.sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+  
 
 /* Form styles */
 
@@ -654,6 +668,25 @@ footer li{
 
 /* industry network gallery */
 
+
+
+.gallery-item {
+    border-bottom: none;
+    padding: 2% 1%;
+}
+
+a.gallery-item{
+    display: block;
+}
+
+.lg-backdrop {
+    background-color: var(--writing) ;
+}
+
+.lg-backdrop.in {
+    opacity: 0.95;
+}
+
 .wrapper {
 	width: 900px;
 	min-height: auto;
@@ -864,6 +897,17 @@ footer li{
     background-position: center;
     background-size: cover;
 }
+
+.testimonial-clients {
+    min-height: 100vh;
+    position: relative;
+    background: url('/images/ausalunch.jpeg');
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+    background-size: cover;
+}
+
 #testimonial4 .carousel-inner:hover{
   cursor: -moz-grab;
   cursor: -webkit-grab;
