@@ -1,5 +1,26 @@
 --- 
 layout: default 
+candidates:
+ - name: Placeholder name 
+   photo_image: mike.jpg
+   title: Some title, company 
+   testimonial: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus temporibus quod accusantium! Iste, aspernatur autem. Aperiam omnis molestias ea sed, repellendus eius laboriosam aliquid rem provident corrupti quas reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae sapiente beatae explicabo velit. Aspernatur repudiandae et distinctio dolore saepe, debitis dicta voluptatibus consectetur quos, animi laborum, esse eveniet similique!
+ - name: Placeholder name 
+   photo_image: mike.jpg
+   title: Some title, company 
+   testimonial: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus temporibus quod accusantium! Iste, aspernatur autem. Aperiam omnis molestias ea sed, repellendus eius laboriosam aliquid rem provident corrupti quas reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae sapiente beatae explicabo velit. Aspernatur repudiandae et distinctio dolore saepe, debitis dicta voluptatibus consectetur quos, animi laborum, esse eveniet similique!
+ - name: Placeholder name 
+   photo_image: mike.jpg
+   title: Some title, company 
+   testimonial: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus temporibus quod accusantium! Iste, aspernatur autem. Aperiam omnis molestias ea sed, repellendus eius laboriosam aliquid rem provident corrupti quas reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae sapiente beatae explicabo velit. Aspernatur repudiandae et distinctio dolore saepe, debitis dicta voluptatibus consectetur quos, animi laborum, esse eveniet similique!
+ - name: Placeholder name 
+   photo_image: mike.jpg
+   title: Some title, company 
+   testimonial: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus temporibus quod accusantium! Iste, aspernatur autem. Aperiam omnis molestias ea sed, repellendus eius laboriosam aliquid rem provident corrupti quas reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae sapiente beatae explicabo velit. Aspernatur repudiandae et distinctio dolore saepe, debitis dicta voluptatibus consectetur quos, animi laborum, esse eveniet similique!
+ - name: Placeholder name 
+   photo_image: mike.jpg
+   title: Some title, company 
+   testimonial: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus temporibus quod accusantium! Iste, aspernatur autem. Aperiam omnis molestias ea sed, repellendus eius laboriosam aliquid rem provident corrupti quas reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae sapiente beatae explicabo velit. Aspernatur repudiandae et distinctio dolore saepe, debitis dicta voluptatibus consectetur quos, animi laborum, esse eveniet similique!
 --- 
 
 <section class="grid-centered padded blocktext bg-image bg-structure tall-80 bg-overlay">
@@ -26,7 +47,47 @@ layout: default
 
 </section>
 
-<section class="padded grid-spaceAround center">
+<section class="padded grid-spaceAround">
+    <h2 class="col-12 p-b-5 p-t-2 center">Some of our placed candidates</h2>
+    {%for member in page.candidates%}
+		<div class="col-2 center margin-sides team-member pointer">
+            <img src="/images/{{member.photo_image}}">
+            <h5 class="m-t-2">{{member.name}}</h5>
+            <h6>{{member.title}}</h6>
+        </div>
+	{%endfor%}
+
+    {%for popup in page.candidates%}
+    <section class="popup" data-pop="{{popup.name}}">
+      <div class="grid-spaceBetween">
+        <div class="col-5_sm-12">
+          <img src="{{popup.photo_image}}" class="popup-photo img-team" />
+        </div>
+        <div class="col-5-middle">
+            <h3>{{popup.name}}</h3>
+            <h5>{{popup.title}}</h5>
+            <p>{{popup.testimonial}}</p>
+        </div>
+        <div class="popupX">  
+            <svg viewbox="0 0 100 100">
+            <path d="M 0,0 L100,100" />
+            <path d="M 100,0 L0,100" />
+            </svg>
+        </div>
+      </div>
+    </section>
+    {%endfor%}
+</section>
+
+<section class="padded grid-spaceAround center capped-section">
     <h2 class="col-12 p-b-5 p-t-2">Gain access to top opportunities</h2>
     <p>The time you spend building a profile with us is well worth it because we give you access to all opportunities not just a tone company</p>
+    <div class="col-3 m-t-2">
+        <a class="m-b-5 button center" href="#">Build your profile</a>
+    </div>
 </section>
+
+{%include benefits.html%}
+
+{%include banner-2.html%}
+
