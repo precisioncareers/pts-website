@@ -1,5 +1,38 @@
 ---
 layout: default 
+teamtestimonials:
+ - headshot_image: ben.jpg 
+   text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, illum eos neque consequuntur rerum, facilis aut molestias, repudiandae recusandae non rem reiciendis possimus quia pariatur minima officiis maxime. Sunt, nemo.
+   name: Benjamin Webb
+ - headshot_image: ben.jpg 
+   text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, illum eos neque consequuntur rerum, facilis aut molestias, repudiandae recusandae non rem reiciendis possimus quia pariatur minima officiis maxime. Sunt, nemo.
+   name: Benjamin Webb
+team:
+ - name: Jake Frazer
+   title: Account Executive
+   photo_image: jake.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Jake Frazer
+   title: Account Executive
+   photo_image: jake.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Jake Frazer
+   title: Account Executive
+   photo_image: jake.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Jake Frazer
+   title: Account Executive
+   photo_image: jake.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Jake Frazer
+   title: Account Executive
+   photo_image: jake.jpg 
+   email: jake@precision.careers
+   linkedin: #
 --- 
 
 <section class="bg-image bg-team grid tall-80">
@@ -17,16 +50,70 @@ layout: default
 
             
               
-<section class="padded grid-right">
-    <div class="col-3-middle right">
-        <img src="/images/headshot-1.png" class="profile-small">
+<!-- <section class="padded grid-right">
+    <div class="testimonial-slider-container team-testimonial">
+    {%for item in page.teamtestimonials%}
+    <div class="slider-item"></div>
+        <div class="col-3-middle right">
+            <img src="/images/{{item.headshot_image}}" class="profile-small">
+        </div>
+        <div class="col-9 padded">
+        <p class="emphasis">
+            {{item.text}} </p>
+        <p>  <em> - {{item.name}} </em> </p>
+        </div>
     </div>
-    <div class="col-9 padded">
-      <p class="emphasis">
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </p>
-      <p>  <em> - A happy customer </em> </p>
+    {%endfor%}
     </div>
+</section> -->
+
+
+<section class="padded grid-spaceAround">
+    {%for member in page.team%}
+		<div class="col-2 center margin-sides team-member pointer">
+            <img src="/images/{{member.photo_image}}">
+            <h5 class="m-t-2">{{member.name}}</h5>
+            <h6>{{member.title}}</h6>
+        </div>
+	{%endfor%}
+
+    {%for popup in page.team%}
+    <section class="popup" data-pop="{{popup.name}}">
+      <div class="grid-spaceBetween">
+        <div class="col-5_sm-12">
+          <img src="{{popup.photo_image}}" class="popup-photo img-team" />
+        </div>
+        <div class="col-5-middle">
+            <h2>{{popup.name}}</h2>
+            <p>Past Companies: {{popup.companies}}</p>
+            <p>Email: <a href="mailto:{{popup.email}}"> {{popup.email}}</a></p>
+            <p>LinkedIn: <a href="{{popup.linkedin}}"> {{popup.name}}</a></p>
+        </div>
+        <div class="popupX">  
+            <svg viewbox="0 0 100 100">
+            <path d="M 0,0 L100,100" />
+            <path d="M 100,0 L0,100" />
+            </svg>
+        </div>
+      </div>
+    </section>
+    {%endfor%}
+
+    <div class="popUpOverlay"></div>
+
+</section>
+
+<section class="padded grid-spaceAround center capped-section">
+    <div class="col-12">
+        <h2>Join our team</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nulla qui nostrum. Eligendi facere aperiam beatae laudantium! Possimus consectetur dolore expedita fugit omnis iure, suscipit voluptas fuga consequuntur, odit molestias?</p>
+    </div>
+    <div class="col-2 m-t-2">
+        <a class="m-b-5 button center" href="/contact-us.html">Get in touch</a>
+    </div>
+    
 </section>
   
+{%include banner-2.html%}
               
             

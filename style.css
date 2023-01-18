@@ -112,6 +112,9 @@ h3{
 .padded-sides{
     margin: 0 1.3rem;
 }
+.margin-sides{
+    margin: 0.3rem 0.8rem;
+}
 .m-b-1{margin-bottom: 1rem;}
 .m-b-0{margin-bottom: 0;}
 .m-t-2{margin-top: 2%;}
@@ -780,6 +783,149 @@ a.gallery-item{
     border-radius: 100%;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
+
+/* Slider */
+.testimonial-slider-container {
+    padding: 5%;
+    max-width: 900px;
+    margin: auto;
+}
+  
+.slider-item {
+padding: 1rem;
+display: none;
+}
+
+.slider-item:first-child {
+display: block;
+}
+
+.slick-next {
+right: 10px;
+}
+
+.slick-prev {
+left: 10px;
+}
+
+.slick-next::before, .slick-prev::before {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(90,90,90);
+}
+
+.slick-dots {
+left: 0;
+bottom: 10px;
+/*  Without this the padding on the parent affects the centering of the dots. Do not delete.    */
+}
+
+.slick-dots li,
+.slick-dots li button {
+width: 10px;
+}
+
+.slick-dots li button::before {
+color: rgb(90,90,90);
+}
+
+.slick-dots li.slick-active button::before {
+color: rgb(90,90,90);
+}
+  
+  
+  /* Slider Text Styles  */
+  
+.slider-item p {
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+
+.team-text{
+    font-size: 1.3rem;
+}  
+.hover-container {
+    background-size: cover;
+    background-position: center;
+}
+  
+.hover-overlay {
+    position: relative;
+    padding-bottom: 100%;
+    border-radius: 100%;
+    color: rgba(255, 255, 255, 0);
+    position: relative;
+    /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
+    transition: all 0.3s;
+}
+  
+.hover-overlay:hover {
+    background-color: rgba(60, 60, 60, 0.7);
+    color: var(--bg);
+    font-size: 1.9rem;
+}
+  
+.hover-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+  
+.hover-inner p {
+    margin-bottom: 0;
+}
+
+
+/* team members popup styles */
+.popup {
+    position: fixed;
+    left: 100vw;
+    z-index: 5;
+    padding: 2rem;
+    background-color: white;
+}
+.popup.onscreen {
+left: 20%;
+right: 20%;
+top: 20%;
+}
+  
+.popUpOverlay {
+background-color: rgba(0,0,0,0);
+transition: all 1s;
+position: fixed;
+}
+
+.popUpOverlay.onscreen {
+background-color: grey;
+top:0;
+left:0;
+bottom:0;
+right:0;
+}
+
+polygon, path{
+fill:rgba(0,0,0,0);
+stroke:black;
+stroke-width:5;
+}
+
+.popupX {
+    position:absolute;
+top:1rem;
+right:1rem;
+width:1rem;
+}
+
+.pointer{
+      cursor: pointer;
+}
+  
 
 /* Slideshow container */
 .slideshow-container {

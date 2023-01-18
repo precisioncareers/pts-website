@@ -27,3 +27,44 @@ lightGallery(document.getElementById('lightgallery'), {
   speed: 500,
   download: false
 });
+
+$(".testimonial-slider-container").slick({
+  autoplay: true,
+  autoplaySpeed: 3500,
+  speed: 500,
+  arrows: false,
+  accessibility: true,
+  dots: true,
+  fade: false,
+  infinite: false,
+  pauseOnHover: true,
+  pauseOnDotsHover: true,
+  slidesToShow: 1,
+  slidesToScroll: 1
+  
+});
+
+$( document ).ready(function() {
+
+  $(".team-member").click(function(){
+      var target = $(this).attr("data-target");
+     $(".popup").each(function(){
+       if($(this).attr("data-pop") == target){
+         $(this).addClass("onscreen");
+         console.log("bob");
+       }});
+    $(".popUpOverlay").addClass("onscreen");
+  });
+ 
+ $(".popUpOverlay").click(function(){
+ $(".popup").removeClass("onscreen");
+    $(".popUpOverlay").removeClass("onscreen");
+  });
+ 
+   
+ $(".popupX").click(function(){
+   $(".popup").removeClass("onscreen");
+   $(".popUpOverlay").removeClass("onscreen");
+ })
+
+});
