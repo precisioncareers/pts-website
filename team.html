@@ -50,10 +50,11 @@ team:
 
             
               
-<!-- <section class="padded grid-right">
+<section class="padded">
     <div class="testimonial-slider-container team-testimonial">
     {%for item in page.teamtestimonials%}
-    <div class="slider-item"></div>
+    <div class="slider-item">
+      <div class="grid">
         <div class="col-3-middle right">
             <img src="/images/{{item.headshot_image}}" class="profile-small">
         </div>
@@ -62,15 +63,16 @@ team:
             {{item.text}} </p>
         <p>  <em> - {{item.name}} </em> </p>
         </div>
+      </div>
     </div>
     {%endfor%}
     </div>
-</section> -->
+</section>
 
 
 <section class="padded grid-spaceAround">
     {%for member in page.team%}
-		<div class="col-2 center margin-sides team-member pointer">
+		<div class="col-2 center margin-sides team-member pointer" data-target="{{forloop.index}}">
             <img src="/images/{{member.photo_image}}">
             <h5 class="m-t-2">{{member.name}}</h5>
             <h6>{{member.title}}</h6>
@@ -78,10 +80,10 @@ team:
 	{%endfor%}
 
     {%for popup in page.team%}
-    <section class="popup" data-pop="{{popup.name}}">
+    <section class="popup" data-pop="{{forloop.index}}">
       <div class="grid-spaceBetween">
         <div class="col-5_sm-12">
-          <img src="{{popup.photo_image}}" class="popup-photo img-team" />
+          <img src="/images/{{popup.photo_image}}" class="popup-photo img-team" />
         </div>
         <div class="col-5-middle">
             <h2>{{popup.name}}</h2>
