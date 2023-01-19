@@ -693,11 +693,66 @@ a.gallery-item{
 }
 
 .lg-backdrop {
-    background-color: var(--writing) ;
+    background-color: var(--blue) ;
 }
 
 .lg-backdrop.in {
-    opacity: 0.95;
+    opacity: 0.7;
+}
+
+.lg-next, .lg-prev {
+    background-color: rgba(0,0,0,.45);
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 22px;
+    margin-top: -10px;
+    padding: 8px 10px 9px;
+    position: absolute;
+    top: 50%;
+    z-index: 1080;
+    outline: 0;
+    border: none;
+}
+
+.lg-counter {
+    color: black;
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 12px;
+    height: 47px;
+    vertical-align: middle;
+}
+
+.lg-toolbar .lg-icon {
+    color: black;
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+    height: 47px;
+    line-height: 27px;
+    padding: 10px 0;
+    text-align: center;
+    width: 50px;
+    text-decoration: none !important;
+    outline: medium none;
+    will-change: color;
+    -webkit-transition: color .2s linear;
+      transition-property: color;
+      transition-duration: 0.2s;
+      transition-timing-function: linear;
+      transition-delay: 0s;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+      transition-property: color;
+      transition-duration: 0.2s;
+      transition-timing-function: linear;
+      transition-delay: 0s;
+    background: 0 0;
+    border: none;
+    box-shadow: none;
 }
 
 .wrapper {
@@ -783,8 +838,13 @@ a.gallery-item{
     color: var(--white);
 }
 
+#team-description{
+    padding-bottom: 0;
+    padding-top: 10%;
+}
+
 .profile-small {
-    max-width: 8rem;
+    max-width: 12rem;
     width: 100%;
     border-radius: 100%;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
@@ -902,7 +962,7 @@ color: rgb(90,90,90);
 left: auto;
 right: auto;
 top: 5%;
-bottom: 5%;
+bottom: 30%;
 overflow: scroll; 
 }
   
@@ -913,7 +973,8 @@ position: fixed;
 }
 
 .popUpOverlay.onscreen {
-background-color: grey;
+background-color: var(--blue);
+opacity: 0.85;
 top:0;
 left:0;
 bottom:0;

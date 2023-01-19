@@ -1,41 +1,126 @@
 ---
 layout: default 
 teamtestimonials:
- - headshot_image: ben.jpg 
+ - headshot_image: shawn-square.jpg 
    text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, illum eos neque consequuntur rerum, facilis aut molestias, repudiandae recusandae non rem reiciendis possimus quia pariatur minima officiis maxime. Sunt, nemo.
-   name: Benjamin Webb
- - headshot_image: ben.jpg 
+   name: Shawn Doble
+ - headshot_image: shawn-square.jpg 
    text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, illum eos neque consequuntur rerum, facilis aut molestias, repudiandae recusandae non rem reiciendis possimus quia pariatur minima officiis maxime. Sunt, nemo.
-   name: Benjamin Webb
+   name: Shawn Doble
 team:
  - name: Jake Frazer
    title: Account Executive
    photo_image: jake.jpg 
    email: jake@precision.careers
    linkedin: #
- - name: Jake Frazer
+ - name: Julie Kmet
    title: Account Executive
-   photo_image: jake.jpg 
+   photo_image: julie.jpg 
    email: jake@precision.careers
    linkedin: #
- - name: Jake Frazer
+ - name: Michael Stambaugh
    title: Account Executive
-   photo_image: jake.jpg 
+   photo_image: mike.jpg 
    email: jake@precision.careers
    linkedin: #
- - name: Jake Frazer
+ - name: Scott Diegel
    title: Account Executive
-   photo_image: jake.jpg 
+   photo_image: scott.jpg 
    email: jake@precision.careers
    linkedin: #
- - name: Jake Frazer
+ - name: Andrew MacWilliams
    title: Account Executive
-   photo_image: jake.jpg 
+   photo_image: andy.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Adem Mehmeti
+   title: Account Executive
+   photo_image: adem.jpeg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Arlinda Beqiri Rahmiri
+   title: Account Executive
+   photo_image: arlinda.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Benjamin Webb
+   title: Account Executive
+   photo_image: ben.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Besart Sadiku
+   title: Account Executive
+   photo_image: besart.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Edmond Halili
+   title: Account Executive
+   photo_image: eddie.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Enkeleda Simitxhiu
+   title: Account Executive
+   photo_image: enkeleda.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Fitim Ibishi
+   title: Account Executive
+   photo_image: fitim.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Jeton Musliu
+   title: Account Executive
+   photo_image: jeton.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Jim Shields
+   title: Account Executive
+   photo_image: jim.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Joshua Belcher 
+   title: Account Executive
+   photo_image: josh.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Martyn Brooks
+   title: Account Executive
+   photo_image: martyn.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Shawn Doble
+   title: Account Executive
+   photo_image: shawn.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Tereza Mershon
+   title: Account Executive
+   photo_image: tereza.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Tim Krosa
+   title: Account Executive
+   photo_image: tim.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Violeta Krelani
+   title: Account Executive
+   photo_image: violeta.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Visar Abdullahu
+   title: Account Executive
+   photo_image: visar.jpg 
+   email: jake@precision.careers
+   linkedin: #
+ - name: Wills Hay
+   title: Account Executive
+   photo_image: wills.jpg 
    email: jake@precision.careers
    linkedin: #
 --- 
 
-<section class="bg-image bg-team grid">
+<section class="bg-image bg-team grid tall-80">
     <div class="col-4 left">
         <div data-aos="fade-right">
         <h1 class="m-t-11 m-l-7 team-heading">Meet the team</h1>
@@ -43,7 +128,7 @@ team:
     </div>
 </section>
 
-<section class="padded grid center capped-width">
+<section class="padded grid center capped-width" id="team-description">
     <h2 class="col-12">Something something</h2>
     <p class="col-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quidem nesciunt cumque expedita accusantium doloremque, debitis doloribus fugiat, animi sit tempore harum, rerum quam quibusdam. Odit eaque quam pariatur nobis.</p>
 </section>
@@ -55,11 +140,11 @@ team:
     {%for item in page.teamtestimonials%}
     <div class="slider-item">
       <div class="grid">
-        <div class="col-3-middle right">
+        <div class="col-4-middle right">
             <img src="/images/{{item.headshot_image}}" class="profile-small">
         </div>
-        <div class="col-9 padded">
-        <p class="emphasis">
+        <div class="col-8 padded">
+        <p>
             {{item.text}} </p>
         <p>  <em> - {{item.name}} </em> </p>
         </div>
