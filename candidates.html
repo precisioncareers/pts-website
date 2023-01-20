@@ -13,14 +13,6 @@ candidates:
    photo_image: mike.jpg
    title: Some title, company 
    testimonial: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus temporibus quod accusantium! Iste, aspernatur autem. Aperiam omnis molestias ea sed, repellendus eius laboriosam aliquid rem provident corrupti quas reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae sapiente beatae explicabo velit. Aspernatur repudiandae et distinctio dolore saepe, debitis dicta voluptatibus consectetur quos, animi laborum, esse eveniet similique!
- - name: Placeholder name 
-   photo_image: mike.jpg
-   title: Some title, company 
-   testimonial: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus temporibus quod accusantium! Iste, aspernatur autem. Aperiam omnis molestias ea sed, repellendus eius laboriosam aliquid rem provident corrupti quas reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae sapiente beatae explicabo velit. Aspernatur repudiandae et distinctio dolore saepe, debitis dicta voluptatibus consectetur quos, animi laborum, esse eveniet similique!
- - name: Placeholder name 
-   photo_image: mike.jpg
-   title: Some title, company 
-   testimonial: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus temporibus quod accusantium! Iste, aspernatur autem. Aperiam omnis molestias ea sed, repellendus eius laboriosam aliquid rem provident corrupti quas reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae sapiente beatae explicabo velit. Aspernatur repudiandae et distinctio dolore saepe, debitis dicta voluptatibus consectetur quos, animi laborum, esse eveniet similique!
 --- 
 
 <section class="grid-centered padded blocktext bg-image bg-structure bg-overlay">
@@ -49,10 +41,10 @@ candidates:
 
 
 
-<section class="padded grid-spaceAround">
+<section class="padded grid-spaceAround capped-section">
     <h2 class="col-12 p-b-5 p-t-2 center">Some of our placed candidates</h2>
     {%for member in page.candidates%}
-		<div class="col-2 center margin-sides team-member pointer" data-target="{{forloop.index}}"> 
+		<div class="col-3 center margin-sides team-member pointer" data-target="{{forloop.index}}"> 
             <img src="/images/{{member.photo_image}}">
             <h5 class="m-t-2">{{member.name}}</h5>
             <h6>{{member.title}}</h6>
@@ -82,12 +74,21 @@ candidates:
     <div class="popUpOverlay"></div>
 </section>
 
-<section class="padded grid-spaceAround center capped-section">
+<section class="padded grid-spaceAround center">
+  <div class="col-5 grid-spaceAround center">
+    <h2 class="col-12 p-b-5 p-t-2">Look at our recent job postings</h2>
+    <p class="blocktext">The time you spend building a profile with us is well worth it because we give you access to all opportunities not just a tone company</p>
+    <div class="col-6 m-t-2">
+        <a class="m-b-5 button center" href="#">View opportunities</a>
+    </div>
+  </div>
+  <div class="col-5 grid-spaceAround center">
     <h2 class="col-12 p-b-5 p-t-2">Gain access to top opportunities</h2>
-    <p>The time you spend building a profile with us is well worth it because we give you access to all opportunities not just a tone company</p>
-    <div class="col-3 m-t-2">
+    <p class="blocktext">The time you spend building a profile with us is well worth it because we give you access to all opportunities not just a tone company</p>
+    <div class="col-6 m-t-2 center">
         <a class="m-b-5 button center" href="#">Build your profile</a>
     </div>
+  </div>
 </section>
 
 {%include benefits.html%}
