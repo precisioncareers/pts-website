@@ -100,6 +100,7 @@ h3{
 .padded-1 {  padding: 1rem;  }
 .padded-2 {  padding: 2rem;  }
 .p-b-2{padding-bottom: 2%;}
+.p-b-2rem{padding-bottom: 2rem;}
 .p-b-3{padding-bottom: 3.5%;}
 .p-l-2{padding-left: 2%;}
 .p-r-2{padding-right: 2%;}
@@ -116,8 +117,10 @@ h3{
     margin: 0.3rem 0.8rem;
 }
 .m-b-1{margin-bottom: 1rem;}
+.m-b-3{margin-bottom: 3rem;}
 .m-b-0{margin-bottom: 0;}
 .m-t-2{margin-top: 2%;}
+
 .m-t-5{margin-top: 5%;}
 .m-t-6{margin-top: 6%;}
 .m-t-11{margin-top: 11%;}
@@ -551,10 +554,12 @@ footer li{
 .mobile-menu a {
     text-decoration: none; 
     color: inherit; 
-    padding: 5vh 5%;
+    padding: 0 5%;
+    margin-top: 12%;
     display: block;
     font-weight: normal;
     font-size: 1.5rem;
+    color: black;
 }
 
 .mobile-menu a:hover{
@@ -1077,7 +1082,6 @@ width:1rem;
     position: relative;
     margin-bottom: 70px;
     text-transform: uppercase;
-    z-index: 999;
 }
 .white-heading{
     color: #ffffff;
@@ -1362,7 +1366,7 @@ width:1rem;
     background-repeat: no-repeat;
 } */
 
-.main-banner-text{
+.main-banner-text, .main-banner-text-2{
     color: var(--whitewriting);
     font-size: 3.5rem;
     font-weight: 400;
@@ -1420,6 +1424,11 @@ width:1rem;
 }
 
 
+
+@media(max-width:64em){
+
+}
+
 @media(max-width:48em) {
     .mob-hide { display: none; }
     .mob-show { display: block; }
@@ -1432,6 +1441,44 @@ width:1rem;
     .banner-paragraph{
         font-size: 1.2rem;
     }
+    #main-text{
+        margin-top: 3.8rem;
+    }
+    .main-banner-text{
+        font-size: 2.5rem;
+        font-weight: 400;
+        padding-top: 10%;
+        padding-bottom: 3%;
+    }
+
+    .main-banner-text-2{
+        font-size: 3rem;
+        padding-top: 5%;
+    }
+
+    #sectors{
+        margin-top: 3rem;
+    }
+
+    .mob-m-3{
+        margin-bottom: 3rem;
+    }
+    .mob-m-t-3{margin-top: 3rem;}
+    .team-heading{
+        margin-top: 5rem;
+        font-size: 2.7rem;
+    }
+
+        
+    #team-testimonial{
+    text-align: center;
+    margin-left: 11.5vw;
+    }
+
+    .sm-padded-0{
+        padding: 0;
+    }
+  
 }
 
 @media(max-width:768px) {

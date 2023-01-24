@@ -124,7 +124,7 @@ team:
 --- 
 
 <section class="bg-image bg-team grid tall-80">
-    <div class="col-4 left">
+    <div class="col-4_sm-12 left">
         <div data-aos="fade-right">
         <h1 class="m-t-11 m-l-7 team-heading">Meet the team</h1>
         </div>
@@ -143,10 +143,10 @@ team:
     {%for item in page.teamtestimonials%}
     <div class="slider-item">
       <div class="grid">
-        <div class="col-4-middle right">
+        <div class="col-4_sm-12-middle right" id="team-testimonial">
             <img src="/images/{{item.headshot_image}}" class="profile-small">
         </div>
-        <div class="col-8 padded">
+        <div class="col-8_sm-12 padded">
         <p>
             {{item.text}} </p>
         <p>  <em> - {{item.name}} </em> </p>
@@ -160,7 +160,7 @@ team:
 
 <section class="padded grid-spaceAround">
     {%for member in page.team%}
-		<div class="col-2 center margin-sides team-member pointer" data-target="{{forloop.index}}">
+		<div class="col-2_md-3_sm-5 center margin-sides team-member pointer" data-target="{{forloop.index}}">
             <img src="/images/{{member.photo_image}}">
             <h5 class="m-t-2">{{member.name}}</h5>
             <h6>{{member.title}}</h6>
@@ -173,7 +173,7 @@ team:
         <div class="col-5_sm-12">
           <img src="/images/{{popup.photo_image}}" class="popup-photo img-team" />
         </div>
-        <div class="col-5-middle">
+        <div class="col-5_md-8_sm-12-middle">
             <h2>{{popup.name}}</h2>
             <h5>{{popup.title}}</h5>
             <p>Education: {{popup.education}}</p>
@@ -198,11 +198,11 @@ team:
 </section>
 
 <section class="padded grid-spaceAround center capped-section">
-    <div class="col-12">
+    <div class="col-12 mob-m-3">
         <h2>Join our team</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nulla qui nostrum. Eligendi facere aperiam beatae laudantium! Possimus consectetur dolore expedita fugit omnis iure, suscipit voluptas fuga consequuntur, odit molestias?</p>
     </div>
-    <div class="col-2 m-t-2">
+    <div class="col-2_md-6_sm-12 m-t-2">
         <a class="m-b-5 button center" href="/contact-us.html">Get in touch</a>
     </div>
     

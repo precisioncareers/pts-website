@@ -16,7 +16,7 @@ candidates:
 --- 
 
 <section class="grid-centered padded blocktext bg-image bg-structure bg-overlay">
-    <div class="col-8_sm-12">
+    <div class="col-8_sm-12" id="main-text">
       <h1 class="center p-b-5">Candidates</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat molestiae dolore et facere accusamus ex, eos architecto, dolorum reprehenderit odit maxime rerum consectetur suscipit accusantium! Accusamus voluptatibus eum atque consequatur!</p>
     </div>
@@ -24,17 +24,17 @@ candidates:
 
 <section class="padded grid-spaceAround center">
     <h2 class="col-12 p-b-5 p-t-2">We are with you for your career not just a job!</h2>
-    <div class="col-3 why-pts">
+    <div class="col-3_sm-12 why-pts">
         <h3 class="p-b-2">Be informed about every stage of the process</h3>
-        <p class="blocktext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum exercitationem dicta molestias rem nam provident quam blanditiis, porro velit sapiente vitae facilis fuga sunt tenetur, deleniti est eum fugit optio!    </p>
+        <p class="blocktext p-b-2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum exercitationem dicta molestias rem nam provident quam blanditiis, porro velit sapiente vitae facilis fuga sunt tenetur, deleniti est eum fugit optio!    </p>
     </div>
-    <div class="col-3 why-pts">
+    <div class="col-3_sm-12 why-pts">
         <h3 class="p-b-2">Get to know yourself</h3>
-        <p class="blocktext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ea at voluptatum consequatur sapiente, pariatur maxime, odio, soluta atque explicabo enim beatae inventore amet totam? Cumque minima nesciunt molestias sit?    </p>
+        <p class="blocktext p-b-2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ea at voluptatum consequatur sapiente, pariatur maxime, odio, soluta atque explicabo enim beatae inventore amet totam? Cumque minima nesciunt molestias sit?    </p>
     </div>
-    <div class="col-3 why-pts">
+    <div class="col-3_sm-12 why-pts">
         <h3 class="p-b-2">Career coaching from our experts</h3>
-        <p class="blocktext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus minus neque magnam recusandae, quis maiores. Veniam natus placeat et necessitatibus distinctio, laudantium ex eligendi iste nulla ut exercitationem corporis molestias.    </p>
+        <p class="blocktext p-b-2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus minus neque magnam recusandae, quis maiores. Veniam natus placeat et necessitatibus distinctio, laudantium ex eligendi iste nulla ut exercitationem corporis molestias.    </p>
     </div>
 
 </section>
@@ -44,7 +44,7 @@ candidates:
 <section class="padded grid-spaceAround capped-section">
     <h2 class="col-12 p-b-5 p-t-2 center">Some of our placed candidates</h2>
     {%for member in page.candidates%}
-		<div class="col-3 center margin-sides team-member pointer" data-target="{{forloop.index}}"> 
+		<div class="col-3_sm-12 center margin-sides team-member pointer mob-m-3" data-target="{{forloop.index}}"> 
             <img src="/images/{{member.photo_image}}">
             <h5 class="m-t-2">{{member.name}}</h5>
             <h6>{{member.title}}</h6>
@@ -75,14 +75,14 @@ candidates:
 </section>
 
 <section class="padded grid-spaceAround center">
-  <div class="col-5 grid-spaceAround center">
+  <div class="col-5_sm-12 grid-spaceAround center">
     <h2 class="col-12 p-b-5 p-t-2">Look at our recent job postings</h2>
     <p class="blocktext">The time you spend building a profile with us is well worth it because we give you access to all opportunities not just a tone company</p>
-    <div class="col-6 m-t-2">
+    <div class="col-6 m-t-2 mob-m-3">
         <a class="m-b-5 button center" href="#">View opportunities</a>
     </div>
   </div>
-  <div class="col-5 grid-spaceAround center">
+  <div class="col-5_sm-12 grid-spaceAround center">
     <h2 class="col-12 p-b-5 p-t-2">Gain access to top opportunities</h2>
     <p class="blocktext">The time you spend building a profile with us is well worth it because we give you access to all opportunities not just a tone company</p>
     <div class="col-6 m-t-2 center">

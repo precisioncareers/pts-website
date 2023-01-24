@@ -40,7 +40,7 @@ images:
 
 
 <section class="grid-centered padded blocktext bg-image bg-structure tall-80 bg-overlay">
-    <div class="col-8_sm-12">
+    <div class="col-8_sm-12" id="main-text">
       <h1 class="center p-b-5">Testimonials</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat molestiae dolore et facere accusamus ex, eos architecto, dolorum reprehenderit odit maxime rerum consectetur suscipit accusantium! Accusamus voluptatibus eum atque consequatur!</p>
     </div>
@@ -165,7 +165,7 @@ images:
     <div class="gallery grid" id="lightgallery">
         {% for item in page.images %}
     
-        <a class="col-4 gallery-item" href="{{item.bg_image}}">
+        <a class="col-4_sm-6 gallery-item" href="{{item.bg_image}}">
             <div class="bg-image landscape" 
                 style="background-image: url('{{item.bg_image}}');">
             </div>
