@@ -98,15 +98,15 @@ logos:
 <section id="why-pts" class="padded grid-spaceAround center">
     <h2 class="col-12 p-b-5 p-t-2">Why PTS?</h2>
     <p class="col-12">PTS is so much more than an exec search firm or an agency. We are consultative partners helping our customers solve the greatest challenge in the industry…talent. </p>
-    <div class="col-3 why-pts">
+    <div class="col-3_md-12 why-pts">
         <h3 class="p-b-2">Experience</h3>
         <p>With over 400 years of cumulative government contracting experience from the C-Suite to the field, our team knows the programs/agencies that drive our industry. We have mapped the competitors, and each of our 30+ team members bring our own network to our customers.    </p>
     </div>
-    <div class="col-3 why-pts">
+    <div class="col-3_md-12 why-pts">
         <h3 class="p-b-2">Technology</h3>
         <p>PTS is revolutionizing recruitment by leveraging disruptive technology to include video interview, personality assessment, chance of leadership success predictor, cognitive assessment, functional fit, and technical scorecards. Our “virtual assessment center” reduces time-to-hire by up to 70%, increases hiring quality, and cuts overall hiring costs. We have also invested heavily recruitment technology to include dozens of subscriptions to LinkedIn Recruiter, ClearanceJobs, Devex, XXXX, XXX.     </p>
     </div>
-    <div class="col-3 why-pts">
+    <div class="col-3_md-12 why-pts">
         <h3 class="p-b-2">Philosophy</h3>
         <p>Just like our hiring managers, we have built teams in these same markets…so we know the importance of hiring the right talent. We also understand the perspective of our candidates and strive to treat them like customers. Our philosophy towards empathetic recruitment personifies our core values of integrity, communication, respect, initiative, and added value.    </p>
     </div>
@@ -119,7 +119,7 @@ logos:
     <div class="col-5" id="stairs-container">
         <img class="img-stairs" src="/images/team-stairs.jpg">
     </div>
-    <div class="m-r-6 col-3-middle p-t-2">
+    <div class="m-r-6 col-3_md-12-middle p-t-2">
         <p class="p-b-5 blocktext m-t-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam cumque et ullam reprehenderit doloribus, labore eligendi minima exercitationem nihil beatae. </p>
         <p class="p-b-5 blocktext m-t-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptatem, mollitia magni molestias culpa assumenda porro sapiente odio vitae sunt delectus provident eligendi veritatis libero?</p>
         <a class="m-t-6 m-b-5 button center" href="#">Top talent</a>
@@ -127,16 +127,27 @@ logos:
 </section>
 
 <section class="grid-spaceAround padded">
-    <div class="m-r-6 col-3-middle p-t-2 m-l-7">
+    <div class="m-r-6 col-3_md-12-middle p-t-2 m-l-7">
         <h3>Lorem ipsum id</h3>
         <p class="p-b-5 blocktext m-t-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam cumque et ullam reprehenderit doloribus, labore eligendi minima exercitationem nihil beatae. </p>
         <!-- <a class="m-b-5 button center m-l-5" href="#">Top talent</a> -->
     </div>
-    <div class="col-5">
+    <!-- <div class="col-5_md-12 embed-container">
+        <iframe src="/images/pts-video.mp4" frameborder="0" allowfullscreen></iframe>
         <video width="560" height="315" poster="/images/video-cover.jpeg" frameborder="0" allowfullscreen controls>
             <source src="/images/pts-video.mp4" type="video/mp4">
         </video>
-    </div>
+    </div> -->
+    <div class="col-6_sm-12">
+        <div class="embed-container">
+    
+            <video width="560" height="315" poster="/images/video-cover.jpeg" frameborder="0" allowfullscreen controls>
+                <source src="/images/pts-video.mp4" type="video/mp4">
+            </video>
+    
+        </div>
+      </div>
+    
 </section>
 
 <!----------------- ISOA, VOSB, Inc -------------------------------------------->
@@ -186,7 +197,7 @@ logos:
 
         {% for post in featured_posts limit:3 %}
 
-            <div class="col-4 post-item padded-05">
+            <div class="col-4_md-12 post-item padded-05">
                 <div class="bg-image portrait" style="background-image:url( '{{ post.featured_image }}' );"></div>
                 <div class="padded-1">
 
@@ -214,7 +225,7 @@ logos:
 <section class="grid-spaceBetween padded capped-width">
     <h2 class="col-12 p-b-5 center p-t-2">Our Clients</h2>
     {%for logo in page.logos%}
-    <div data-aos="flip-left" class="col-2 logos">
+    <div data-aos="flip-left" class="col-2_md-3 logos">
         <img src="/images/{{logo.img_image}}">
     </div>
     {%endfor%}
