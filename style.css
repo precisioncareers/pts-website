@@ -1425,8 +1425,26 @@ width:1rem;
 
 
 
-@media(max-width:64em){
-
+@media(max-width:66em){
+    .tablet-hide{display:none;}
+    .main-banner-text-2{
+        font-size: 3rem;
+    }
+    #banner div{
+        min-height: 30vh;
+    }
+    .team-heading{
+        margin-top: 5rem;
+        font-size: 3.2rem;
+    }
+    .web-nav{
+        font-size: 1rem;
+    }
+    .space-between-navlinks{
+        margin: 0.5rem 0rem;
+        padding: 0 0.5rem;
+    }
+    
 }
 
 @media(max-width:48em) {
