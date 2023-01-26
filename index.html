@@ -9,18 +9,18 @@ images:
  - bg: selfiejpeg.jpg
  - bg: stuttgart.jpg
 testimonials:
- - headshot:  gerrygalloway-website.jpeg
+ - headshot_image:  gerrygalloway-website.jpeg
    text: Finding great IT talent is hard…finding cleared IT talent for a project in Germany is even tougher. We worked on filling a key leadership role with both internal recruiting resources and external agencies, but we were never able to find the right fit. We engaged the team at PTS in hopes of helping us solve this challenge. Their team jumped on the project with a thorough kickoff call, provided a very informative calibration list, and they were presenting candidates for interviews within just a couple of weeks. The first panel of 5 candidates was spot on, and we were able to move to final interviews quickly to pick a great talent. I would definitely recommend PTS to other companies that operate in the GovCon space, especially for highly technical IT roles on classified programs. 
-   title: Director of Business Development, Serco-NA
+   name: Director of Business Development, Serco-NA
  - headshot: howielind-website.jpeg 
    text: The ISOA Board of Directors and I brought in PTS to help identify candidates for a critical role within our organization. The PTS team engaged all the relevant stakeholders, collected necessary information beyond the position description, and worked directly with the Board to manage a complex search process. PTS penetrated the relevant professional associations in the sector and brought forward for consideration multiple qualified candidates. Their technology made assessing candidates easy, and they were hands-on even facilitating multiple rounds of in-person interviews to make sure we got the right talent. It is great to work with real industry insiders who specialize in talent for our sector. I highly recommend PTS.
-   title: President, ISOA
+   name: President, ISOA
  - headshot: rickgoundry-website.jpeg 
    text: PTS responded timely while supporting our company with filling a critical and time-sensitive technical position that allowed our firm to meet an important contractual obligation for what turned out to be difficult to fill internally. I would recommend PTS to any firm requiring support with filling any “Key/Niche” position in a methodical and timely manner. They have the unique software to deliver and a proven track-record of finding great talent when you need it!
-   title: Director of International Operations, J&J Global Contingency Services 
+   name: Director of International Operations, J&J Global Contingency Services 
  - headshot: johnhart-website.jpeg
    text: We have appreciated the opportunity to partner with Precision Talent Solutions (PTS). Their dedication to understanding who we are as a company along with their commitment to engaging and presenting high quality talent within our budget enabled us to quickly fill a critical senior leadership role on our Business Development team. PTS’s ability to communicate in a clear and timely way with both Valiant and candidates made the hiring process much more productive and less stressful. Calling on Precision Talent Solutions in the future to support our key hiring needs is a no brainer.
-   title: Chief Growth Officer, Valiant Integrated Services
+   name: Chief Growth Officer, Valiant Integrated Services
 logos:
  - img_image: inc.png 
  - img: inc.png 
@@ -229,72 +229,29 @@ logos:
         <img src="/images/{{logo.img_image}}">
     </div>
     {%endfor%}
-    <!-- <div class="col-2">
-        <img src="/images/isoa-dc.jpg">
-    </div>
-    <div class="col-2">
-        <img src="/images/isoa-dc.jpg">
-    </div>
-    <div class="col-2">
-        <img src="/images/isoa-dc.jpg">
-    </div>
-    <div class="col-2">
-        <img src="/images/isoa-dc.jpg">
     </div> -->
 </section>
 
-<!------------------- Voice of our customers ----------------------------------->
-
-<section class="testimonial text-center">
-    <div class="container">
-
-        <div class="heading white-heading">
-            Voice of our candidates
-        </div>
-        
-        <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="3000" data-duration="1000">
-            
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="testimonial4_slide">
-                        <img src="/images/glenschuhmacher-website.jpeg" class="img-circle img-responsive" /><p> I appreciate and value PTS' unique and customized technology that helps us sort out all the key information our BD and Operations teams need to make the best resourcing decisions. Their use of video, targeted questions, and references makes it easy for our team to evaluate the talent and get the best people. PTS is resourceful in helping us find great people who are not obviously on the market, giving us a competitive advantage. PTS is a strategic partner I can rely on to help us bid and win. In my 30+ years of experience, I have not seen a company that so proactively supports the niche talent needs for our industry like PTS. </p>
-                        <h4 class="emphasized">- CEO, Sincerus Global Solutions</h4>
-                       <!-- <img src="/images/isoa-img.jpeg" class="img-logo img-responsive"/>                       -->
-            
-                    </div>
-                </div>
-
-                <!-- I had to jekyllify this on the second one, because the first one has a special class called active that has to be only in the first one -->
-                {%for testimonial in page.testimonials%}
-                <div class="carousel-item">
-                   
-                    <div class="testimonial4_slide">
-                        
-                        <img src="/images/{{testimonial.headshot}}" class="img-circle img-responsive" />
-                        <p>{{testimonial.text}} </p>
-                        <h4 class="emphasized">- {{testimonial.title}}</h4>
-                     
-                      <!-- <img src="/images/{{testimonial.logo}}" class="img-logo img-responsive"/>         -->
-                                  
-                    </div>
-                    
-                </div>
-                {%endfor%} 
-            </div>
-            
-            <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#testimonial4" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-         
-    </div>
-</section>
-
+<!-- ---------------------------------------- SLider testimonial ---------------------------------------- -->
   
-              
+<section class="padded bg-kosovoteam bg-image tall-90">
+    <div class="center testimonial-slider-container-index team-testimonial">
+    {%for testimonial in page.testimonials%}
+    <div class="slider-item">
+      <div class="grid-spaceAround center">
+        <div class="col-3_sm-12-middle" id="team-testimonial">
+            <img src="/images/{{testimonial.headshot_image}}" class="profile-small">
+        </div>
+        <div class="col-12_sm-12 padded">
+        <p>
+            {{testimonial.text}} </p>
+        <p>  <em> - {{testimonial.name}} </em> </p>
+        </div>
+      </div>
+    </div>
+    {%endfor%}
+    </div>
+</section>      
             
 
 

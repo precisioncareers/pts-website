@@ -45,6 +45,22 @@ $(".testimonial-slider-container").slick({
   
 });
 
+$(".testimonial-slider-container-index").slick({
+  autoplay: true,
+  autoplaySpeed: 3500,
+  speed: 500,
+  arrows: true,
+  accessibility: true,
+  dots: false,
+  fade: false,
+  infinite: true,
+  pauseOnHover: true,
+  pauseOnDotsHover: true,
+  slidesToShow: 1,
+  slidesToScroll: 1
+  
+});
+
 $( document ).ready(function() {
 
   $(".team-member").click(function(){
