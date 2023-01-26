@@ -1601,6 +1601,28 @@ width:1rem;
     .sm-padded-0{
         padding: 0;
     }
+    #testimonial-text{
+        font-size: 0.8rem;
+    }
+    .bg-kosovoteam{
+        background-color: var(--blue);
+        background-image: url('/');
+    }
+
+    .slider-item p{
+        font-size: 1rem;
+    }
+    .profile-small{
+        max-width: 10rem;
+    }
+
+    .slick-next::before, .slick-prev::before {
+        display: none;
+    }
+
+    .slick-prev, .slick-next {
+        display: none;
+    }
   
 }
 
