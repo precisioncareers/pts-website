@@ -197,7 +197,7 @@ logos:
 
         {% for post in featured_posts limit:3 %}
 
-            <div class="col-4_md-7 post-item padded-05">
+            <div class="col-4_md-11 post-item padded-05">
                 <div class="bg-image square" style="background-image:url( '{{ post.featured_image }}' );"></div>
                 <div class="padded-1">
 
@@ -229,7 +229,7 @@ logos:
         <img src="/images/{{logo.img_image}}">
     </div>
     {%endfor%}
-    </div> -->
+    </div> 
 </section>
 
 <!-- ---------------------------------------- SLider testimonial ---------------------------------------- -->
@@ -239,10 +239,10 @@ logos:
     {%for testimonial in page.testimonials%}
     <div class="slider-item">
       <div class="grid-spaceAround center">
-        <div class="col-3_sm-12-middle" id="team-testimonial">
+        <div class="col-3_sm-9-middle" id="team-testimonial">
             <img src="/images/{{testimonial.headshot_image}}" class="profile-small">
         </div>
-        <div class="col-12_sm-12 padded">
+        <div class="col-12 padded">
         <p>
             {{testimonial.text}} </p>
         <p>  <em> - {{testimonial.name}} </em> </p>
