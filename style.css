@@ -27,7 +27,7 @@
     padding: 0;
 }
 
-body {
+body, html {
     color: var(--write);
     font-family: 'Roboto';
     font-size: 1rem;
@@ -519,7 +519,92 @@ footer li{
 
 
 
-.hamburger-button {
+.burger-button {
+    position:fixed;
+    top: 2vh;
+    right: 2vh;
+    z-index: 9;
+    padding: 8px;
+  }
+  /*this is where you can chand the color of the buttons*/
+  .burger-button span{
+    width: 40px;
+    border: 2px solid black;
+    background-color: black;
+    display: block;
+    border-radius: 22px;
+    transition: 1.5s;
+  }
+  .burger-button.active span{
+    border-color: green;
+    background-color:#383;
+  }
+  
+  .burger-top, .burger-bottom{
+    position: absolute;
+  }
+  
+  .burger-top{
+    top: -02px;
+  }
+  
+  .burger-bottom{
+    bottom: -02px;
+  }
+  /* make sure this has the same top as the burger button has padding*/
+  .burger-button.active .burger-top{
+    position: absolute;
+    top: 8px;
+    transform: rotateZ(45deg);
+  }
+  
+  .burger-button.active .burger-middle{
+  /*   transform: rotateZ(270deg); */
+    border-color: rgba(0,0,0,0);
+    background-color:rgba(0,0,0,0);
+  }
+  
+  /* make sure this has the same bottom as the burger button has padding*/
+  
+  .burger-button.active .burger-bottom{
+    position: absolute;
+    bottom: 8px;
+    transform: rotateZ(-45deg);
+  }
+  
+  .burger-menu {
+      display: flex;
+      position: fixed;
+      top: 0vh;
+      left:100vw;
+      right: -100vw;
+      bottom: 0vh;
+      background-color: #f9f9f9;
+      padding:5px;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+      z-index: 8;
+    transition:1s;
+      align-content:space-around;
+    justify-content:space-around;
+    flex-direction:column;
+  }
+  .burger-menu.active{
+    left: 0vw;
+    right:0;
+  }
+  .burger-menu a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #C3BFBC;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    display:block;
+    padding:5px 15px;
+    text-align:center;
+    white-space:nowrap;
+  }
+
+/* .hamburger-button {
     cursor: pointer;
     padding: 0 0.5rem;
     display: inline-block;
@@ -535,7 +620,7 @@ footer li{
 
 .hamburger-button.active {
     color: var(--blue);
-}
+} */
 
 .mobile-menu {
     display: none; 
@@ -1376,10 +1461,16 @@ width:1rem;
 
 .embed-container {
     position: relative;
-    height: 0;
     overflow: hidden;
     max-width: 100%;
     display: block;
+    padding-bottom: 55.4%;
+}
+
+.embed-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
   
   

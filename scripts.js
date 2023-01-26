@@ -1,7 +1,8 @@
-console.log('bob')
-$('.hamburger-button').click(function(){
-    $('.mobile-menu').fadeToggle(100);
-    $(this).toggleClass('active')
+$( document ).ready(function() {
+  $(".burger-button").click(function(){
+    $(".burger-button").toggleClass("active");
+    $(".burger-menu").toggleClass("active");
+  });
 });
 
 // let slideIndex = 0;
