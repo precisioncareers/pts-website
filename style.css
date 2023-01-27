@@ -537,7 +537,7 @@ footer li{
   }
   .burger-button.active span{
     border-color: var(--neonblue);
-    background-color:var(--neonblue);
+    background-color: #0700EE;
   }
   
   .burger-top, .burger-bottom{
@@ -1549,9 +1549,7 @@ width:1rem;
         margin: 0.5rem 0rem;
         padding: 0 0.5rem;
     }
-    .bg-kosovoteam{
-
-    }
+    
     
 }
 
