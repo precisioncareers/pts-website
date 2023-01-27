@@ -536,8 +536,8 @@ footer li{
     transition: 1.5s;
   }
   .burger-button.active span{
-    border-color: green;
-    background-color:#383;
+    border-color: var(--neonblue);
+    background-color:var(--neonblue);
   }
   
   .burger-top, .burger-bottom{
@@ -1548,6 +1548,9 @@ width:1rem;
     .space-between-navlinks{
         margin: 0.5rem 0rem;
         padding: 0 0.5rem;
+    }
+    .bg-kosovoteam{
+
     }
     
 }
