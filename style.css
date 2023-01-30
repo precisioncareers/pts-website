@@ -1559,6 +1559,7 @@ width:1rem;
     .mob-show { display: block; }
     .logo{
         font-size: 5rem;
+        margin-left: 37%;
     }
     .banner-text{
         font-size: 2rem;
@@ -1624,6 +1625,10 @@ width:1rem;
 
     .slick-prev, .slick-next {
         display: none;
+    }
+
+    .mob-block{
+        text-align: justify;
     }
   
 }
