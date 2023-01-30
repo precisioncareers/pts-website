@@ -6,11 +6,11 @@ description: >-
   best serve our customers.
 author: Wills Hay
 featured: true
+date: 10/28/2022
 categories:
   - industry news
 category-link: category-industry.html
 featured_image: /images/logcap-update.jpg
-date: 10/28/2022
 seo:
   title: USAID UPDATE & FORECAST Q23and Q4 2022
   description: >-
