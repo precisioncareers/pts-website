@@ -6,7 +6,6 @@ description: >-
   best serve our customers.
 author: Wills Hay
 featured: true
-date:
 categories:
   - industry news
 category-link: category-industry.html
