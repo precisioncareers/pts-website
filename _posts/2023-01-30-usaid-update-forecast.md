@@ -10,6 +10,7 @@ categories:
   - industry news
 category-link: category-industry.html
 featured_image: /images/logcap-update.jpg
+date: 28.10.2022
 seo:
   title: USAID UPDATE & FORECAST Q23and Q4 2022
   description: >-
