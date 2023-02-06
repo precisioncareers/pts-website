@@ -721,6 +721,10 @@ footer li{
     background-image: url('/images/testimonial-kosovo.svg');
 }
 
+.bg-ausalunch{
+    background-image: url('/images/ausalunch.jpeg');
+}
+
 .max-w{
     max-width: 100%;
 }
@@ -1237,6 +1241,8 @@ width:1rem;
     background-position: center;
     background-size: cover;
 }
+
+
 
 .testimonial-clients {
     min-height: 100vh;

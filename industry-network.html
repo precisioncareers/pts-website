@@ -1,29 +1,23 @@
 --- 
 layout: default
 customers:
- - headshot: headshot.jpg 
+ - headshot_image: headshot.jpg 
    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-   title: Chief Growth Officer, Company
-   logo: isoa-img.jpeg
- - headshot: headshot.jpg 
+ - headshot_image: headshot.jpg 
    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-   title: Chief Growth Officer, Company
-   logo: isoa-img.jpeg
- - headshot: headshot.jpg 
+ - headshot_image: headshot.jpg 
    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-   title: Chief Growth Officer, Company
-   logo: isoa-img.jpeg
 candidates:
- - headshot: headshot.jpg 
+ - headshot_image: headshot.jpg 
    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
    title: Chief Growth Officer, Company
    logo: isoa-img.jpeg
- - headshot: headshot.jpg 
+ - headshot_image: headshot.jpg 
    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
    title: Chief Growth Officer, Company
    logo: isoa-img.jpeg
- - headshot: headshot.jpg 
-   text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+ - headshot_image: headshot.jpg 
+   text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
    title: Chief Growth Officer, Company
    logo: isoa-img.jpeg
 images:
@@ -51,53 +45,24 @@ images:
 
 <!------------------- Voice of our customers ----------------------------------->
 
-<section class="testimonial-clients text-center" id="customer-testimonials">
-    <div class="container">
-
-        <div class="heading white-heading">
-            Voice of our customers
+<section class="padded bg-ausalunch bg-image tall-100">
+    <div class="center testimonial-slider-container-index team-testimonial">
+    {%for testimonial in page.customers%}
+    <div class="slider-item">
+      <div class="grid-spaceAround center">
+        <div class="col-3_sm-8-middle" id="team-testimonial">
+            <img src="/images/{{testimonial.headshot_image}}" class="profile-small">
         </div>
-        
-        <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="3000" data-duration="1000">
-            
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="testimonial4_slide">
-                        <img src="/images/headshot.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                        <h4 class="emphasized">- Client 2</h4>
-                                           
-            
-                    </div>
-                </div>
-
-                <!-- I had to jekyllify this on the second one, because the first one has a special class called active that has to be only in the first one -->
-                {%for customers in page.customers%}
-                <div class="carousel-item">
-                   
-                    <div class="testimonial4_slide">
-                        
-                        <img src="/images/{{testimonial.headshot}}" class="img-circle img-responsive" />
-                        <p>{{customers.text}} </p>
-                        <h4 class="emphasized">- {{customers.title}}</h4>
-                     
-                 
-                                  
-                    </div>
-                    
-                </div>
-                {%endfor%} 
-            </div>
-            
-            <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#testimonial4" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+        <div class="col-12 padded" id="testimonial-text">
+        <p>
+            {{testimonial.text}} </p>
+        <p>  <em> - {{testimonial.name}} </em> </p>
         </div>
-         
+      </div>
     </div>
-</section>
+    {%endfor%}
+    </div>
+</section>   
 
 
 <section id="banner">
@@ -109,52 +74,24 @@ images:
 
 <!---------------------------------------------- Voice of our Candidates -------------------------------------------------->
 
-<section class="testimonial text-center" id="candidate-testimonials">
-    <div class="container">
-
-        <div class="heading white-heading">
-            Voice of our candidates
+<section class="padded bg-kosovoteam bg-image tall-100">
+    <div class="center testimonial-slider-container-index team-testimonial">
+    {%for testimonial in page.candidates%}
+    <div class="slider-item">
+      <div class="grid-spaceAround center">
+        <div class="col-3_sm-8-middle" id="team-testimonial">
+            <img src="/images/{{testimonial.headshot_image}}" class="profile-small">
         </div>
-        
-        <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="3000" data-duration="1000">
-            
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="testimonial4_slide">
-                        <img src="/images/headshot.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                        <h4 class="emphasized">- Client 2</h4>
-                                        
-            
-                    </div>
-                </div>
-
-                <!-- I had to jekyllify this on the second one, because the first one has a special class called active that has to be only in the first one -->
-                {%for candidate in page.candidates%}
-                <div class="carousel-item">
-                   
-                    <div class="testimonial4_slide">
-                        
-                        <img src="/images/{{testimonial.headshot}}" class="img-circle img-responsive" />
-                        <p>{{candidate.text}} </p>
-                        <h4 class="emphasized">- {{candidate.title}}</h4>
-                       
-                                  
-                    </div>
-                    
-                </div>
-                {%endfor%} 
-            </div>
-            
-            <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#testimonial4" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+        <div class="col-12 padded" id="testimonial-text">
+        <p>
+            {{testimonial.text}} </p>
+        <p>  <em> - {{testimonial.name}} </em> </p>
         </div>
-         
+      </div>
     </div>
-</section>
+    {%endfor%}
+    </div>
+</section>  
 
 <section class="padded grid center capped-width" id="team-description">
     <h2 class="col-12">PTS team in action</h2>
