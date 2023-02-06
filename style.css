@@ -96,12 +96,14 @@ h3{
 
 
 .padded   {  padding: 5%;    }
+.padded-3   {  padding: 3.5%;    }
 .padded-05 {  padding: 0.5rem;  }
 .padded-1 {  padding: 1rem;  }
 .padded-2 {  padding: 2rem;  }
 .p-b-2{padding-bottom: 2%;}
 .p-b-2rem{padding-bottom: 2rem;}
 .p-b-3{padding-bottom: 3.5%;}
+.p-b-12{padding-bottom: 12%;}
 .p-l-2{padding-left: 2%;}
 .p-r-2{padding-right: 2%;}
 .p-b-5{padding-bottom: 5%;}

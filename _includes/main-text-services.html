@@ -1,0 +1,8 @@
+<section class="grid-centered padded blocktext bg-image bg-structure bg-overlay">
+    {%for text in page.main-texts%}
+    <div class="col-8_sm-12-middle" id="main-text">
+      <h1 class="center p-b-5"> {{text.heading}}</h1>
+      <p>{{text.writing}}</p>
+    </div>
+    {%endfor%}
+</section>
