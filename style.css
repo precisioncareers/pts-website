@@ -136,6 +136,7 @@ h3{
 .m-l--7{margin-left: -7%; }
 .m-l--2{margin-left: -2%; }
 .margin-sides{margin: 0 0.5rem;}
+/* Ade */
 .m-neg-2{margin-left: -2.5rem;}
 
 .capped-width { max-width: 1100px; margin: auto;}
@@ -1531,6 +1532,13 @@ width:1rem;
     max-height: 9vh;
     margin: 1%;
     box-shadow: 5px -4px 10px rgba(34,177,224,0.3);
+}
+
+/* Ade copyright ad */
+.copyright{
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    padding-top: 1rem;
 }
 
 @keyframes fade {
