@@ -136,6 +136,7 @@ h3{
 .m-l--7{margin-left: -7%; }
 .m-l--2{margin-left: -2%; }
 .margin-sides{margin: 0 0.5rem;}
+.m-neg-2{margin-left: -2.5rem;}
 
 .capped-width { max-width: 1100px; margin: auto;}
 .capped-section { max-width: 1200px; margin: auto;}
@@ -402,7 +403,7 @@ header{
 }
 
 footer{
-    padding: 5% 3%;
+    padding: 5% 2%;
 }
 
 .footer{
