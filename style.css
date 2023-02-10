@@ -411,6 +411,7 @@ header{
 
 footer{
     padding: 5% 2%;
+    padding-bottom: 1%;
 }
 
 .footer{
@@ -431,6 +432,7 @@ footer a{
 
 .footer-contact{
     font-size: 1.2rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -489,9 +491,10 @@ li::before {
     background-image: url('/images/diamond.png');
 } */
 
-footer ul {
-    list-style-image: url('/images/diamond.png');
-}
+/* footer ul {
+    list-style-image: url('/images/pts-bullet.png');
+    max-height: 2vh;
+} */
 
 footer ul::content{
     vertical-align: middle;
@@ -1653,6 +1656,9 @@ width:1rem;
     .mob-block{
         text-align: justify;
     }
+
+    .footer-contact{padding-bottom: 0;
+    padding-top: 2rem;}
   
 }
 
