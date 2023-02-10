@@ -29,7 +29,7 @@ layout: default
     </div>
 
     <!------------------ SIDEBAR  --------------------------------->
-    <aside class="padded-1 col-3_md-4_sm-12">
+    <aside class="padded-1 col-3_md-4_sm-12 sticky">
         <div class="sidebar">
         <div class="sidebar-item padded-1">
 
@@ -42,7 +42,7 @@ layout: default
             <h4> Recent Posts </h4>
 
             <nav class="recent-posts-nav"> 
-                {% for post in site.posts limit:8 %}
+                {% for post in site.posts limit:4 %}
                      <a href="{{post.url}}"> {{post.title}}</a>
                 {% endfor %}
             </nav>
