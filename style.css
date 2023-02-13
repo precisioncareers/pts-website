@@ -316,13 +316,23 @@ p a:hover {
     border: 2px solid var(--neonblue);
 }
 
+.sidenav-parent{
+    position: absolute;
+    height: 0;
+}
+
 
 /* Blog styles */
 
 .sidebar {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: -4rem;
+}
+
+.sticky-parent{
+    max-height: 100vh;
+    overflow-y: scroll;
 }
 
 .sticky {
@@ -440,11 +450,10 @@ footer a{
 
   .side-nav {
     /* width: 200px; */
-    position: fixed;
+    position: sticky;
     top: 50%;
     right: 0;
     z-index: 1;
-    transform: translateY(-50%);
     background-color: #333333;
     color: white;
     box-sizing: border-box;
