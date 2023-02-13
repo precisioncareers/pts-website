@@ -807,6 +807,10 @@ footer li{
     position: relative;
 }
 
+.service-icon{
+    max-width: 14rem;
+}
+
 /* industry network gallery */
 
 
@@ -1675,6 +1679,10 @@ width:1rem;
 
     .footer-contact{padding-bottom: 0;
     padding-top: 2rem;}
+
+    .service-icon{
+        margin-left: 5.2rem;
+    }
   
 }
 
