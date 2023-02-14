@@ -34,6 +34,7 @@ body, html {
     background-color: var(--bg);
     overflow-x: hidden;
     word-break: break-word;
+    max-height: 100vh;
 }
 
 
@@ -328,12 +329,13 @@ p a:hover {
 }
 
 
+
 /* Blog styles */
 
 .sidebar {
     position: -webkit-sticky;
     position: sticky;
-    top: -4rem;
+    top: -2rem;
 }
 
 .sticky-parent{
@@ -456,7 +458,7 @@ footer a{
 
   .side-nav {
     /* width: 200px; */
-    position: sticky;
+    position: fixed;
     top: 50%;
     right: 0;
     z-index: 1;

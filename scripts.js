@@ -85,3 +85,40 @@ $( document ).ready(function() {
  })
 
 });
+
+
+let body = document.querySelector('body')
+let header = document.querySelector('header');
+let footer = document.querySelector('footer');
+let sideNav = document.querySelector('#side-nav');
+
+console.log('working')
+console.log(body)
+console.log(header)
+console.log(footer)
+console.log(sideNav)
+
+function shiftSideNav() {
+  let totalSpace = body.offsetHeight
+  // console.log(`${totalSpace}px`)
+  if (header.offsetHeight + header.getBoundingClientRect().top > 0 )
+  {
+    totalSpace = totalSpace + (header.offsetHeight + header.getBoundingClientRect().top)
+  }
+  // console.log(footer.offsetHeight + footer.getBoundingClientRect().top)
+
+
+   if (footer.getBoundingClientRect().top < body.offsetHeight) {
+      console.log('i can see footer')
+    totalSpace = totalSpace - (body.offsetHeight - footer.getBoundingClientRect().top)
+  }
+
+  let usableGap = totalSpace - sideNav.offsetHeight;
+
+  sideNav.style.top = `${usableGap/2}px`
+
+  console.log(totalSpace)
+}
+
+body.addEventListener('scroll', shiftSideNav)
+body.addEventListener('resize', shiftSideNav)
