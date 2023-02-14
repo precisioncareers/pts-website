@@ -25,8 +25,8 @@ logos:
  - img_image: logo-accl.png
  - img_image: logo-acuity.png
  - img_image: logo-agility.png
- - img_image: logo-ami.png
- - img_image: logo-ams.png
+ - img_image: ami-logo.png
+ - img_image: ams-logo.png
  - img_image: logo-battele.png
  - img_image: logo-culmen.png
  - img_image: logo-ecolog.png
@@ -246,7 +246,7 @@ logos:
 <section class="grid-spaceBetween padded capped-width">
     <h2 class="col-12 p-b-5 center p-t-2">Our Clients</h2>
     {%for logo in page.logos%}
-    <div data-aos="flip-left" class="col-2_md-3 logos">
+    <div class="col-2_md-3 logos">
         <img src="/images/{{logo.img_image}}" loading="lazy">
     </div>
     {%endfor%}
