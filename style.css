@@ -231,6 +231,22 @@ hr {
     min-width: 100vw;
 }
 
+#blueline-team{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 32vw;
+    margin-right: 0;
+    max-width: 35vw;
+}
+
+#blueline-index{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 5vw;
+    margin-right: 0;
+    max-width: 90vw;
+}
+
 /* Unique typography styles */
 
 .emphasis{
@@ -1686,6 +1702,11 @@ width:1rem;
     .service-icon{
         margin-left: 5.2rem;
     }
+
+    .mob-m-b-3{
+        margin-bottom: 3rem;
+    }
+
   
 }
 
