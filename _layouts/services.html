@@ -10,6 +10,10 @@
 
     {%include services-three.html%}
 
+    {%if page.contained-terms == true%}
+        {%include contained-terms.html%}
+    {%endif%}
+
     {%include placements.html%}
 
     {%include banner.html%}
