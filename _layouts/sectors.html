@@ -6,7 +6,6 @@
 <body>
     {%include site-header.html%}
 
-    <div class="sticky-parent">
     {%include side-nav.html%}
 
     {%include main-text.html%}
@@ -23,11 +22,47 @@
 
     <hr class="col-12" id="blueline">
 
-    </div>
-
     {%include site-footer.html%}
 
     {%include scripts.html%}
+
+    <script>
+        let body = document.querySelector('body')
+       let header = document.querySelector('header');
+       let footer = document.querySelector('footer');
+       let sideNav = document.querySelector('#side-nav');
+       
+       console.log('working')
+       console.log(body)
+       console.log(header)
+       console.log(footer)
+       console.log(sideNav)
+       
+       function shiftSideNav() {
+         let totalSpace = window.innerHeight
+         // console.log(`${totalSpace}px`)
+         if (header.offsetHeight + header.getBoundingClientRect().top > 0 )
+         {
+           totalSpace = totalSpace + (header.offsetHeight + header.getBoundingClientRect().top)
+         }
+         // console.log(footer.offsetHeight + footer.getBoundingClientRect().top)
+       
+       
+          if (footer.getBoundingClientRect().top < window.innerHeight) {
+             console.log('i can see footer')
+           totalSpace = totalSpace - (window.innerHeight - footer.getBoundingClientRect().top)
+         }
+       
+         let usableGap = totalSpace - sideNav.offsetHeight;
+       
+         sideNav.style.top = `${usableGap/2}px`
+       
+         console.log(totalSpace)
+       }
+       
+       window.addEventListener('scroll', shiftSideNav)
+       window.addEventListener('resize', shiftSideNav)
+    </script>
 
 </body>
 </html>

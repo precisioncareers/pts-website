@@ -319,7 +319,9 @@ team:
         <div class="col-5_md-8_sm-12-middle">
             <h2>{{popup.name}}</h2>
             <h5>{{popup.title}}</h5>
+            {%if popup.education%}
             <p>Education: {{popup.education}}</p>
+            {%endif%}
             <p>GovCon: {{popup.govcon}} years of experience</p>
             <p>Past Companies: {{popup.companies}}</p>
             <p>Email: <a href="mailto:{{popup.email}}"> {{popup.email}}</a></p>

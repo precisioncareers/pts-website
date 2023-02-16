@@ -27,6 +27,10 @@
     padding: 0;
 }
 
+html{
+    max-height: 100vh;
+}
+
 body, html {
     color: var(--write);
     font-family: 'Roboto';
@@ -34,7 +38,6 @@ body, html {
     background-color: var(--bg);
     overflow-x: hidden;
     word-break: break-word;
-    max-height: 100vh;
 }
 
 
