@@ -98,6 +98,8 @@ h3{
 .center {  text-align: center;   }
 .blocktext{text-align: justify;}
 
+.bold{font-weight: 500;}
+
 
 .padded   {  padding: 5%;    }
 .padded-top{
@@ -774,7 +776,7 @@ footer li{
 }
 
 .bg-ausalunch{
-    background-image: url('/images/ausalunch.jpeg');
+    background-image: url('/images/ausalaunch-blue.svg');
 }
 
 .max-w{
