@@ -1,22 +1,28 @@
 --- 
 layout: default
 customers:
- - headshot_image: headshot.jpg 
+ - headshot_image: headshot.jpg
+   headshot-alt:  
    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
  - headshot_image: headshot.jpg 
+   headshot-alt: 
    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
  - headshot_image: headshot.jpg 
+   headshot-alt: 
    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 candidates:
- - headshot_image: headshot.jpg 
+ - headshot_image: headshot.jpg
+   headshot-alt: 
+   text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+   title: Chief Growth Officer, Company
+   logo: isoa-img.jpeg
+ - headshot_image: headshot.jpg
+   headshot-alt:  
    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
    title: Chief Growth Officer, Company
    logo: isoa-img.jpeg
  - headshot_image: headshot.jpg 
-   text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-   title: Chief Growth Officer, Company
-   logo: isoa-img.jpeg
- - headshot_image: headshot.jpg 
+   headshot-alt: 
    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
    title: Chief Growth Officer, Company
    logo: isoa-img.jpeg
@@ -51,7 +57,7 @@ images:
     <div class="slider-item">
       <div class="grid-spaceAround center">
         <div class="col-3_sm-8-middle" id="team-testimonial">
-            <img src="/images/{{testimonial.headshot_image}}" class="profile-small">
+            <img src="/images/{{testimonial.headshot_image}}" class="profile-small" alt="{{testimonial.headshot-alt}}">
         </div>
         <div class="col-12 padded white" id="testimonial-text">
         <p>
@@ -80,7 +86,7 @@ images:
     <div class="slider-item">
       <div class="grid-spaceAround center">
         <div class="col-3_sm-8-middle" id="team-testimonial">
-            <img src="/images/{{testimonial.headshot_image}}" class="profile-small">
+            <img src="/images/{{testimonial.headshot_image}}" class="profile-small" alt="{{testimonial.headshot-alt}}">
         </div>
         <div class="col-12 padded white" id="testimonial-text">
         <p>
