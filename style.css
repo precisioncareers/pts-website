@@ -781,6 +781,14 @@ footer li{
     background-image: url('/images/ausa-launch.svg');
 }
 
+.lazy-proxy{
+    width:1px;
+    height: 1px;
+    opacity:0;
+    position:fixed;
+    left:1000vw;
+}
+
 .max-w{
     max-width: 100%;
 }

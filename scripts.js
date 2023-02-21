@@ -88,5 +88,21 @@ $( document ).ready(function() {
    $(".popUpOverlay").removeClass("onscreen");
  })
 
+
+//  lazy loading lower res and then higher res images
+ $(window).on('load', function(){ 
+  $('.lazy-div').each(function(){
+    var background = $(this).attr("data-main");
+    $(this).css("background-image","url("+ background +")");
+  });
+
+  $('.lazy-img').each(function(){
+    var background = $(this).attr("data-main");
+    $(this).attr("src",background);
+  });
 });
+
+});
+
+
 
