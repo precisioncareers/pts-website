@@ -360,7 +360,8 @@ p a:hover {
 .sidebar {
     position: -webkit-sticky;
     position: sticky;
-    top: -2rem;
+    top: -1rem;
+    font-size: 1.2rem;
 }
 
 .sticky-parent{
