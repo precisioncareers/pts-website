@@ -4,14 +4,24 @@ main-texts:
  - heading: Bid & Proposal Support 
    writing: Finding the right Key Personnel for your bids can be the difference between winning and losing. PTS bolts onto your Capture teams to find the most compliant and compelling talent for your bids. We lead an intense recruitment campaign, conduct compliance checks, obtain market intelligence, and manage the Letter of Commitment process, allowing Capture leaders to focus on the capture, not the recruitment.
 bids:
- - profile_image: headshot.jpg 
-   quote: Ab, voluptatem, mollitia magni molestias culpa assumenda porro sapiente odio vitae sunt delectus provident eligendi veritatis libero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam cumque et ullam reprehenderit doloribus, labore eligendi minima exercitationem nihil beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-   title: Project Manager, Company
+ - profile_image: headshot.jpg
+   headshot-alt: 
+   quote: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+   title: Project Manager, ISOA
    logo: isoa-img.jpeg 
+   logo-alt:
  - profile_image: headshot.jpg 
-   quote: Ab, voluptatem, mollitia magni molestias culpa assumenda porro sapiente odio vitae sunt delectus provident eligendi veritatis libero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam cumque et ullam reprehenderit doloribus, labore eligendi minima exercitationem nihil beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-   title: Project Manager, Company
-   logo: isoa-img.jpeg 
+  headshot-alt: 
+  quote: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+  title: Project Manager, ISOA
+  logo: isoa-img.jpeg 
+  logo-alt:
+ - profile_image: headshot.jpg 
+  headshot-alt: 
+  quote: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+  title: Project Manager, ISOA
+  logo: isoa-img.jpeg 
+  logo-alt: 
 --- 
 
 {%include main-text.html%}
@@ -41,13 +51,13 @@ bids:
 
 	<div class="grid flex-flip-alternate">
 		<div class="col-5 padded-2">
-			<img src="/images/{{bid.profile_image}}" class="profile-image">
+			<img src="/images/{{bid.profile_image}}" class="profile-image" alt="{{bid.headshot-alt}}">
        	</div>
        	<div class="col-7-middle padded-1">
            	<!-- <h3>{{person.name}}</h3> -->
            	<p class="blocktext">"{{bid.quote}}"</p>
            	<p class="emphasized">- {{bid.title}}</p>
-            <img class="logo-placements" src="/images/{{bid.logo}}">
+            <img class="logo-placements" src="/images/{{bid.logo}}" alt="{{bid.logo-alt}}">
        	</div>
    	</div>
 
