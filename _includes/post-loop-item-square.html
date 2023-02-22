@@ -5,7 +5,8 @@
     <div class="padded-1">
 
         <a href="/{{post.category-link}}"> 
-            {% for item in post.categories %}<span class="tag"> {{item}} </span></a>
+            {% for item in post.categories %}
+            <span class="tag"> {{item}} </span></a>
         {% endfor %}
         
         <a href="{{ post.url }}">
