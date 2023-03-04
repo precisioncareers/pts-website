@@ -1,8 +1,8 @@
-<section class="grid-spaceBetween padded capped-width center bg-lines">
-    <h2 class="center p-b-5 col-12">Past Performance</h2>
+<section class="grid-spaceBetween padded bg-placement bg-image capped-width center">
+    <h2 class="center blue-underline p-b-5 col-12">Past Performance</h2>
     {%for job in page.performances%}
     <div class="col-5_sm-12 p-b-5">
-        <h4>{{job.title}}</h4>
+        <h3>{{job.title}}</h3>
         <p class="emphasized">{{job.company}}</p>
     </div>
     {%endfor%}

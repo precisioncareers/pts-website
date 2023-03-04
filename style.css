@@ -81,6 +81,8 @@ h3{
     margin-bottom: 1rem;
 }
 
+
+
 .relative{
     position: relative;
 }
@@ -775,11 +777,18 @@ footer li{
 }
 
 .bg-kosovoteam{
-    background-image: url('/images/testimonial-kosovo.svg');
+    background-image: url('/images/kosovoteam-resized.webp');
+    background-position: 20% 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bg-ausalunch{
-    background-image: url('/images/ausa-launch.svg');
+    background-image: url('/images/ausa-lunch-resized.webp');
+}
+
+.bg-placement{
+    background-image: url('images/placements-structure.png');
 }
 
 .lazy-proxy{
@@ -1003,7 +1012,7 @@ a.gallery-item{
 .team-heading{
     font-size: 3.5rem;
     font-family: var(--headlines);
-    color: var(--white);
+    color: white;
 }
 
 #team-description{
