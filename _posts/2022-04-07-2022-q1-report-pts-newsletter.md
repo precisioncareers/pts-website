@@ -9,7 +9,7 @@ featured: true
 categories:
   - industry news
 category-link: category-industry.html
-featured_image: /images/logcap-update.jpg
+featured_image: /images/q1-2022.webp
 date: 2022-04-07 00:00:00
 seo:
   title:

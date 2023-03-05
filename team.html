@@ -317,8 +317,8 @@ seo:
     {%for member in page.team%}
 		<div class="col-2_md-3_sm-5 center margin-sides m-t-1-5 team-member pointer" data-target="{{forloop.index}}">
             <img src="/images/{{member.photo_image}}" alt="{{member.photo-alt}}">
-            <h5 class="m-t-2">{{member.name}}</h5>
-            <h6>{{member.title}}</h6>
+            <h4 class="m-t-2">{{member.name}}</h4>
+            <h5>{{member.title}}</h5>
         </div>
 	{%endfor%}
 
@@ -330,7 +330,7 @@ seo:
         </div>
         <div class="col-5_md-8_sm-12-middle">
             <h2>{{popup.name}}</h2>
-            <h5>{{popup.title}}</h5>
+            <h4>{{popup.title}}</h4>
             {%if popup.education%}
             <p>Education: {{popup.education}}</p>
             {%endif%}

@@ -9,7 +9,7 @@ featured: true
 categories:
   - industry news
 category-link: category-industry.html
-featured_image: /images/logcap-update.jpg
+featured_image: /images/usaid-update.webp
 date: 2023-01-30 00:00:00
 seo:
   title: USAID UPDATE & FORECAST Q23and Q4 2022

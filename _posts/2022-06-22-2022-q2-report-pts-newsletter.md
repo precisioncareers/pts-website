@@ -10,7 +10,7 @@ featured:
 categories:
   - industry news
 category-link: category-thought.html
-featured_image: /images/logcap-update.jpg
+featured_image: /images/q2-2022.webp
 date: 2022-06-22 00:00:00
 seo:
   title:

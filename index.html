@@ -3,12 +3,19 @@ layout: default
 description:
 images:
  - bg: ben-andy.webp
+   lowres: ben-andy-resized.webp
  - bg: isoa-dc.webp
+   lowres: isoa-dc-resized.webp
  - bg: jake-ladiesedit.jpg
+   lowres: jake-ladiesedit.webp
  - bg: jake-speaking-resized.jpg
+   lowres: jake-ladiesresized.webp
  - bg: julie-andy.jpg
+   lowres: julie-andy-resized.webp
  - bg: selfiejpeg.jpg
+   lowres: selfiejpeg-resized.jpg
  - bg: stuttgart.jpg
+   lowres: stuttgart-resized.webp
 testimonials:
  - headshot_image:  gerrygalloway-website.jpeg
    alt: 
@@ -90,7 +97,7 @@ seo:
         <div class="mySlides fade">
         <!-- <img class="capped-img" src="/images/logo.png" style="width:100%"> -->
         
-        <div class="bg-image bg-overlay-dark tall-80" style="background-image: url('/images/{{image.bg}}')"></div>
+        <div class="bg-image lazy-div bg-overlay-dark tall-80" style="background-image: url('/images/{{image.lowres}}')" data-main="/images/{{image.bg}}"></div>
         
         <div class="center grid-spaceAround">
             <h1 class="banner-text col-12">Talent Solutions <br> Defense and Government contracting</h1>

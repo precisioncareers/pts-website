@@ -11,7 +11,7 @@ featured: true
 categories:
   - industry news
 category-link: category-industry.html
-featured_image: /images/logcap-update.jpg
+featured_image: /images/overseas-migration.webp
 date: 2019-11-21 00:00:00
 seo:
   title:

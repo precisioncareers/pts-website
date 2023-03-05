@@ -10,7 +10,7 @@ featured: true
 categories:
   - thought leadership
 category-link: category-thought.html
-featured_image: /images/logcap-update.jpg
+featured_image: /images/overseas-migration.webp
 date: 2021-01-08 00:00:00
 seo:
   title:
