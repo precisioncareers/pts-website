@@ -104,6 +104,7 @@ h3{
 
 
 .padded   {  padding: 5%;    }
+.padded-t   {  padding: 5% 0;    }
 .padded-top{
   padding-top: 1%;
   padding-right: 5%;
@@ -1038,7 +1039,7 @@ a.gallery-item{
 
 .testimonial-slider-container {
     padding: 5%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
 }
   
