@@ -8,7 +8,7 @@ author: Michael Stambaugh
 featured: true
 categories:
   - career support
-category-link: category-thought.html
+category-link: category-career.html
 featured_image: /images/beat-the-bots.webp
 date: 2023-01-11 00:00:00
 seo:
