@@ -5,7 +5,7 @@ description: >-
   PTS closely monitors USAID funding, contracts, and implementation seeking to
   best serve our customers.
 author: Wills Hay
-featured: true
+featured: false
 categories:
   - industry news
 category-link: category-industry.html

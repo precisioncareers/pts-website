@@ -5,7 +5,7 @@ description: >-
   After last year's Afghanistan rapid extraction and the continued challenges
   with COVID, we expected the world to return to normalcy in 2022. 
 author: Jake Frazer
-featured: true
+featured: false
 categories:
   - industry news
 category-link: category-industry.html

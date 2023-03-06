@@ -6,7 +6,7 @@ description: >-
   what has transpired in our industry since our 2019 Forecast back in January
   and ...
 author: Jake Frazer
-featured: true
+featured: false
 categories:
   - industry news
   - thought leadership

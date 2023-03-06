@@ -6,7 +6,7 @@ description: >-
   environments in the world. What makes us successful is our ability to handle
   stress, ...
 author: Jake Frazer
-featured: true
+featured: false
 categories:
   - industry news
 category-link: category-industry.html

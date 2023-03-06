@@ -5,7 +5,7 @@ description: >-
   Six months into 2022, the year has already seen major historical events.
   Russia’s full-scale invasion of Ukraine focused NATO and ...
 author: Jake Frazer
-featured:
+featured: false
 categories:
   - industry news
 category-link: category-thought.html

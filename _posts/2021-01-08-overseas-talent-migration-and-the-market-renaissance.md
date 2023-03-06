@@ -6,7 +6,7 @@ description: >-
   recent downturn due to negative externalities in both the Defense and Energy
   markets. 
 author: Jake Frazer
-featured: true
+featured: false
 categories:
   - thought leadership
 category-link: category-thought.html
