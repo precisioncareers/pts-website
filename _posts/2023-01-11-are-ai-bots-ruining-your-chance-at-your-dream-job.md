@@ -3,7 +3,7 @@ layout: post-with-sidebar
 title: Are AI Bots Ruining Your Chance at Your Dream Job?
 description: >-
   How Applicant Tracking Systems (ATS) and Human Resources Information Systems
-  (HRIS) Work and how you can get your resume through them to get noticed. 
+  (HRIS) Work ...
 author: Michael Stambaugh
 featured: true
 categories:
