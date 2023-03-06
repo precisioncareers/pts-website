@@ -144,12 +144,14 @@ h3{
 .m-t-11{margin-top: 11%;}
 .m-b-5{margin-bottom: 5%;}
 .m-b-1-4{margin-bottom: 1.4rem;}
+.m-b-1-2{margin-bottom: 1.2rem;}
 .m-l-5{margin-left: 5.5vw;}
 .m-l-7{margin-left: 7vw;}
 .p-banner{padding-bottom: 50vh;}
 .m-r-6{margin-right: 6%;}
 .m-r-4{margin-right: 4%;}
 .m-l-neg{margin-left: -5%; }
+.m-l-neg-1{margin-left: -1rem; }
 .m-l--7{margin-left: -7%; }
 .m-l--2{margin-left: -2%; }
 .margin-sides{margin: 0 0.5rem;}
@@ -164,6 +166,8 @@ h3{
 .m-sector{margin: 1% 0.5%}
 
 .tall-17-max  {  min-height: 10vh;   }
+.max-height-40{max-height: 40vh;}
+.max-height-35{max-height: 35vh;}
 .tall-30  {  min-height: 30vh;   }
 .tall-35  {  min-height: 35vh;   }
 .tall-40  {  min-height: 40vh;   }
@@ -267,15 +271,31 @@ hr {
 
 ul, ol{
     list-style-position: inside;
+    list-style: none;
 }
 
 li{
     font-size: 1.2rem;
 }
 
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--neonblue); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
 .display-block{
     display: block;
 }
+
+#benefits p, .contained-model{
+    margin-bottom: 1rem;
+}
+
+
 
 /* Button and link styles */
 
@@ -1538,7 +1558,7 @@ width:1rem;
 
 /* index page styles */
 
-#why-pts p{
+.why-pts{
     text-align: justify;
     max-width: 1200px;
 }
@@ -1683,6 +1703,8 @@ width:1rem;
     #sectors{
         margin-top: 3rem;
     }
+
+   
 
     .mob-m-3{
         margin-bottom: 3rem;

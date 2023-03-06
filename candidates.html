@@ -32,15 +32,15 @@ seo:
 <section class="padded grid-spaceAround center">
     <h2 class="col-12 p-b-5 p-t-2">We are with you for your career - not just a job!</h2>
     <div class="col-3_sm-12 why-pts">
-        <h3 class="p-b-2">Complete Profile Assessment</h3>
+        <h3 class="p-b-2 center">Complete Profile Assessment</h3>
         <p class="blocktext p-b-2rem">We'll help you create an in-depth profile outlining your skill set, personality assessment, work experience, and educational qualifications. Our talent acquisition professionals can answer your profile or job-specific questions.  </p>
     </div>
     <div class="col-3_sm-12 why-pts">
-        <h3 class="p-b-2">Streamlined Application Process</h3>
+        <h3 class="p-b-2 center">Seamless Application Process</h3>
         <p class="blocktext p-b-2rem">Our streamlined application process ensures you waste no time applying for a new career. We've created a customized approach designed specifically for government contracting. Our process makes it easy to use for your next position.   </p>
     </div>
     <div class="col-3_sm-12 why-pts">
-        <h3 class="p-b-2">Lifelong Career Partners</h3>
+        <h3 class="p-b-2 center">Lifelong Career Partners</h3>
         <p class="blocktext p-b-2rem">Working with PTS will increase your likelihood of getting hired. Our team of Account Executives, Recruiters, and Sourcers understands the importance of finding the right fit for candidates and customers. We work diligently to pair both parties in a mutually beneficial relationship.   </p>
     </div>
 
@@ -53,7 +53,7 @@ seo:
     {%for member in page.candidates%}
 		<div class="col-3_sm-12 center margin-sides team-member pointer mob-m-3" data-target="{{forloop.index}}"> 
             <img src="{{member.photo_image}}" class="profile-image" alt="{{member.headshot-alt}}">
-            <h3 class="m-t-2">{{member.name}}</h3>
+            <h3 class="m-t-2 bold">{{member.name}}</h3>
             <h4>{{member.title}}</h4>
         </div>
 	{%endfor%}
