@@ -163,7 +163,7 @@ h3{
 .capped-sector{max-width: 200px;}
 .m-sector{margin: 1% 0.5%}
 
-.tall-17-max  {  max-height: 17vh;   }
+.tall-17-max  {  min-height: 10vh;   }
 .tall-30  {  min-height: 30vh;   }
 .tall-35  {  min-height: 35vh;   }
 .tall-40  {  min-height: 40vh;   }
@@ -171,6 +171,7 @@ h3{
 .tall-60    {min-height: 60vh;}
 .tall-70    {min-height: 70vh;}
 .tall-80  {  min-height: 80vh;   }
+.tall-85  {  min-height: 86vh;   }
 .tall-90  {  min-height: 90vh;   }
 .tall-100 {  min-height: 100vh;  }
 .max-20 {  max-width: 20vw; 
@@ -451,8 +452,13 @@ header{
     background: white;
 }
 
+.bg-header{
+    background-image: url('/images/diamond-structure-for-website.png');
+    background-position: 0% 0%;
+}
+
 .logo{
-   
+   padding-left: 1%;
     margin-top: 1%;
     margin-bottom: 0.5%;
 }
