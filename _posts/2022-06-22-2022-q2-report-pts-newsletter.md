@@ -3,8 +3,7 @@ layout: post-with-sidebar
 title: 2022 Q2 REPORT PTS NEWSLETTER
 description: >-
   Six months into 2022, the year has already seen major historical events.
-  Russia’s full-scale invasion of Ukraine focused NATO and the world on Europe’s
-  Eastern front, with neither side in the conflict looking to relent.
+  Russia’s full-scale invasion of Ukraine focused NATO and ...
 author: Jake Frazer
 featured:
 categories:

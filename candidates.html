@@ -1,16 +1,16 @@
 --- 
 layout: default 
 candidates:
- - name: Placeholder name 
-   photo_image: mike.jpg
+ - name: Roxanne Kaufman
+   photo_image: /uploads/roxanne-kaufman.webp
+   headshot-alt: 
+   title: Senior Vice President, ISOA 
+   testimonial: PTS was there for every step of the process, making sure that I knew what to expect and following up with feedback. I highly recommend Jake and his team of professionals!
+ - name: Anita Vick 
+   photo_image: /uploads/anita-vick.jpeg
    headshot-alt:
-   title: Some title, company 
-   testimonial: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus temporibus quod accusantium! Iste, aspernatur autem. Aperiam omnis molestias ea sed, repellendus eius laboriosam aliquid rem provident corrupti quas reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae sapiente beatae explicabo velit. Aspernatur repudiandae et distinctio dolore saepe, debitis dicta voluptatibus consectetur quos, animi laborum, esse eveniet similique!
- - name: Placeholder name 
-   photo_image: mike.jpg
-   headshot-alt:
-   title: Some title, company 
-   testimonial: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus temporibus quod accusantium! Iste, aspernatur autem. Aperiam omnis molestias ea sed, repellendus eius laboriosam aliquid rem provident corrupti quas reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae sapiente beatae explicabo velit. Aspernatur repudiandae et distinctio dolore saepe, debitis dicta voluptatibus consectetur quos, animi laborum, esse eveniet similique!
+   title: Sr. Director, Business Development, GardaWorld
+   testimonial: I was approached by a recruiter from the PTS firm for a position that I didn't believe I was qualified to fill. Martyn Brooks, who works for Jake and is based in England, met with me nonetheless to see if we could find another position to discuss. The best interviewing process I have ever been part of and I am very excited about my new position at Gardaworld Federal Services.
  - name: Placeholder name 
    photo_image: mike.jpg
    headshot-alt:
@@ -52,9 +52,9 @@ seo:
     <h2 class="col-12 p-b-5 p-t-2 center">Some of our placed candidates</h2>
     {%for member in page.candidates%}
 		<div class="col-3_sm-12 center margin-sides team-member pointer mob-m-3" data-target="{{forloop.index}}"> 
-            <img src="/images/{{member.photo_image}}" alt="{{member.headshot-alt}}">
-            <h5 class="m-t-2">{{member.name}}</h5>
-            <h6>{{member.title}}</h6>
+            <img src="{{member.photo_image}}" class="profile-image" alt="{{member.headshot-alt}}">
+            <h3 class="m-t-2">{{member.name}}</h3>
+            <h4>{{member.title}}</h4>
         </div>
 	{%endfor%}
 
@@ -62,12 +62,12 @@ seo:
     <section class="popup" data-pop="{{forloop.index}}">
       <div class="grid-spaceBetween">
         <div class="col-5_sm-12">
-          <img src="/images/{{popup.photo_image}}" class="popup-photo img-team" alt="popup.headshot-alt"/>
+          <img src="{{popup.photo_image}}" class="popup-photo img-team" alt="popup.headshot-alt"/>
         </div>
         <div class="col-5-middle">
             <h3>{{popup.name}}</h3>
-            <h5>{{popup.title}}</h5>
-            <p>{{popup.testimonial}}</p>
+            <h4>{{popup.title}}</h4>
+            <p>"{{popup.testimonial}}"</p>
         </div>
         <div class="popupX">  
             <svg viewbox="0 0 100 100">

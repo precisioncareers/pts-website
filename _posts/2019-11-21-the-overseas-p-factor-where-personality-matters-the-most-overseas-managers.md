@@ -1,11 +1,10 @@
 ---
 layout: post-with-sidebar
-title: 'The Overseas P-Factor: Where Personality Matters the Most...Overseas Managers'
+title: 'Where Personality Matters the Most...Overseas Managers'
 description: >-
   The overseas contracting industry is one of the most unique and demanding work
   environments in the world. What makes us successful is our ability to handle
-  stress, deal with other coworkers, and manage a family far away that really
-  determines our success or failures.
+  stress, ...
 author: Jake Frazer
 featured: true
 categories:
@@ -24,7 +23,7 @@ _comments:
   title: Max 70 characters
   social_image: landscape 1200 x 600px
 ---
-The overseas contracting industry is one of the most unique and demanding work environments in the world. Whether we are running a base camp in Africa, managing a static guard force in Iraq, jumping an oil rig in the Caspian, or fixing a generator in Afghanistan, an already challenging job is made exponentially harder by the project conditions. Living in a tent in close quarters, showering in a container, eating from a paper tray, and spending holidays like any other work day….these all add stress and complexity to already tough work.
+The overseas contracting industry is one of the most unique and demanding work environments in the world. What makes us successful is our ability to handle stress, deal with other coworkers, and manage a family far away that really determines our success or failures. Whether we are running a base camp in Africa, managing a static guard force in Iraq, jumping an oil rig in the Caspian, or fixing a generator in Afghanistan, an already challenging job is made exponentially harder by the project conditions. Living in a tent in close quarters, showering in a container, eating from a paper tray, and spending holidays like any other work day….these all add stress and complexity to already tough work.
 
 What makes us successful is not as much the skills, degrees, and qualifications that we have learned. Rather, it is our ability to handle stress, deal with other coworkers, and manage a family far away that really determines our success or failures.
 

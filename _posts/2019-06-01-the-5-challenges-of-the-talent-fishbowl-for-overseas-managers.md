@@ -1,10 +1,10 @@
 ---
 layout: post-with-sidebar
-title: The 5 Challenges of the Talent Fishbowl for Overseas Managers
+title: The 5 Talent Challenges for Overseas Managers
 description: >-
   As we mark the halfway point for 2019, it is a good chance for us to recap
   what has transpired in our industry since our 2019 Forecast back in January
-  and look at possibilities for the rest of the year.
+  and ...
 author: Jake Frazer
 featured: true
 categories:
@@ -24,6 +24,7 @@ _comments:
   title: Max 70 characters
   social_image: landscape 1200 x 600px
 ---
+As we mark the halfway point for 2019, it is a good chance for us to recap what has transpired in our industry since our 2019 Forecast back in January and look at possibilities for the rest of the year.
 The overseas contracting space is a vast ocean of opportunities for highly skilled, experienced management professionals. After all, being able to function at a high level under challenging circumstances in a multicultural environment is a rare competency that most “domestic” managers never have the chance to master. So it should be like “fish in a barrel” for us top-performing industry professionals to find top jobs. But, even more so than in the domestic market, our industry has its challenges:
 
 1. Limited by our network (fishbowl) - Most job opportunities come via our networks as people we know move around to new companies. This is a great, tested tactic that gives high quality leads, but this is limited by only exposing ourselves to a fraction of a fraction of the opportunities. Meanwhile, we are missing the rest of the ocean. Quality but certainly not quantity. And we need both. &nbsp;&nbsp;

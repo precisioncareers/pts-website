@@ -1,6 +1,6 @@
 ---
 layout: post-with-sidebar
-title: Overseas Talent Migration and the Market Renaissance
+title: Overseas Talent Migration
 description: >-
   Much of the industry talent in overseas contracting has been caught in a
   recent downturn due to negative externalities in both the Defense and Energy
