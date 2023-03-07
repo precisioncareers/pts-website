@@ -330,7 +330,7 @@ seo:
 <section class="padded grid-spaceAround">
     {%for member in page.team%}
 		<div class="col-2_md-3_sm-5 center margin-sides m-t-1-5 team-member pointer" data-target="{{forloop.index}}">
-            <img src="/images/{{member.photo_image}}" alt="{{member.photo-alt}}">
+            <img src="/images/{{member.photo_image}}" alt="{{member.photo-alt}}" class="img-max">
             <h3 class="m-t-2 m-b-02">{{member.name}}</h3>
             <h4>{{member.title}}</h4>
         </div>
@@ -340,7 +340,7 @@ seo:
     <section class="popup" data-pop="{{forloop.index}}">
       <div class="grid-spaceBetween">
         <div class="col-5_sm-12">
-          <img src="/images/{{popup.photo_image}}" class="popup-photo img-team" alt="{{popup.photo-alt}}">
+          <img src="/images/{{popup.photo_image}}" class="popup-photo img-team img-max" alt="{{popup.photo-alt}}">
         </div>
         <div class="col-5_md-8_sm-12-middle">
             <h2>{{popup.name}}</h2>

@@ -52,7 +52,7 @@ seo:
     <h2 class="col-12 p-b-5 p-t-2 center">Some of our placed candidates</h2>
     {%for member in page.candidates%}
 		<div class="col-3_sm-12 center margin-sides team-member pointer mob-m-3" data-target="{{forloop.index}}"> 
-            <img src="{{member.photo_image}}" class="profile-image" alt="{{member.headshot-alt}}">
+            <img src="{{member.photo_image}}" class="profile-image img-max" alt="{{member.headshot-alt}}">
             <h3 class="m-t-2 bold">{{member.name}}</h3>
             <h4 class="light">{{member.title}}</h4>
         </div>
@@ -62,7 +62,7 @@ seo:
     <section class="popup" data-pop="{{forloop.index}}">
       <div class="grid-spaceBetween">
         <div class="col-5_sm-12">
-          <img src="{{popup.photo_image}}" class="popup-photo img-team" alt="popup.headshot-alt"/>
+          <img src="{{popup.photo_image}}" class="popup-photo img-team img-max" alt="popup.headshot-alt"/>
         </div>
         <div class="col-5-middle">
             <h3>{{popup.name}}</h3>
