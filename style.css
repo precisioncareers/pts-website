@@ -291,7 +291,7 @@ li{
     font-size: 1.2rem;
 }
 
-ul li::before {
+footer ul li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: var(--neonblue); /* Change the color */
     font-weight: bold; /* If you want it to be bold */
@@ -1120,11 +1120,11 @@ width: 10px;
 }
 
 .slick-dots li button::before {
-color: rgb(90,90,90);
+color: var(--neonblue);
 }
 
 .slick-dots li.slick-active button::before {
-color: rgb(90,90,90);
+color: var(--neonblue);
 }
 
   
