@@ -3,11 +3,11 @@ layout: default
 ---
 
 <style>body{max-height:100vh;}</style>
-<section class="grid padded capped-width-wide">
+<section class="grid padded mob-not-p capped-width-wide">
 
     <div class="padded-1 col-9_md-8_sm-12 blog-content">
 
-        <div class="intro padded-1">
+        <div class="intro padded-1 mob-padded-post">
 
             {% for item in page.categories %}
                 <span class="tag"> {{ item }}</span>
@@ -18,7 +18,7 @@ layout: default
             <p class="post-info"> by {{ page.author }} | {{ page.date | date_to_string }} </p>
          
         </div>
-        <div class="padded-1 blocktext">
+        <div class="padded-1 mob-padded-post blocktext">
 
             {{content}}
 

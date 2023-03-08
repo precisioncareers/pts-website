@@ -696,12 +696,13 @@ footer li{
     text-decoration: none;
     font-size: 20px;
     font-weight: 300;
-    color: #C3BFBC;
+    color: black;
     font-family: 'Alegreya Sans SC', sans-serif;
     display:block;
     padding:5px 15px;
     text-align:center;
     white-space:nowrap;
+    padding-bottom: 1.5rem;
   }
 
 /* .hamburger-button {
@@ -1693,7 +1694,8 @@ width:1rem;
         margin-left: 37%;
     }
     .banner-text{
-        font-size: 2rem;
+        font-size: 2.3rem;
+        padding: 75.5% 12px;
     }
     .banner-paragraph{
         font-size: 1.2rem;
@@ -1740,10 +1742,10 @@ width:1rem;
     #testimonial-text{
         font-size: 0.8rem;
     }
-    .bg-kosovoteam{
+    /* .bg-kosovoteam{
         background-color: var(--blue);
         background-image: url('/');
-    }
+    } */
 
     .slider-item p{
         font-size: 1rem;
@@ -1768,14 +1770,40 @@ width:1rem;
     padding-top: 2rem;}
 
     .service-icon{
-        margin-left: 5.2rem;
+        margin-left: 18%;
     }
 
     .mob-m-b-3{
         margin-bottom: 3rem;
     }
 
+    .mob-padded-2{
+        padding: 2rem 0;
+    }
   
+    .mob-tall-60{
+        min-height: 60vh;
+    }
+
+    .mob-m-l-10{
+        margin-left: 10%;
+    }
+
+    .mob-justify{
+        text-align: justify;
+    }
+
+    #main-text{
+        margin-top: 0;
+    }
+
+    .mob-padded-post{
+        padding: 0.2rem 0.2rem;
+    }
+
+    .mob-not-p{
+        padding: 0;
+    }
 }
 
 @media(max-width:768px) {

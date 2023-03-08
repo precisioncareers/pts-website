@@ -186,7 +186,7 @@ seo:
 
 <section id="video-teamphoto" class="grid-spaceAround padded center">
     <div class="col-5_sm-9" id="stairs-container">
-        <img class="img-stairs" src="/images/stairs-photo-resized.webp" style="aspect-ratio: 0.75/1;" alt="The PTS team standing on stairs in Warsaw with the CEO of the government contracting recruitment company standing in front." loading="lazy">
+        <img class="img-stairs img-max" src="/images/stairs-photo-resized.webp" style="aspect-ratio: 0.75/1;" alt="The PTS team standing on stairs in Warsaw with the CEO of the government contracting recruitment company standing in front." loading="lazy">
     </div>
     <div class="m-r-6 col-3_md-12-middle p-t-2">
         <p class="p-b-5 blocktext m-t-2">PTS delivers government contracting talent acquisition services for Defense, Diplomacy, Aid & Development, and Tech IC. Our team of industry professionals holds extensive experience in operations and management from each of these sectors.  </p>
@@ -224,24 +224,29 @@ seo:
 
 <section class="grid-spaceBetween padded capped-section">
     <div class="col-5_sm-12 center max-20">
-        <img class="rounded lazy-img" src="/images/isoa-img-lowres.jpg" style="aspect-ratio: 2.44/1;" alt="The logo of the International Stability Operations Association which Precision Talent Solutions is a member of." date-main="/images/isoa-img.webp" loading="lazy">
+        <img class="rounded lazy-img img-max" src="/images/isoa-img-lowres.jpg" style="aspect-ratio: 2.44/1;" alt="The logo of the International Stability Operations Association which Precision Talent Solutions is a member of." date-main="/images/isoa-img.webp" loading="lazy">
     </div>
     <div class="lazy-proxy" style="background-image:url(/images/isoa-img.webp)"></div>
    
-    <div data-aos="fade-left" class="col-5_sm-12-middle justify centered-p m-b-11 aos-init aos-animate">
+    <div data-aos="fade-left" class="col-5_sm-12-middle justify centered-p m-b-11 aos-init aos-animate mob-padded-2">
         <p class="capped-text">PTS is a member of the International Stability Operations Association (ISOA), and our President, Jake Frazer, serves on the Board of Directors.</p>
     </div>
+
+    <div class="col-5_sm-12 center m-t-6 max-20 mob-show">
+      <img src="/images/vosb-img.webp" style="aspect-ratio: 1.07/1;" alt="The official Veteran Owned Small Business badge which PTS acquired thanks to the CEO being a veteran." date-main="/images/vosb-img.png" loading="lazy" class="max-height-40" class="img-max">
+  </div>
+  <div class="lazy-proxy" style="background-image:url(/images/vosb-img.png)"></div>
     
-    <div class="col-5_sm-12-middle justify centered-p">
+    <div class="col-5_sm-12-middle justify centered- mob-padded-2">
         <p data-aos="fade-right" class="capped-text">Our company is Veteran-founded and owned. We value those who served our country and its allies. Roughly one-third of our employees served in the U.S. or European armed services.</p>
     </div>
-    <div class="col-5_sm-12 center m-t-6 max-20">
-        <img src="/images/vosb-img.webp" style="aspect-ratio: 1.07/1;" alt="The official Veteran Owned Small Business badge which PTS acquired thanks to the CEO being a veteran." date-main="/images/vosb-img.png" loading="lazy" class="max-height-40">
+    <div class="col-5_sm-12 center m-t-6 max-20 mob-hide">
+        <img src="/images/vosb-img.webp" style="aspect-ratio: 1.07/1;" alt="The official Veteran Owned Small Business badge which PTS acquired thanks to the CEO being a veteran." date-main="/images/vosb-img.png" loading="lazy" class="max-height-40" class="img-max">
     </div>
     <div class="lazy-proxy" style="background-image:url(/images/vosb-img.png)"></div>
     
     <div class="col-5_sm-12 center m-t-6 max-20">
-        <img class="rounded" src="/images/inc.webp" style="aspect-ratio: 1.37/1;" alt="An Inc 5000 rank graphic - Precision Talent Solutions was the 4676th fastest growing company in America." date-main="/images/inc.png" loading="lazy" class="max-height-40">
+        <img class="rounded" src="/images/inc.webp" style="aspect-ratio: 1.37/1;" alt="An Inc 5000 rank graphic - Precision Talent Solutions was the 4676th fastest growing company in America." date-main="/images/inc.png" loading="lazy" class="max-height-40 img-max">
     </div>
     <div class="lazy-proxy" style="background-image:url(/images/inc.png)"></div>
     <div class="col-5_sm-12-middle justify centered-p">
@@ -319,7 +324,7 @@ seo:
 
 <!-- ---------------------------------------- SLider testimonial ---------------------------------------- -->
   
-<section class="padded bg-kosovoteam bg-image tall-100">
+<section class="padded bg-kosovoteam bg-image tall-100 mob-tall-60">
     <div class="center testimonial-slider-container-index team-testimonial">
     {%for testimonial in page.testimonials%}
     <div class="slider-item">
