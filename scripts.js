@@ -65,6 +65,22 @@ $(".testimonial-slider-container-index").slick({
   
 });
 
+$(".index-images").slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+  speed: 500,
+  arrows: false,
+  accessibility: true,
+  dots: false,
+  fade: true,
+  infinite: true,
+  pauseOnHover: false,
+  pauseOnDotsHover: false,
+  slidesToShow: 1,
+  slidesToScroll: 1
+  
+});
+
 $( document ).ready(function() {
 
   $(".team-member").click(function(){
@@ -90,19 +106,59 @@ $( document ).ready(function() {
 
 
 //  lazy loading lower res and then higher res images
- $(window).on('load', function(){ 
-  $('.lazy-div').each(function(){
-    var background = $(this).attr("data-main");
-    $(this).css("background-image","url("+ background +")");
-  });
+//  $(window).on('load', function(){ 
+//   $('.lazy-div').each(function(){
+//     var background = $(this).attr("data-main");
+//     $(this).css("background-image","url("+ background +")");
+//   });
 
-  $('.lazy-img').each(function(){
-    var background = $(this).attr("data-main");
-    $(this).attr("src",background);
-  });
-});
+//   $('.lazy-img').each(function(){
+//     var background = $(this).attr("data-main");
+//     $(this).attr("src",background);
+//   });
+// });
 
-});
+// });
+
+const dumpingGround = document.querySelector('.dumping-ground')
+const lazyDivs = document.querySelectorAll('.lazy-div')
+const lazyImgs = document.querySelectorAll('.lazy-img')
+
+console.log(dumpingGround)
+
+function updateDiv(target,img) {
+  console.log("dump image loaded");
+  target.style.backgroundImage = img
+}
+function updateImg(target, img) {
+    console.log("dump image loaded");
+    target.src = img
+  }
+
+window.addEventListener('load', () => {
+lazyDivs.forEach(div => {
+  
+  let newImg = document.createElement('img');
+  // newImg.attributes.onload = updateDiv(div, `url(${div.dataset.main})`)
+  newImg.src = div.dataset.main;
+  dumpingGround.appendChild(newImg);
+  console.log(div.dataset.main);
+  newImg.addEventListener('load', () => {
+    updateDiv(div, `url(${div.dataset.main})`);
+  })
+})
+lazyImgs.forEach(img => {
+
+  let newImg = document.createElement('img');
+  // newImg.attributes.onload = updateDiv(div, `url(${div.dataset.main})`)
+  newImg.src = img.dataset.main;
+  dumpingGround.appendChild(newImg);
+  console.log(img.dataset.main);
+  newImg.addEventListener('load', () => {
+    updateImg(img, `${img.dataset.main}`);
+  })
+})
+})
 
 
-
+})

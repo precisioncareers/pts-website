@@ -897,6 +897,17 @@ footer li{
     max-width: 14rem;
 }
 
+
+.dumping-ground{
+    position: absolute;
+    left: -100vw;
+}
+
+.dumping-ground img{
+    width: 0;
+}
+
+
 /* industry network gallery */
 
 
@@ -1190,8 +1201,8 @@ color: var(--neonblue);
 left: auto;
 right: auto;
 top: 5%;
-bottom: 30%;
 overflow: scroll; 
+max-height: 90vh;
 }
   
 .popUpOverlay {
@@ -1232,6 +1243,7 @@ width:1rem;
   min-width: 100vw;
   position: relative;
   margin: auto;
+  background-color: rgba(6, 113, 255, 0.26);
 }
 
 .banner-text {
