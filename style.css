@@ -274,6 +274,14 @@ hr {
 
 /* Unique typography styles */
 
+.white{
+    color: white;
+}
+
+.blue{
+    color: var(--neonblue);
+}
+
 .emphasis{
     color: var(--neonblue);
 }
@@ -868,7 +876,7 @@ footer li{
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(250,250,250,0.25);
+    background-color: rgba(250,250,250,0);
 }
   
 .bg-overlay > * {
@@ -907,6 +915,9 @@ footer li{
     width: 0;
 }
 
+.svg-logo{
+    height: 200px;
+}
 
 /* industry network gallery */
 

@@ -345,15 +345,14 @@ seo:
             <h2>{{popup.name}}</h2>
             <h4>{{popup.title}}</h4>
             {%if popup.education%}
-            <p>Education: {{popup.education}}</p>
+            <p> <span class="blue"> Education: </span> {{popup.education}}</p>
             {%endif%}
-            <p>GovCon: {{popup.govcon}} years of experience</p>
-            <p>Past Companies: {{popup.companies}}</p>
-            <p>Email: <a href="mailto:{{popup.email}}"> {{popup.email}}</a></p>
+            <p><span class="blue"> GovCon: </span>  {{popup.govcon}} years of experience</p>
+            <p><span class="blue"> Past Companies: </span>  {{popup.companies}}</p>
             {%if popup.linkedin%}
-            <p>LinkedIn: <a href="{{popup.linkedin}}" target="_blank"> {{popup.name}}</a></p>
+            <p><span class="blue"> LinkedIn: </span>  <a href="{{popup.linkedin}}" target="_blank"> {{popup.name}}</a></p>
             {%endif%}
-            <p>Located in: {{popup.location}}</p>
+            <p><span class="blue"> Located in: </span>  {{popup.location}}</p>
         </div>
         <div class="popupX">  
             <svg viewbox="0 0 100 100">
