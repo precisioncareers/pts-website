@@ -321,6 +321,10 @@ footer ul li::before {
     text-indent: 1rem;
 }
 
+.blue-left{
+    border-left: 2px solid #2B94E7;
+}
+
 /* Button and link styles */
 
 .post-item {
@@ -938,6 +942,10 @@ footer li{
 
 .svg-logo{
     height: 200px;
+}
+
+.association{
+    border-radius: 16%;
 }
 
 /* industry network gallery */
