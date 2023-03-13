@@ -116,6 +116,7 @@ h3{
   padding-left: 5%;
 }
 .padded-3   {  padding: 3.5%;    }
+.padded-8   {  padding: 8%;    }
 .padded-05 {  padding: 0.5rem;  }
 .padded-1 {  padding: 1rem;  }
 .padded-2 {  padding: 2rem;  }
@@ -324,6 +325,14 @@ footer ul li::before {
 .blue-left{
     border-left: 2px solid #2B94E7;
 }
+
+.threes p{
+    line-height: 1.2;
+    font-size: 1rem;
+    margin-top: 24%;
+    margin-left: 9%;
+}
+
 
 /* Button and link styles */
 
@@ -858,7 +867,21 @@ footer li{
     background-image: url('/images/placements-structure.png');
 }
 
-.bg-threes{
+.bg-experience{
+    background-image: url('/images/experience.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-philosophy{
+    background-image: url('/images/philosophy.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-technology{
     background-image: url('/images/technology.png');
     background-position: center;
     background-size: cover;
