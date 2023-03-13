@@ -316,7 +316,10 @@ footer ul li::before {
     margin-bottom: 1rem;
 }
 
-
+.blog-content p{
+    margin-bottom: 1rem;
+    text-indent: 1rem;
+}
 
 /* Button and link styles */
 
@@ -345,6 +348,7 @@ p a {
     text-decoration: none;
     border-bottom: 2px solid var(--blue);
     transition: all 0.2s;
+    text-indent: 0;
 }
 
 p a:hover {
@@ -496,6 +500,8 @@ header{
 .bg-header{
     background-image: url('/images/diamond-structure-for-website.png');
     background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .logo{
@@ -610,10 +616,18 @@ footer li{
     font-weight: 400;
     font-size: 1.2rem;
     letter-spacing: 0.08em;
-    display: inline-block;
-    margin-right: 5rem;
+    /* display: inline-block; */
+    margin-right: 2rem;
     padding-left: 0;
     /* padding: 0.6rem 0 0.7rem 0; */
+    display: flex;
+    padding: 1.5rem;
+
+}
+
+.web-nav span{
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 .web-nav a{
@@ -801,9 +815,9 @@ footer li{
     display: block;
 }
 
-.space-between-navlinks{
+/* .space-between-navlinks{
    padding: 0 1.05rem;
-}
+} */
 
 
 
@@ -1833,5 +1847,14 @@ width:1rem;
     .email-signup input {
       width: 100%;
       max-width: 100%;
+    }
+}
+
+@media(max-width: 1400px){
+    .tablet-show-header{
+        display: block;
+    }
+    .tablet-hide-header{
+        display: none;
     }
 }
