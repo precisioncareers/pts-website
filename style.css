@@ -851,7 +851,14 @@ footer li{
 }
 
 .bg-placement{
-    background-image: url('images/placements-structure.png');
+    background-image: url('/images/placements-structure.png');
+}
+
+.bg-threes{
+    background-image: url('/images/technology.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .lazy-proxy{
