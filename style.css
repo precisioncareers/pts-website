@@ -517,6 +517,14 @@ header{
     background-repeat: no-repeat;
 }
 
+.bg-diamond{
+    background-image: url('/images/bg-diamond.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+}
+
 .logo{
    padding-left: 1%;
     margin-top: 1%;
@@ -1885,6 +1893,16 @@ width:1rem;
     .email-signup input {
       width: 100%;
       max-width: 100%;
+    }
+
+    .threes p {
+        line-height: 1.2;
+        font-size: 1rem;
+        margin-top: 40%;
+        margin-left: 20%;
+    }
+    #why-pts{
+        min-height: 65vh;
     }
 }
 
