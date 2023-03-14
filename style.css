@@ -1906,6 +1906,9 @@ width:1rem;
     #why-pts{
         min-height: 65vh;
     }
+    .blue-left-mob{
+        border-left: 2px solid #2B94E7;
+    }
 }
 
 @media(max-width: 1400px){
