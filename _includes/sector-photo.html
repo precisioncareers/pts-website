@@ -1,0 +1,10 @@
+{%for photo in page.sectorphotos%}
+<section class="bg-sector tall-100 padded-3 white" style="background-image: url('/images/{{photo.sector}}')">
+    {%for text in page.main-texts%}
+    <div class="grid">
+      <h1 class="col-12 p-b-2"> {{text.heading}}</h1>
+      <p class="col-4">{{text.writing}}</p>
+      </div>
+    {%endfor%}
+</section>
+{%endfor%}
