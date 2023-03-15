@@ -328,9 +328,7 @@ footer ul li::before {
 
 .threes p{
     line-height: 1.2;
-    font-size: 1rem;
-    margin-top: 24%;
-    margin-left: 9%;
+    font-size: 1.15rem;
 }
 
 
@@ -979,6 +977,13 @@ footer li{
 
 .association{
     border-radius: 16%;
+}
+
+.fixed-three {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    right: 6%;
 }
 
 /* industry network gallery */
@@ -1658,8 +1663,8 @@ width:1rem;
 /* index page styles */
 
 .why-pts{
-    text-align: justify;
-    max-width: 1200px;
+    text-align: left;
+    max-width: 400px
 }
 
 .img-stairs{
