@@ -996,6 +996,13 @@ footer li, #video-teamphoto li{
     right: 6%;
 }
 
+.fixed-heading {
+    position: absolute;
+    top: 13%;
+    left: 25%;
+    right: 6%;
+  }
+
 /* industry network gallery */
 
 
