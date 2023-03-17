@@ -1789,6 +1789,14 @@ width:1rem;
         margin: 0.5rem 0rem;
         padding: 0 0.5rem;
     }
+
+    .threes p{
+        font-size: 0.65rem;
+    }
+
+    .fixed-three{
+        top: 28%;
+    }
     
     
 }
@@ -1915,6 +1923,10 @@ width:1rem;
     .mob-center{
         text-align: center;
     }
+
+    .threes p{
+        font-size: 0.65rem;
+    }
 }
 
 @media(max-width:768px) {
@@ -1925,9 +1937,9 @@ width:1rem;
 
     .threes p {
         line-height: 1.2;
-        font-size: 1rem;
-        margin-top: 40%;
-        margin-left: 20%;
+        font-size: 0.95rem;
+        margin-top: 0%;
+        margin-left: 3%;
     }
     #why-pts{
         min-height: 65vh;
@@ -1935,6 +1947,9 @@ width:1rem;
     .blue-left-mob{
         border-left: 2px solid #2B94E7;
     }
+    .fixed-heading {
+        top: 7%;
+      }
 }
 
 @media(max-width: 1400px){
