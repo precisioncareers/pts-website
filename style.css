@@ -283,6 +283,10 @@ hr {
     color: var(--neonblue);
 }
 
+.light-blue{
+    color: #2894E7;
+}
+
 .emphasis{
     color: var(--neonblue);
 }
@@ -989,7 +993,7 @@ footer li, #video-teamphoto li{
     border-radius: 16%;
 }
 
-.fixed-three {
+.fixed-three, .fixed-three-index {
     position: absolute;
     top: 20%;
     left: 25%;
@@ -2070,7 +2074,7 @@ width:1rem;
     position: absolute;
     top: 30%;
     left: 30%;
-    right: 12%;
+    right: 14%;
     font-size: 1.2rem;
     line-height: 1.2;
     }
