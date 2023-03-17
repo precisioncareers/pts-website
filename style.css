@@ -1001,7 +1001,17 @@ footer li, #video-teamphoto li{
     top: 13%;
     left: 25%;
     right: 6%;
-  }
+}
+
+.fixed-benefits{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    right: 2%;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
 
 /* industry network gallery */
 
@@ -1798,6 +1808,10 @@ width:1rem;
         top: 28%;
     }
     
+    .fixed-benefits{
+        left: 31%;
+        right: 16%;
+    }
     
 }
 
@@ -1927,6 +1941,12 @@ width:1rem;
     .threes p{
         font-size: 0.65rem;
     }
+    .fixed-benefits{
+        top: 18%;
+        left: 25%;
+        right: 5%;
+        font-size: 1rem;
+    }
 }
 
 @media(max-width:768px) {
@@ -1950,6 +1970,10 @@ width:1rem;
     .fixed-heading {
         top: 7%;
       }
+
+    .mob-p-09{
+        font-size: 0.9rem;
+    }
 }
 
 @media(max-width: 1400px){
@@ -2041,4 +2065,13 @@ width:1rem;
     font-size: 2.1rem;
     padding: 1.6rem 1.5rem;
   }
+
+  .fixed-benefits{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    right: 12%;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    }
 }
