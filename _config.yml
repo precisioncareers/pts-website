@@ -31,3 +31,7 @@ _options:
     image: true
     bulletedlist: true
     styles: /editor.css
+  quote_html:
+    format: p span
+    styles: /editor.css
+    
