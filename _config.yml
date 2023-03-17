@@ -34,4 +34,6 @@ _options:
   quote_html:
     format: p span
     styles: /editor.css
+    bold: true
+    italic: true
     
