@@ -8,6 +8,8 @@ images:
    lowres: 
  - bg: isoa-dc.webp
    lowres: isoa-dc-resized.webp
+ - bg: kosovo-team.webp
+   lowres: kosovo-team.webp
  - bg: jake-ladiesedit.jpg
    lowres: jake-ladiesedit.webp
  - bg: julie-andy.jpg
@@ -220,7 +222,7 @@ seo:
 
 <section id="why-pts" class="padded-8 grid-spaceAround center">
   <h2 class="col-12 p-b-3 p-t-2 blue bold">Why PTS?</h2>
-  <p class="col-12 p-b-2 center">Precision Talent Solutions is not your average executive search firm or recruitment agency. We are consulting partners helping our customers solve the greatest challenge of the government contracting industry: talent. </p>
+  <p class="col-12 p-b-2 center">Precision Talent Solutions is not your average executive search firm or recruitment agency. We are consulting partners helping our customers solve the greatest challenge of the government contracting industry: <span class="blue bold">TALENT</span>. </p>
       <!-- changed this to col-4 because it was wacky on large sized monitors -->
   <div class="col-4_sm-12 why-pts threes relative">
     <img class="img-max" src="/images/experience.png">
@@ -297,6 +299,8 @@ seo:
 <!----------------- ISOA, VOSB, Inc -------------------------------------------->
 
 <section class="grid-spaceAround padded">
+  <h2 class="col-12 p-b-3 p-t-2 center blue bold">LOREM IPSUM</h2>
+  <p class="col-12 p-b-2 center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat libero itaque similique maiores earum in asperiores commodi hic nihil dicta iste ex saepe placeat doloremque eos nobis, quas soluta voluptatem. </p>
   <div class="col-4_sm-12 center padded blue-left-mob">
     <h3 class="blue">ISOA</h3>
     <p class="p-b-5 blocktext">PTS is a member of the International Stability Operations Association (ISOA), and our President, Jake Frazer, serves on the Board of Directors.</p>
@@ -324,39 +328,20 @@ seo:
   </div>
 </section>
 
-<!-- <section class="grid-spaceBetween padded capped-section"> -->
-    <!-- <div class="col-5_sm-12 center max-20">
-        <img class="rounded lazy-img img-max" src="/images/isoa-img-lowres.jpg" style="aspect-ratio: 2.44/1;" alt="The logo of the International Stability Operations Association which Precision Talent Solutions is a member of." date-main="/images/isoa-img.webp" loading="lazy">
-    </div>
-    <div class="lazy-proxy" style="background-image:url(/images/isoa-img.webp)"></div>
-   
-    <div data-aos="fade-left" class="col-5_sm-12-middle justify centered-p m-b-11 aos-init aos-animate mob-padded-2">
-        <p class="capped-text">PTS is a member of the International Stability Operations Association (ISOA), and our President, Jake Frazer, serves on the Board of Directors.</p>
-    </div> -->
 
-    <!-- <div class="col-5_sm-12 center m-t-6 max-20 mob-show">
-      <img src="/images/vosb-img.webp" style="aspect-ratio: 1.07/1;" alt="The official Veteran Owned Small Business badge which PTS acquired thanks to the CEO being a veteran." date-main="/images/vosb-img.png" loading="lazy" class="max-height-40" class="img-max">
+<hr class="col-12" id="blueline-index">
+
+<!------------------ Our Clients logo ---------------------------------------->
+
+<section class="grid-spaceBetween padded capped-width">
+  <h2 class="col-12 p-b-5 center p-t-2">Some of Our Clients</h2>
+  {%for logo in page.logos%}
+  <div class="col-2_md-3 logos">
+      <img src="/images/{{logo.img_image}}" loading="lazy" alt="{{logo.alt}}" class="img-max">
   </div>
-  <div class="lazy-proxy" style="background-image:url(/images/vosb-img.png)"></div>
-    
-    <div class="col-5_sm-12-middle justify centered- mob-padded-2">
-        <p data-aos="fade-right" class="capped-text">Our company is Veteran-founded and owned. We value those who served our country and its allies. Roughly one-third of our employees served in the U.S. or European armed services.</p>
-    </div>
-    <div class="col-5_sm-12 center m-t-6 max-20 mob-hide">
-        <img src="/images/vosb-img.webp" style="aspect-ratio: 1.07/1;" alt="The official Veteran Owned Small Business badge which PTS acquired thanks to the CEO being a veteran." date-main="/images/vosb-img.png" loading="lazy" class="max-height-40" class="img-max">
-    </div>
-    <div class="lazy-proxy" style="background-image:url(/images/vosb-img.png)"></div>
-    
-    <div class="col-5_sm-12 center m-t-6 max-20">
-        <img class="rounded img-max" src="/images/inc.webp" style="aspect-ratio: 1.37/1;" alt="An Inc 5000 rank graphic - Precision Talent Solutions was the 4676th fastest growing company in America." date-main="/images/inc.png" loading="lazy" class="max-height-40 img-max">
-    </div>
-    <div class="lazy-proxy" style="background-image:url(/images/inc.png)"></div>
-    <div class="col-5_sm-12-middle justify centered-p">
-        <p data-aos="fade-left" class="capped-text p-t-5">
-          PTS is part of an elite group of entrepreneurially-inspired companies with strong ties to technology. In 2022, we ranked 4,675 among the fastest-growing companies in America. 
-           </p>
-    </div>
-</section> -->
+  {%endfor%}
+  </div> 
+</section>
 
 <hr class="col-12" id="blueline-index">
 
@@ -371,7 +356,7 @@ seo:
 <hr class="col-12" id="blueline-index">
 
 <!-------------------------- Featured blog loop ------------------------------>
-<section class="padded">
+<!-- <section class="padded">
 
     <div class="capped-width grid-center">
 
@@ -407,22 +392,12 @@ seo:
 
     </div>
 
-</section>
+</section> -->
 
 <hr class="col-12" id="blueline-index">
 
 
-<!------------------ Our Clients logo ---------------------------------------->
 
-<section class="grid-spaceBetween padded capped-width">
-    <h2 class="col-12 p-b-5 center p-t-2">Some of Our Clients</h2>
-    {%for logo in page.logos%}
-    <div class="col-2_md-3 logos">
-        <img src="/images/{{logo.img_image}}" loading="lazy" alt="{{logo.alt}}" class="img-max">
-    </div>
-    {%endfor%}
-    </div> 
-</section>
 
 <!-- ---------------------------------------- SLider testimonial ---------------------------------------- -->
   
@@ -435,9 +410,9 @@ seo:
             <img src="{{testimonial.headshot_image}}" class="profile-small" alt="{{testimonial.alt}}">
         </div>
         <div class="col-12 padded white" id="testimonial-text">
-        <p class="white m-b-1-2">
-            {{testimonial.text}} </p>
-        <p>  <em> - {{testimonial.name}} </em> </p>
+        <p class="white m-b-1-2 italic">
+            "{{testimonial.text}}" </p>
+        <p>   - {{testimonial.name}}  </p>
         </div>
       </div>
     </div>

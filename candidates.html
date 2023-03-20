@@ -7,27 +7,27 @@ threes:
    text: Our streamlined application process ensures you waste no time applying for a new career. We've created a customized approach designed specifically for government contracting. Our process makes it easy to use for your next position.
  - title: Lifelong Career Partners
    text: Working with PTS will increase your likelihood of getting hired. Our team of Account Executives, Recruiters, and Sourcers understands the importance of finding the right fit for candidates and customers. We work diligently to pair both parties in a mutually beneficial relationship. 
-candidates:
- - name: Roxanne Kaufman
-   photo_image: /uploads/roxanne-kaufman.webp
+placements:
+ - title: Roxanne Kaufman, Senior Vice President, ISOA
+   profile_image: /uploads/roxanne-kaufman.webp
    headshot-alt: 
-   title: Senior Vice President, ISOA 
-   testimonial: PTS was there for every step of the process, making sure that I knew what to expect and following up with feedback. I highly recommend Jake and his team of professionals!
- - name: Anita Vick 
-   photo_image: /uploads/anita-vick.jpeg
+   quote_html: PTS was there for every step of the process, making sure that I knew what to expect and following up with feedback. I highly recommend Jake and his team of professionals!
+ - title: Anita Vick, Sr. Director, Business Development, GardaWorld 
+   profile_image: /uploads/anita-vick.jpeg
    headshot-alt:
-   title: Sr. Director, Business Development, GardaWorld
-   testimonial: I was approached by a recruiter from the PTS firm for a position that I didn't believe I was qualified to fill. Martyn Brooks, who works for Jake and is based in England, met with me nonetheless to see if we could find another position to discuss. The best interviewing process I have ever been part of and I am very excited about my new position at Gardaworld Federal Services.
- - name: Placeholder name 
-   photo_image: mike.jpg
+   quote_html: I was approached by a recruiter from the PTS firm for a position that I didn't believe I was qualified to fill. Martyn Brooks, who works for Jake and is based in England, met with me nonetheless to see if we could find another position to discuss. The best interviewing process I have ever been part of and I am very excited about my new position at Gardaworld Federal Services.
+ - title: Placeholder name 
+   profile_image: mike.jpg
    headshot-alt:
-   title: Some title, company 
-   testimonial: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus temporibus quod accusantium! Iste, aspernatur autem. Aperiam omnis molestias ea sed, repellendus eius laboriosam aliquid rem provident corrupti quas reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae sapiente beatae explicabo velit. Aspernatur repudiandae et distinctio dolore saepe, debitis dicta voluptatibus consectetur quos, animi laborum, esse eveniet similique!
+   quote_html: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus temporibus quod accusantium! Iste, aspernatur autem. Aperiam omnis molestias ea sed, repellendus eius laboriosam aliquid rem provident corrupti quas reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae sapiente beatae explicabo velit. Aspernatur repudiandae et distinctio dolore saepe, debitis dicta voluptatibus consectetur quos, animi laborum, esse eveniet similique!
 seo:
    title: Precision Talent Solutions, For candidates
    description: Upload your information on our website for career opportunities.
    keywords: government consulting, government contracting recruiters, contract recrutiment agencies, contractor recruitment agencies, executive employment agencies, employment agency for executives, executive recruitment agency, executives recruitment agency, recruitment agencies for executives, contract staffing agencies
 --- 
+
+
+
 
 <section class="grid-centered padded center bg-image bg-structure bg-overlay white">
     <div class="col-8_sm-12" id="main-text">
@@ -36,6 +36,13 @@ seo:
     </div>
 </section>
 
+<section class="p-t-2 grid-spaceAround center">
+  <h2 class="col-12 p-b-2 blue p-t-2">Check Out Recent Job Postings</h2>
+  <p class="center">Please review our current opportunities in government contracting, from a wide range of small, medium, and large companies!</p>
+  <div class="col-6_md-8 m-t-2 mob-m-3">
+      <a class="m-b-5 button center" href="#">View opportunities</a>
+  </div>
+</section>
 
 <section id="why-pts" class="padded grid-spaceAround center">
   <h2 class="col-12 p-b-3 p-t-2 blue bold">We are with you for your career - not just a job!</h2>
@@ -53,54 +60,10 @@ seo:
 
 <section class="padded grid-spaceAround capped-section">
     <h2 class="col-12 p-b-5 p-t-2 center">Some of our placed candidates</h2>
-    {%for member in page.candidates%}
-		<div class="col-3_sm-12 center margin-sides team-member pointer mob-m-3" data-target="{{forloop.index}}"> 
-            <img src="{{member.photo_image}}" class="profile-image img-max" alt="{{member.headshot-alt}}">
-            <h3 class="m-t-2 bold">{{member.name}}</h3>
-            <h4 class="light">{{member.title}}</h4>
-        </div>
-	{%endfor%}
-
-    {%for popup in page.candidates%}
-    <section class="popup" data-pop="{{forloop.index}}">
-      <div class="grid-spaceBetween">
-        <div class="col-5_sm-12">
-          <img src="{{popup.photo_image}}" class="popup-photo img-team img-max" alt="popup.headshot-alt"/>
-        </div>
-        <div class="col-5-middle_sm-12">
-            <h3>{{popup.name}}</h3>
-            <h4>{{popup.title}}</h4>
-            <p>"{{popup.testimonial}}"</p>
-        </div>
-        <div class="popupX">  
-            <svg viewbox="0 0 100 100">
-            <path d="M 0,0 L100,100" />
-            <path d="M 100,0 L0,100" />
-            </svg>
-        </div>
-      </div>
-    </section>
-    {%endfor%}
-    <div class="popUpOverlay"></div>
+    {%include placements.html%}
 </section>
 
-<section class="padded grid-spaceAround center">
-  <div class="col-5_sm-12 grid-spaceAround center">
-    <h2 class="col-12 p-b-5 p-t-2">Check Out Recent Job Postings</h2>
-    <p class="center">Please review our current opportunities in government contracting, from a wide range of small, medium, and large companies!</p>
-    <div class="col-6_md-8 m-t-2 mob-m-3">
-        <a class="m-b-5 button center" href="#">View opportunities</a>
-    </div>
-  </div>
-  <div class="col-5_sm-12 grid-spaceAround center">
-    <h2 class="col-12 p-b-5 p-t-2">Build A Career Profile Today</h2>
-    <p class="center">We encourage anyone considering a career move to create a profile so we can contact you when the perfect opportunity arises!
-    </p>
-    <div class="col-6_md-8 m-t-2 center">
-        <a class="m-b-5 button center" href="#">Build your profile</a>
-    </div>
-  </div>
-</section>
+
 
 {%include benefits.html%}
 

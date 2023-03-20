@@ -105,6 +105,7 @@ h3{
 .blocktext{text-align: justify;}
 
 .bold{font-weight: 500;}
+.italic{font-style: italic;}
 
 
 .padded   {  padding: 5%;    }
@@ -1365,6 +1366,12 @@ width:1rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
+}
+
+.meet-team{
+    position: absolute;
+    top: 5vw;
+    left: 5vw;
 }
 
 .banner-paragraph{

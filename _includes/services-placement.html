@@ -1,7 +1,6 @@
 <section class="padded">
 	<div class="capped-width">
 	{% for person in page.placements %}
-
 	<div class="grid flex-flip-alternate">
 		<div class="col-5_sm-12 padded-2">
 			<img src="{{person.profile_image}}" class="profile-image" alt="{{person.headshot-alt}}">
@@ -12,7 +11,6 @@
            	<p class="emphasized">- {{person.title}}</p>
        	</div>
    	</div>
-
    	{% endfor %}
  	</div>
 </section>
