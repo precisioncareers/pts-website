@@ -9,7 +9,7 @@ featured: true
 categories:
   - thought leadership
 category-link: category-thought.html
-featured_image: /images/things-ceo-wants.webp
+featured_image: /images/blog-things-ceo-wants.webp
 date: 2023-02-05 00:00:00
 seo:
   title: The Top 5 Things Your CEO Won't Say to You as CHRO | HR Insights

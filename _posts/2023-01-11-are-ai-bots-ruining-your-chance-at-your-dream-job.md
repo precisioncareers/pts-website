@@ -9,7 +9,7 @@ featured: true
 categories:
   - career support
 category-link: category-career.html
-featured_image: /images/beat-the-bots.webp
+featured_image: /images/blog-beat-the-bots.webp
 date: 2023-01-11 00:00:00
 seo:
   title: >-

@@ -10,7 +10,7 @@ featured: false
 categories:
   - thought leadership
 category-link: category-thought.html
-featured_image: /images/overseas-migration.webp
+featured_image: /images/blog-covers-overseas.webp
 date: 2021-01-08 00:00:00
 seo:
   title:

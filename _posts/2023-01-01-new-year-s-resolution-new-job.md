@@ -9,7 +9,7 @@ featured: true
 categories:
   - career support
 category-link: category-career.html
-featured_image: /images/resolution.webp
+featured_image: /images/blog-resolution.webp
 date: 2023-01-01 00:00:00
 seo:
   title: How to find a job in the new year

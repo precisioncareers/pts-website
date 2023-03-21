@@ -11,7 +11,7 @@ categories:
   - industry news
   - thought leadership
 category-link: category-thought.html
-featured_image: /images/5-chalenges.webp
+featured_image: /images/blog-5-chalenges.webp
 date: 2019-06-01 00:00:00
 seo:
   title:

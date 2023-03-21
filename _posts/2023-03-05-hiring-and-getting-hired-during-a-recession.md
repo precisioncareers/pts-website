@@ -9,7 +9,7 @@ featured: true
 categories:
   - career support
 category-link: category-career.html
-featured_image: /uploads/blog-layoffs.webp
+featured_image: /images/blog-covers-recession.webp
 date: 2023-03-05 00:00:00
 seo:
   title: How to Prepare for Potential Layoffs in 2023

@@ -10,7 +10,7 @@ featured: false
 categories:
   - industry news
 category-link: category-industry.html
-featured_image: /images/overseas-migration.webp
+featured_image: /images/blog-covers-personality.webp
 date: 2019-11-21 00:00:00
 seo:
   title:
