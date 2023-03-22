@@ -1189,6 +1189,11 @@ a.gallery-item{
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
+.left-blue-line{
+    border-left: 2px solid var(--neonblue);
+    padding-left: 5rem;
+}
+
 /* Slider */
 
 .testimonial-slider-container-index {
@@ -1823,6 +1828,11 @@ width:1rem;
         left: 31%;
         right: 16%;
     }
+    .left-blue-line{
+        border: none;
+        text-align: center;
+        padding: 0;
+    }
     
 }
 
@@ -1858,8 +1868,6 @@ width:1rem;
     #sectors{
         margin-top: 3rem;
     }
-
-   
 
     .mob-m-3{
         margin-bottom: 3rem;
@@ -2084,5 +2092,11 @@ width:1rem;
     right: 14%;
     font-size: 1.2rem;
     line-height: 1.2;
+    }
+
+ .testimonial-slider-container {
+        padding: 5%;
+        max-width: 1500px;
+        margin: auto;
     }
 }
