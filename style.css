@@ -109,6 +109,7 @@ h3{
 
 
 .padded   {  padding: 5%;    }
+.padded-l-r   {  padding: 0 5%;    }
 .padded-t   {  padding: 5% 0;    }
 .padded-top{
   padding-top: 1%;
