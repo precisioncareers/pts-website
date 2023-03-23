@@ -1739,6 +1739,10 @@ width:1rem;
     padding-bottom: 3%;
 }
 
+.ss-description{
+    line-height: 1.2;
+}
+
 .embed-container {
     position: relative;
     overflow: hidden;
