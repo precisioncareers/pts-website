@@ -74,7 +74,20 @@ seo:
 
 <section class="padded grid-spaceAround capped-section">
     <h2 class="col-12 p-b-5 p-t-2 center">Some of our placed candidates</h2>
-    {%include placements.html%}
+    {% for person in page.placements %}
+
+	<div class="grid flex-flip-alternate">
+		<div class="col-5_sm-12 padded-2">
+			<img src="{{person.profile_image}}" class="profile-image img-max" alt="{{person.headshot-alt}}">
+       	</div>
+       	<div class="col-7_sm-12-middle padded-1">
+           	<!-- <h3>{{person.name}}</h3> -->
+           	<div class="blocktext m-b-1-2">{{person.quote_html}}</div>
+           	<p class="emphasized">- {{person.title}}</p>
+       	</div>
+   	</div>
+
+   	{% endfor %}
 </section>
 
 
