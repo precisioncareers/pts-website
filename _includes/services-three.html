@@ -1,13 +1,3 @@
-<!-- <section id="why-pts" class="padded grid-spaceAround center">
-    <h2 class="col-12 p-b-5 p-t-2">What we can help you with</h2>
-    {%for item in page.threes%}
-    <div class="col-3_md-12 why-pts">
-        <h3 class="mob-padded-2 p-b-2 center">{{item.title}}</h3>
-        <p>{{item.text}}</p>
-    </div>
-    {%endfor%}
-
-</section> -->
 
 <section id="why-pts" class="padded grid-spaceAround center">
     <h2 class="col-12 p-b-3 p-t-2 blue bold">What we can help you with</h2>
@@ -15,7 +5,12 @@
     <div class="col-4_sm-12 why-pts threes relative">
         <img class="img-max" src="/images/blank-.png">
         <h3 class="mob-padded-2 p-b-2 left fixed-heading light-blue bold">{{item.title}}</h3>
-        <p class="fixed-three">{{item.text}}</p>
+        <p class="fixed-three-sentence">{{item.text}}</p>
+        <ul class="fixed-three-index">
+          <li>{{item.li-1}}</li>
+          <li>{{item.li-2}}</li>
+          <li>{{item.li-3}}</li>
+        </ul>
     </div>
     {%endfor%}
 

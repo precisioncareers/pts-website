@@ -2,11 +2,20 @@
 layout: default 
 threes:
  - title: Complete Profile Assessment
-   text: We'll help you create an in-depth profile outlining your skill set, personality assessment, work experience, and educational qualifications. Our talent acquisition professionals can answer your profile or job-specific questions.
- - title: Seamless Application Process
-   text: Our streamlined application process ensures you waste no time applying for a new career. We've created a customized approach designed specifically for government contracting. Our process makes it easy to use for your next position.
+   text: PTS team members maintain high-touch engagement with our candidates throughout the recruitment process. 
+   li-1: In-depth profile outlining your skill set, personality assessment, work experience, and educational qualifications
+   li-2: Streamlined application process ensures you waste no time applying for a new career
+   li-3: Answer profile or job-specific questions tailored to you
+ - title: Easy Application Process
+   text: Our team will keep you updated on industry trends and opportunities.
+   li-1: Leverage our numerous GovCon association memberships
+   li-2: Keep you informed on networking opportunities
+   li-3: Support your network growth through social media and marketing
  - title: Lifelong Career Partners
-   text: Working with PTS will increase your likelihood of getting hired. Our team of Account Executives, Recruiters, and Sourcers understands the importance of finding the right fit for candidates and customers. We work diligently to pair both parties in a mutually beneficial relationship. 
+   text: PTS wishes to support you throughout your GovCon career.
+   li-1: Share regular industry updates and job openings with current and former candidates
+   li-2: Serve as an extension of our customers' brands to the industry talent base
+   li-3: Understand the importance of finding the right fit for candidates and customers
 placements:
  - title: Roxanne Kaufman, Senior Vice President, ISOA
    profile_image: /uploads/roxanne-kaufman.webp
@@ -32,7 +41,7 @@ seo:
 <section class="grid-centered padded center bg-image bg-structure bg-overlay white">
     <div class="col-8_sm-12" id="main-text">
       <h1 class="center p-b-5">Candidates</h1>
-      <p>PTS is disrupting the hyper-transactional nature of recruitment in the government contracting sector by building long-term relationships with our candidates. Our approach is to “treat our candidates like customers.” We provide proactive updates on recruitment status and personality assessment feedback. PTS team members maintain high-touch engagement with our candidates throughout the recruitment process. We share regular industry updates and job openings with current and former candidates, as we seek to be your career partners. We realize that we are not only representing the PTS brand, but also an extension of our customers' brands to the industry talent base.</p>
+      <p>PTS is disrupting the hyper-transactional nature of recruitment in the government contracting sector by building long-term relationships with our candidates. Our approach is to “treat our candidates like customers.” We provide proactive updates on recruitment status and personality assessment feedback. </p>
     </div>
 </section>
 
@@ -47,10 +56,15 @@ seo:
 <section id="why-pts" class="padded grid-spaceAround center">
   <h2 class="col-12 p-b-3 p-t-2 blue bold">We are with you for your career - not just a job!</h2>
   {%for item in page.threes%}
-  <div class="col-4_md-12 why-pts threes relative">
+  <div class="col-4_sm-12 why-pts threes relative">
       <img class="img-max" src="/images/blank-.png">
-      <h3 class="mob-padded-2 p-b-2 m-b-1 left fixed-heading light-blue bold">{{item.title}}</h3>
-      <p class="fixed-three">{{item.text}}</p>
+      <h3 class="mob-padded-2 p-b-2 left fixed-heading light-blue bold">{{item.title}}</h3>
+      <p class="fixed-three-sentence">{{item.text}}</p>
+      <ul class="fixed-three-index">
+        <li>{{item.li-1}}</li>
+        <li>{{item.li-2}}</li>
+        <li>{{item.li-3}}</li>
+      </ul>
   </div>
   {%endfor%}
 
