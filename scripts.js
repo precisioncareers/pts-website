@@ -65,6 +65,8 @@ $(".testimonial-slider-container-index").slick({
   
 });
 
+console.log('about to run slideshow');
+
 $(".index-images").slick({
   autoplay: true,
   autoplaySpeed: 2000,

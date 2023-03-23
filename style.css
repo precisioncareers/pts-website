@@ -1716,6 +1716,12 @@ width:1rem;
     border-radius: 12%;
 }
 
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 /* #stairs-container {
     background-image: url('/images/team-stairs.jpg');
     box-shadow: 40px 40px 40px 40px white inset, -20px -20px 40px 40px white inset; 
