@@ -49,25 +49,49 @@ seo:
 
 {%include services-three.html%}
 
-<section class="padded">
-	<div class="capped-width">
-		<h2 class="center p-b-5">Recent Bids</h2>
-	{% for bid in page.bids %}
+<section class="padded" id="b-p">
+	<div class="capped-width grid-spaceBetween">
+		<h2 class="center p-b-5 col-12">Recent Bids</h2>
+	<!-- {% for bid in page.bids %}
 
 	<div class="grid flex-flip-alternate">
 		<div class="col-5 padded-2">
 			<img src="/images/{{bid.profile_image}}" class="profile-image img-max" alt="{{bid.headshot-alt}}">
        	</div>
        	<div class="col-7-middle padded-1">
-           	<!-- <h3>{{person.name}}</h3> -->
-           	<p class="blocktext">"{{bid.quote}}"</p>
+           	<h3>{{person.name}}</h3> -->
+           	<!-- <p class="blocktext">"{{bid.quote}}"</p>
            	<p class="emphasized">- {{bid.title}}</p>
             <img class="logo-placements" src="/images/{{bid.logo}}" alt="{{bid.logo-alt}}">
        	</div>
    	</div>
 
-   	{% endfor %}
+   	{% endfor %} -->
+     <div class="col-5 center">
+      <ul class="left">
+        <li>Kaiserslautern BOSS</li>
+        <li>DiPSS - Baghdad Embassy Key Personnel</li>
+        <li>USACE Task Force Safe</li>
+        <li>Navy Research Data Scientists</li>
+        <li>AFCAP IV Pricing and Key Personnel</li>
+        <li>AFRICAP Vehicle Maintenance PMO</li>
+        <li>Global Defense Reform Program (GDRP) Security Advisors</li>
+      </ul>
+    </div>
+    <div class="col-5 center">
+    <ul class="left">
+      <li>USAID South Sudan Embassy Facilities</li>
+      <li>GAVI Immunication/Vaccine Consultants</li>
+      <li>Global Health Supply Chain - ICL / PSA Laboratory </li>
+      <li>DLA Subsistence Prime Vendor PMO</li>
+      <li>MARSOC Key Personnel</li>
+      <li>NAVFAC BOSS Key Personnel</li>
+      <li>Korea Classified Facilities Engineers</li>
+    </ul>
+  </div>
  	</div>
+
+  
 </section>
 
 

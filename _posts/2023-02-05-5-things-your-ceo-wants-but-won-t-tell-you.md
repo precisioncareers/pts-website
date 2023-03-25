@@ -7,8 +7,8 @@ description: >-
 author: Michael Stambaugh
 featured: true
 categories:
-  - thought leadership
-category-link: category-thought.html
+  - talent innovation
+category-link: category-talent.html
 featured_image: /images/blog-things-ceo-wants.webp
 date: 2023-02-05 00:00:00
 seo:
