@@ -1018,9 +1018,9 @@ footer li, #video-teamphoto li{
 
 .fixed-benefits{
     position: absolute;
-    top: 37%;
-    left: 28%;
-    right: 2%;
+    top: 40%;
+    left: 24%;
+    right: 0%;
     font-size: 1.2rem;
     line-height: 1.2;
 }
@@ -1976,13 +1976,24 @@ width:1rem;
     }
 
     .threes p{
-        font-size: 0.65rem;
+        font-size: 0.95rem;
     }
     .fixed-benefits{
-        top: 18%;
-        left: 25%;
-        right: 5%;
-        font-size: 1rem;
+        top: 38%;
+        left: 24%;
+        right: -14%;
+        font-size: 0.85rem;
+    }
+    .mob-min-w{
+        min-width: 20vw;
+    }
+
+    .mob-min-w-s{
+        min-width: 17vw;
+    }
+    .ss-description{
+        line-height: 1;
+        font-size: 0.7rem;
     }
 }
 
@@ -1993,8 +2004,8 @@ width:1rem;
     }
 
     .threes p {
-        line-height: 1.2;
-        font-size: 0.95rem;
+        line-height: 1;
+        font-size: 1rem;
         margin-top: 0%;
         margin-left: 3%;
     }
@@ -2011,6 +2022,11 @@ width:1rem;
     .mob-p-09{
         font-size: 0.9rem;
     }
+
+    .fixed-three-index li{
+        font-size: 1.1rem;
+    }
+    
 }
 
 @media(max-width: 1400px){
