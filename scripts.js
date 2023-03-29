@@ -42,7 +42,7 @@ $(".testimonial-slider-container").slick({
   dots: true,
   fade: false,
   infinite: false,
-  pauseOnHover: true,
+  pauseOnHover: false,
   pauseOnDotsHover: true,
   slidesToShow: 1,
   slidesToScroll: 1
@@ -58,7 +58,7 @@ $(".testimonial-slider-container-index").slick({
   dots: false,
   fade: false,
   infinite: true,
-  pauseOnHover: true,
+  pauseOnHover: false,
   pauseOnDotsHover: true,
   slidesToShow: 1,
   slidesToScroll: 1
