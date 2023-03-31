@@ -338,7 +338,7 @@ footer ul li::before, #video-teamphoto ul li::before, #why-pts ul li::before, #b
     border-top: 2px solid #2B94E7;
 }
 
-.threes p{
+.-index p{
     line-height: 1.2;
     font-size: 1.15rem;
 }
@@ -542,8 +542,7 @@ header{
 }
 
 footer{
-    padding: 5% 2%;
-    padding-bottom: 1%;
+    padding: 4% 2% 0 2%;
 }
 
 .footer{
@@ -1010,8 +1009,28 @@ footer li{
 
 .fixed-three-sentence{
     position: absolute;
+    top: 11%;
+    left: 25%;
+    line-height: 1;
+}
+
+
+
+.line-height-inherit{
+    line-height: inherit;
+    padding-bottom: 0.5rem;
+}
+
+
+.fixed-three-sentence-index{
+    position: absolute;
     top: 19%;
     left: 25%;
+}
+
+.title-three{
+    margin-bottom: 0;
+    padding-bottom: 0.3rem;
 }
 
 .fixed-heading {
@@ -1839,9 +1858,10 @@ width:1rem;
         padding: 0 0.5rem;
     }
 
-    .threes p{
+    .threes-index p{
         font-size: 0.65rem;
     }
+
 
     .fixed-three{
         top: 28%;
@@ -1980,13 +2000,13 @@ width:1rem;
         text-align: center;
     }
 
-    .threes p{
+    .threes-index p{
         font-size: 0.95rem;
     }
     .fixed-benefits{
-        top: 38%;
+        top: 35%;
         left: 24%;
-        right: -14%;
+        right: 0;
         font-size: 0.85rem;
     }
     .mob-min-w{
@@ -1998,7 +2018,7 @@ width:1rem;
     }
     .ss-description{
         line-height: 1;
-        font-size: 0.7rem;
+        font-size: 0.68rem;
     }
 }
 
@@ -2008,11 +2028,22 @@ width:1rem;
       max-width: 100%;
     }
 
-    .threes p {
+    .threes-index p {
         line-height: 1;
         font-size: 1rem;
         margin-top: 0%;
         margin-left: 3%;
+    }
+
+    .threes p {
+        line-height: 1;
+        font-size: 1.2rem;
+        margin-top: 0%;
+        margin-left: 3%;
+    }
+
+    .title-three{
+        font-size: 1.3rem;
     }
 
     #why-pts{
@@ -2041,25 +2072,44 @@ width:1rem;
 }
 
 @media(max-width:1080px) and (min-width:769px){
-    .threes p {
+    .threes-index p {
       line-height: 1;
       font-size: 0.8rem;
       margin-top: 0%;
       margin-left: 3%;
   }
 
+  .threes p {
+    line-height: 1;
+    font-size: 1rem;
+    margin-top: 0%;
+    margin-left: 3%;
+}
+
+.threes li{
+    font-size: 0.9rem;
+}
+
   .fixed-three li, .fixed-three-index li {
       font-size: 0.8rem;
   }
  
-  .fixed-three-sentence li{
+  .fixed-three-sentence-index li{
     font-size: 0.8rem;
+}
+
+.line-height-inherit{
+    padding-bottom: 0;
+}
+
+.title-three{
+    font-size: 1.3rem;
 }
 
 }
 
 @media(max-width:1375px){
-      .threes p {
+      .threes-index p {
         line-height: 1;
         font-size: 0.9rem;
         margin-top: 0%;
@@ -2068,6 +2118,12 @@ width:1rem;
 
     .fixed-three li, .fixed-three-index li {
         font-size: 0.9rem;
+    }
+    .fixed-three-sentence-index li{
+        font-size: 0.9rem;
+    }
+    .title-three{
+        font-size: 1.1rem;
     }
 
 }
@@ -2089,6 +2145,9 @@ width:1rem;
     .m-l-1{
         margin-left: 2rem;
       }
+    .p-b-1-desktop{
+        padding-bottom: 1rem;
+    }
 }
 
 @media(min-width: 1600px){
@@ -2096,7 +2155,7 @@ width:1rem;
     body{
         font-size: 1.2rem;
     }
-    .threes p {
+    .threes-index p {
         line-height: 1.2;
         font-size: 1.5rem;
       }

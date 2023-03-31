@@ -4,43 +4,41 @@ threes:
    -
       title: Profile Assessment
       text: >-
-         PTS team members maintain high-touch engagement with our candidates
-         throughout the recruitment process.
+         Our team maintains high-touch engagement with our candidates throughout the recruitment process. We ensure candidates receive timely and constructive feedback.
       li-1: >-
-         In-depth profile outlining your skill set, personality assessment, work
-         experience, and educational qualifications
+         In-depth profile outlining your relevant features
       li-2: >-
-         Streamlined application process ensures you waste no time applying for
-         a new career
-      li-3: Answer profile or job-specific questions tailored to you
+         Articulate writeup of skills and work experience
+      li-3: Personality assessment detailing cognition and chance of leadership success
    -
       title: Easy Application Process
-      text: Our team will keep you updated on industry trends and opportunities.
-      li-1: Leverage our numerous GovCon association memberships
-      li-2: Keep you informed on networking opportunities
-      li-3: Support your network growth through social media and marketing
+      text: PTS created an innovative application process to save our candidates time. It is designed to get your most relevant information without extracting unnecessary details. 
+      li-1: Streamlined application process ensures you waste no time applying for a new career
+      li-2: Round-the-clock support service for application questions
+      li-3: Job-specific questions tailored to fit your profile
    -
       title: Lifelong Career Partners
-      text: PTS wishes to support you throughout your GovCon career.
+      text: PTS wishes to support you throughout your GovCon career. We'll help you find the right job and update you on industry trends, events, and opportunities.
       li-1: >-
-         Share regular industry updates and job openings with current and former
-         candidates
+         Share regular industry updates and job openings with current and former candidates
       li-2: >-
-         Serve as an extension of our customers' brands to the industry talent
-         base
+         Serve as an extension of our customers' brands to the industry talent base
       li-3: >-
-         Understand the importance of finding the right fit for candidates and
-         customers
+         Understand the importance of finding the right fit for candidates and customers
 placements:
    -
-      title: Roxanne Kaufman, Senior Vice President, ISOA
-      profile_image: /uploads/roxanne-kaufman.webp
+      profile_image: /uploads/mark-white.webp
       headshot-alt:
       quote_html: >-
-         <p>"PTS was there for <span class="blue">every step of the
-         process</span>, making sure that I knew what to expect and following up
-         with feedback. I <span class="blue">highly recommend</span> Jake and
-         his team of professionals!"</p>
+         <p>"PTS <span class="blue">coordinated and were present for every
+         meeting with the key stakeholders </span>and stayed in close contact
+         through my first day and followed up 4-6 weeks after I started the new
+         role to confirm with me that I had made the correct career decision.
+         <span class="blue">It was an excellent experience working with
+         PTS</span>."</p>
+      title: Mark White, Senior Executive
+      logo: isoa-img.jpeg
+      logo-alt:
    -
       title: Anita Vick, Sr. Director, Business Development, GardaWorld
       profile_image: /uploads/anita-vick.jpeg
@@ -57,12 +55,8 @@ placements:
       profile_image: /uploads/josiah-helms.webp
       headshot-alt:
       quote_html: >-
-         <p>"The advice and guidance in the Cloud government contracting arena
-         was spot on - <span class="blue">excellent market intel</span>! The PTS
-         team <span class="blue">took time to understand my cloud technical and
-         capture leadership background</span> and what I could bring to the next
-         organization."</p>
-      title: Josiah Helms, Senior Cloud Capture Manager
+         <p>"I have worked with PTS and am thoroughly impressed with their professionalism, industry knowledge, and ability to match experienced candidates with great opportunities! True to their name, Precision Talent Solutions is an outstanding group, making great opportunities meet with great people, and vice versa! "</p>
+      title: Matt Fuller, Senior Director of Pricing and Business Analyst
 seo:
    title: Precision Talent Solutions, For candidates
    description: Upload your information on our website for career opportunities.
@@ -93,13 +87,15 @@ seo:
   {%for item in page.threes%}
   <div class="col-4_sm-12 why-pts threes relative">
       <img class="img-max" src="/images/blank-.png" />
-      <h3 class="mob-padded-2 p-b-2 left fixed-heading light-blue bold">{{item.title}}</h3>
-      <p class="fixed-three-sentence">{{item.text}}</p>
-      <ul class="fixed-three-index">
-        <li>{{item.li-1}}</li>
-        <li>{{item.li-2}}</li>
-        <li>{{item.li-3}}</li>
-      </ul>
+      <div class="fixed-three-sentence">
+         <h3 class="title-three left light-blue bold">{{item.title}}</h3>
+         <p class="line-height-inherit font-1-4">{{item.text}}</p>
+         <ul class="font-1-4">
+           <li>{{item.li-1}}</li>
+           <li>{{item.li-2}}</li>
+           <li>{{item.li-3}}</li>
+         </ul>
+         </div>
   </div>
   {%endfor%}
 
