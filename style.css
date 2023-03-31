@@ -170,7 +170,7 @@ h3{
 .margin-sides{margin: 0 0.5rem;}
 .m-t-1-5{margin-top: 1.8rem;}
 /* Ade */
-.m-neg-2{margin-left: -2.5rem;}
+
 
 .capped-width { max-width: 1100px; margin: auto;}
 .capped-section { max-width: 1200px; margin: auto;}
@@ -305,6 +305,7 @@ ul, ol{
 
 li{
     font-size: 1.2rem;
+    list-style-position: inside;
 }
 
 footer ul li::before, #video-teamphoto ul li::before, #why-pts ul li::before, #b-p ul li::before{
@@ -313,7 +314,7 @@ footer ul li::before, #video-teamphoto ul li::before, #why-pts ul li::before, #b
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
+     /* Also needed for space (tweak if needed) */
   }
 
 .display-block{
@@ -632,6 +633,10 @@ footer ul::content, #video-teamphoto ul::content{
 
 footer li, #video-teamphoto li{
     padding-bottom: 0.3rem;
+}
+
+footer li{
+    font-size: 1rem;
 }
 
 .socials{
@@ -2009,6 +2014,7 @@ width:1rem;
         margin-top: 0%;
         margin-left: 3%;
     }
+
     #why-pts{
         min-height: 65vh;
     }
@@ -2023,13 +2029,18 @@ width:1rem;
         font-size: 0.9rem;
     }
 
-    .fixed-three-index li{
+   
+    .blog-footer-hide{
+        display: none;
+      }
+
+      .fixed-three-sentence li{
         font-size: 1.1rem;
     }
     
 }
 
-@media(max-width:1040px){
+@media(max-width:1080px) and (min-width:769px){
     .threes p {
       line-height: 1;
       font-size: 0.8rem;
@@ -2040,6 +2051,10 @@ width:1rem;
   .fixed-three li, .fixed-three-index li {
       font-size: 0.8rem;
   }
+ 
+  .fixed-three-sentence li{
+    font-size: 0.8rem;
+}
 
 }
 
@@ -2064,6 +2079,10 @@ width:1rem;
     .tablet-hide-header{
         display: none;
     }
+}
+
+@media(min-width: 1375px){
+    .m-neg-2{margin-left: -2.5rem;}
 }
 
 @media(min-width:1401px){
