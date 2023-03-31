@@ -5,6 +5,7 @@ description: 'PTS monitors contract awards through the US Government and NATO. '
 author: Wills Hay
 featured: false
 categories:
+  - contract awards
 category-link: category-contract.html
 featured_image: /uploads/contract.png
 date: 2023-01-13 00:00:00
