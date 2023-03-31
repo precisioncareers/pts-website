@@ -40,9 +40,8 @@ Precision Talent Solutions is a recruiting company for government contractors. W
 * Oshkosh - $141,018,624 Firm-Fixed-Price contract for A2 Medium Tactical Trucks and Medium Tactical Trailers
 * SAIC - $99,000,000 Firm-Fixed-Price, IDIQ contract for facilities maintenance, repair, and operations supplies
 * Leidos - $2,993,000 Cost-Plus-Fixed-Fee R&D contract for Nuclear Non-Proliferation
-
 * Guidehouse - $158,000,000 Order Dependent contract for Identity Management System Technology Refresh Project
-
+*
 * Strateion Group - $4,500,000 Time and Materials contract for IT Support Services
 * WolfTek Mission Group - $13, 413,000 Firm-Fixed-Price IT Support Services and Software Development Tools contract
 * WolfTek Mission Group - $25,000,000 Firm-Fixed-Price IDIQ Cloud Services and Software Development Tools contract
