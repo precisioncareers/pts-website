@@ -298,6 +298,10 @@ hr {
     font-weight: 400;
 }
 
+.font-1-4{
+    font-size: 1.4rem;
+}
+
 ul, ol{
     list-style-position: inside;
     list-style: none;
