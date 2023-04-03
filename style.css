@@ -875,6 +875,14 @@ footer li{
     width: auto;
 }
 
+.bg-candidates{
+    background-image: url('/images/candidates.webp');
+    width: auto;
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .bg-team{
     background-image: url('/images/team-closeup.jpg');
 }
@@ -1398,7 +1406,7 @@ width:1rem;
     font-size: 3.5rem;
     padding: 14.5% 12px;
     position: absolute;
-    bottom: 100px;
+    bottom: -127px;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -1413,7 +1421,7 @@ width:1rem;
 
 .banner-paragraph{
     position: absolute;
-    bottom: 100px;
+    bottom: 39px;
     width: 100%;
     text-align: center;
     font-weight: 400;
@@ -1887,11 +1895,12 @@ width:1rem;
         margin-left: 37%;
     }
     .banner-text{
-        font-size: 2.3rem;
+        font-size: 2.25rem;
         padding: 75.5% 12px;
     }
     .banner-paragraph{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
     }
     #main-text{
         margin-top: 3.8rem;
