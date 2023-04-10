@@ -303,13 +303,13 @@ hr {
 }
 
 ul, ol{
-    list-style-position: inside;
+    list-style-position: outside;
     list-style: none;
 }
 
 li{
     font-size: 1.2rem;
-    list-style-position: inside;
+    list-style-position: outside;
 }
 
 footer ul li::before, #video-teamphoto ul li::before, #why-pts ul li::before, #b-p ul li::before{
