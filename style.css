@@ -1054,6 +1054,15 @@ footer li{
 
 .fixed-benefits{
     position: absolute;
+    top: 34%;
+    left: 24%;
+    right: 0%;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.fixed-benefits-candidates{
+    position: absolute;
     top: 40%;
     left: 24%;
     right: 0%;
