@@ -303,8 +303,9 @@ hr {
 }
 
 ul, ol{
-    list-style-position: outside;
     list-style: none;
+    list-style-position: outside;
+    
 }
 
 li{
@@ -312,11 +313,30 @@ li{
     list-style-position: outside;
 }
 
-footer ul li::before, #video-teamphoto ul li::before, #why-pts ul li::before, #b-p ul li::before{
+.blog-content ul{
+    list-style: initial;
+    margin-right: 1.5rem;
+}
+
+.blog-content li{
+    margin-bottom: 1rem;
+    list-style-position: inside;
+}
+
+.standard-list{
+    padding-left: 1rem;
+}
+
+.standard-list li{
+    line-height: 1;
+    padding-left: 1rem;
+}
+
+footer ul li::marker, #video-teamphoto ul li::marker, #why-pts ul li::marker, #b-p ul li::marker{
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: var(--neonblue); /* Change the color */
     font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
+ /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
      /* Also needed for space (tweak if needed) */
   }
