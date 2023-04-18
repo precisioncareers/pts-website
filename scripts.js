@@ -69,7 +69,7 @@ console.log('about to run slideshow');
 
 $(".index-images").slick({
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 3000,
   speed: 500,
   arrows: false,
   accessibility: true,
