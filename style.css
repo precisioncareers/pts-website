@@ -125,6 +125,7 @@ h3{
 .p-b-2{padding-bottom: 2%;}
 .p-b-2rem{padding-bottom: 2rem;}
 .p-b-3{padding-bottom: 3.5%;}
+.p-b-04{padding-bottom: 0.5rem;}
 .p-b-12{padding-bottom: 12%;}
 .p-l-2{padding-left: 2%;}
 .p-r-2{padding-right: 2%;}
@@ -408,7 +409,7 @@ p a:hover {
     display: inline-block;
     font-weight: bold;
     text-transform: uppercase;
-    opacity: 0.5;
+    opacity: 0.8;
     font-size: 0.8rem;
     margin-right: 0.4rem;
   }
