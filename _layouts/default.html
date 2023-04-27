@@ -13,7 +13,12 @@
 
     {%include site-footer.html%}
 
+    {%unless page.newsletter==false%}
+    {%include newsletter-popup.html%}
+    {%endunless%}
+
     {%include scripts.html%}
+
 
 </body>
 </html>

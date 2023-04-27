@@ -338,9 +338,14 @@ footer ul li::marker, #video-teamphoto ul li::marker, #why-pts ul li::marker, #b
     color: var(--neonblue); /* Change the color */
     font-weight: bold; /* If you want it to be bold */
  /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
+    width: 1em; /*Also needed for space (tweak if needed) */
      /* Also needed for space (tweak if needed) */
-  }
+}
+@media not all and (min-resolution:.001dpcm){
+    ul, ol{
+        list-style: initial;
+    }
+}
 
 .display-block{
     display: block;
@@ -1869,6 +1874,35 @@ width:1rem;
     max-height: 9vh;
     margin: 1%;
     box-shadow: 5px -4px 10px rgba(34,177,224,0.3);
+}
+
+/* newsletter popup/cookie banner */
+
+#cookie-notice {
+    padding: 0.5rem 1rem;
+    display: none;
+    text-align: center;
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0;
+    width: calc(100% - 2rem);
+    background: #222;
+    color: rgba(255,255,255,0.8);
+}
+#cookie-notice a {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+#cookie-notice .button-subtle {
+  opacity: 0.8;
+}
+#close-cookie-banner {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  opacity: 0.5
 }
 
 /* Ade copyright ad */

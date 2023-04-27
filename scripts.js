@@ -30,7 +30,8 @@ console.log('Dave');
 
 lightGallery(document.getElementById('lightgallery'), {
   speed: 500,
-  download: false
+  download: false,
+  licenseKey: "4F32ADB5-8E9D-4DF8-846E-EDD6754A8A17"
 });
 
 $(".testimonial-slider-container").slick({
