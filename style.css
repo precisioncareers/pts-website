@@ -539,7 +539,47 @@ form .button:hover {
 }
     
 
-  
+/* Card flip styles */
+
+.card-flip {
+    perspective: 1000px;
+    }
+    
+    
+    .card-flip:hover .flip {
+    transform: rotateY(180deg);
+    }
+    
+    .card-flip,
+    .front,
+    .back {
+      width: 21vw;
+      height: 480px;
+      padding: 7% 2%;
+    }
+    
+    .flip {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+    
+    .front,
+    .back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .front {
+      z-index: 2;
+      transform: rotateY(0deg);
+    }
+    
+    .back {
+      transform: rotateY(180deg);
+    }
               
             
 /* Header and footer styles */

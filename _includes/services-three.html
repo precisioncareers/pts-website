@@ -1,5 +1,5 @@
 
-<section id="why-pts" class="padded grid-spaceAround center">
+<section id="why-pts" class="padded grid-spaceAround center mob-show">
     <h2 class="col-12 p-b-3 p-t-2 blue bold">What we can help you with</h2>
     {%for item in page.threes%}
     <div class="col-4_sm-12 why-pts threes relative">
@@ -17,3 +17,33 @@
     {%endfor%}
 
 </section>
+
+<section id="why-pts" class="padded grid-spaceAround center mob-hide">
+  <h2 class="col-12 p-b-3 p-t-2 blue bold">What we can help you with</h2>
+  {%for item in page.threes%}
+  <div class="col-4_sm-12 why-pts threes relative">
+      <img class="img-max" src="/images/blank-.png">
+      <div class="fixed-three-sentence card-flip">
+        <div class="flip">
+        <div class="front">
+          <h3 class="title-three left light-blue bold">{{item.title}}</h3>
+          <p class="line-height-inherit font-1-4">{{item.text}}</p>
+          <!-- <span>add arrow icon</span> -->
+        </div>
+        <div class="back">
+          <ul class="font-1-4 standard-list">
+            <li class="font-1-4">{{item.li-1}}</li>
+            <li class="font-1-4">{{item.li-2}}</li>
+            <li class="font-1-4">{{item.li-3}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  {%endfor%}
+
+</section>
+
+<!-- if i wnat to flip the image as well move the flip classes above the image so it is a part of the flip point -->
+
+<!-- suggestion: have the image be a blue triangle and set the background color of the flipping section to white -->
