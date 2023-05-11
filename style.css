@@ -670,6 +670,11 @@ footer{
     color: var(--neonblue);
   }
 
+
+.li-padding li{
+    padding-left: 9px;
+}
+
 /* footer ul{
     list-style-image:url('/images/diamond.png');
 

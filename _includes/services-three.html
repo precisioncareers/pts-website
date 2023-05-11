@@ -23,7 +23,8 @@
   {%for item in page.threes%}
   <div class="col-4_sm-12 why-pts threes relative">
       <img class="img-max" src="/images/blank-.png">
-      <div class="fixed-three-sentence card-flip">
+      <div class="fixed-three-sentence card-flip" data-aos="flip-left" data-aos-duration="6000" data-aos-offset="{{forloop.index | plus: 1 }}00"> 
+        <!-- forloop.index - offsets the next two cards so they flip after each other -->
         <div class="flip">
         <div class="front">
           <h3 class="title-three left light-blue bold">{{item.title}}</h3>
