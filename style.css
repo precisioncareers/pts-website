@@ -134,6 +134,7 @@ h3{
 .p-b-0{padding-bottom: 0;}
 .p-b-1{padding-bottom: 1rem;}
 .p-t-2{padding-top: 2%;}
+.p-t-6{padding-top: 6%;}
 .p-02{padding: 2rem;}
 .padded-sides{
     margin: 0 1.3rem;
@@ -1948,6 +1949,22 @@ width:1rem;
   cursor: pointer;
   font-size: 0.8rem;
   opacity: 0.5
+}
+
+/* Technical process page styles */
+
+.bg-process-blue{
+    background-color: #4263E6;
+}
+
+.bg-process-blue-left{
+    background-color: #4263E6;
+    border-radius: 0 3rem 3rem 0;
+}
+
+.bg-process-blue-right{
+    background-color: #4263E6;
+    border-radius: 3rem 0 0 3rem;
 }
 
 /* Ade copyright ad */
