@@ -1967,6 +1967,10 @@ width:1rem;
     border-radius: 3rem 0 0 3rem;
 }
 
+.technical-img{
+    max-height: 45vh;
+}
+
 /* Ade copyright ad */
 .copyright{
     font-size: 0.8rem;
