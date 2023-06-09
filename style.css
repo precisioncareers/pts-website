@@ -1969,6 +1969,7 @@ width:1rem;
 
 .technical-img{
     max-height: 45vh;
+    max-width: 100%;
 }
 
 /* Ade copyright ad */
