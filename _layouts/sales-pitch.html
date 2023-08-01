@@ -3,15 +3,15 @@ layout: default
 --- 
 <section class="bg-sector tall-85 padded-3 white center" style="background-image: url('{{page.banner-image}}')">
     <div class="grid-spaceAround m-t-6">
-      <h1 class="col-12 p-b-2">Precision Talent Solutions</h1>
-      <p class="col-8-md-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, asperiores corporis laboriosam quidem minus animi alias atque, nam beatae veritatis tempora voluptate aspernatur, et natus quas vero ipsum quaerat minima.</p>
+      <h1 class="col-12 p-b-2">{{page.h1}}</h1>
+      <p class="col-8-md-12">{{page.description}}</p>
       </div>
 </section>
 
 <section class="padded-top grid-spaceAround center bg-process-blue white m-t-5">
     <h2 class="col-12 m-b-1-2 m-t-5">About Us</h2>
-    <p class="col-10 blocktext p-b-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam dolore officiis totam consequuntur tempora necessitatibus blanditiis quae inventore molestiae dolores rerum, nemo asperiores sed libero distinctio labore nesciunt unde commodi?</p>
-    <p class="col-10 blocktext p-b-2"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate laboriosam modi quos saepe fugiat assumenda reiciendis eum eligendi ullam. Ea veniam officia dicta corporis quis sapiente, aliquid magnam inventore esse!</p>
+    <p class="col-10 blocktext p-b-2">{{page.about-1}}</p>
+    <p class="col-10 blocktext p-b-2"> {{page.about-2}}</p>
 </section>
 
 <section class="padded grid capped-width center">
@@ -55,6 +55,16 @@ layout: default
     </div>
 </section>
 
+<section class="padded">
+    <h3>{{page.experience-headline}}</h3>
+    <ul>
+        {%for performance in page.performances%}
+        <li>{{performance.position}}
+        </li>
+        {%endfor%}
+    </ul>
+</section>
+
 
 {%include contained-terms.html%}
 
@@ -62,6 +72,26 @@ layout: default
     <h2 class="col-12 p-t-2 m-b-1 index-titles bold">Pricing</h2>
     <img src="/images/pricing.png" alt="Countries where the PTS team resides: USA, UK, Czechia, Belgium, Switzerland, Poland, Kosovo, Bosnia, Turkey, UAE, Germany." date-main="/images/compresed-map.webp" loading="lazy" class="col-12 img-max">
 </section>
+
+<section class="padded bg-ausalunch bg-image tall-100 mob-tall-60">
+  <h2 class="center white p-b-5">Voice of our Customers</h2>
+    <div class="center testimonial-slider-container-index team-testimonial">
+    {%for testimonial in page.customers%}
+    <div class="slider-item">
+      <div class="grid-spaceAround center">
+        <div class="col-3_sm-8-middle" id="team-testimonial">
+            <img src="{{testimonial.headshot_image}}" class="profile-small" alt="{{testimonial.headshot-alt}}">
+        </div>
+        <div class="col-12 padded white" id="testimonial-text">
+        <p class="italic p-b-2">
+            "{{testimonial.text}}" </p>
+        <p>  - {{testimonial.name}}  </p>
+        </div>
+      </div>
+    </div>
+    {%endfor%}
+    </div>
+</section>  
 
 
 {%include benefits.html%}
