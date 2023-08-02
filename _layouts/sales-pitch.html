@@ -26,12 +26,11 @@ layout: default
     <img src="/images/funnel.png" alt="Countries where the PTS team resides: USA, UK, Czechia, Belgium, Switzerland, Poland, Kosovo, Bosnia, Turkey, UAE, Germany." date-main="/images/compresed-map.webp" loading="lazy" class="col-12 img-max">
 </section>
 
-<section class="grid-spaceAround padded">
-    <h3>Example video interview</h3>
+<section class="grid-spaceAround padded center">
+    <!-- <h3 class="center col-12">Example video interview</h3> -->
 <video class="center col-6" width="320" height="240" controls>
     <source src="{{page.video-mp4}}" type="video/mp4">
     <source src="{{page.video-ogg}}" type="video/ogg">
-  Your browser does not support the video tag.
 </video> 
 </section>
 
@@ -64,14 +63,38 @@ layout: default
     </div>
 </section>
 
-<section class="padded">
-    <h3>{{page.experience-headline}}</h3>
-    <ul>
+<!-- <section class="padded standard-list grid-spaceAround" id="sales-pitch">
+    <h3 class="col-12 center">{{page.experience-headline}}</h3>
+    <ul class="col-3 justify">
         {%for performance in page.performances%}
         <li>{{performance.position}}
         </li>
         {%endfor%}
     </ul>
+</section> -->
+
+<section class="padded" id="b-p">
+	<div class="capped-width grid-spaceAround">
+		<h3 class="col-12 p-b-5 center">{{page.experience-headline}}</h3>
+     <div class="col-5_sm-12 center">
+      <ul class="left">
+        {%for performance in page.performances%}
+        <li>{{performance.position}}
+        </li>
+        {%endfor%}
+      </ul>
+    </div>
+    <div class="col-5_sm-12 center">
+    <ul class="left">
+        {%for performance in page.performances-right%}
+        <li>{{performance.position}}
+        </li>
+        {%endfor%}
+    </ul>
+  </div>
+ 	</div>
+
+  
 </section>
 
 
